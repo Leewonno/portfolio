@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'SBAggroB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.headerBox{
+    width: 95%;
+    height: 75px;
+    margin-top: 15px;
+    background-color: rgb(25 25 25);
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 5px 8px 0 rgba(68,68,68,.125);
+    position: relative;
+    font-family: 'S-CoreDream-3Light';
+}
+
+.name{
+    font-size: 25px;
+    font-family: 'SBAggroB';
+    color: white;
+    margin-left: 20px;
+}
+
+.aBox{
+    margin-right: 20px;
+}
+
+.a{
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    transition: all 0.3s;
+}
+
+.a:hover{
+    transform: scale(1.1);
+}
