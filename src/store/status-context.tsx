@@ -11,7 +11,7 @@ const StatusContext = createContext<StatusContextType>({
 });
 
 export function StatusProvider({children}:any){
-    const [light, setLight] = useState<string>("black");
+    const [light, setLight] = useState<string>("off");
 
     return <StatusContext.Provider value={{
             light, setLight,

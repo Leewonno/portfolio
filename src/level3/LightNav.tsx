@@ -12,11 +12,11 @@ export default function LightNav(){
     }, []);
 
     const handleOnOff = ()=>{
-        if(context.light === "white"){
-            context.setLight("black");
+        if(context.light === "on"){
+            context.setLight("off");
         }
-        else if(context.light === "black"){
-            context.setLight("white");
+        else if(context.light === "off"){
+            context.setLight("on");
         }
     }
 
@@ -27,6 +27,8 @@ export default function LightNav(){
             <div className={light.box} onClick={handleOnOff}>
                 <div className={light.line}></div>
                 <div className={light.dot}></div>
+                <div className={light.dotBuble}></div>
+                <div className={light.hint}><span>C</span>lick</div>
             </div>
             
         </>
