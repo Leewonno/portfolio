@@ -64,6 +64,7 @@ export default function MainMy(){
                             </div>
                             <div className={main.infoName}>참여활동</div>
                             <div className={main.infoItemBox}>
+                                <div>- 남서울대학교 제 27회 졸업작품 전시회 (2023.06)</div>
                                 <div>- 포스코 X 코딩온 웹 풀스택 부트캠프 9기 (2023.07~2023.12)</div>
                             </div>
                             <div className={main.infoName} style={styleThema2}>Email</div>

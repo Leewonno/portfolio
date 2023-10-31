@@ -31,6 +31,7 @@ export default function MainProject(){
         <>
             <section id="project" className={main.project}>
                 <div className={main.projectBox}>
+                    <div className={main.projectName} style={styleThema}>PROJECT</div>
                     <div className={main.projectItem} style={styleThema}>
                         <div className={main.projectImg}>
                             <img src={novelcut} className={main.pjImg}></img>
@@ -81,11 +82,7 @@ export default function MainProject(){
                             </div>
                             <div className={main.projectSet}>
                                 <div className={main.projectCategory}>Backend</div>
-                                <div className={main.projectContent}></div>
-                            </div>
-                            <div className={main.projectSet}>
-                                <div className={main.projectCategory}>Database</div>
-                                <div className={main.projectContent}></div>
+                                <div className={main.projectContent}>CloudType</div>
                             </div>
                             <div className={main.projectSet}>
                                 <div className={main.projectCategory}>Github</div>
@@ -93,7 +90,7 @@ export default function MainProject(){
                             </div>
                             <div className={main.projectSet}>
                                 <div className={main.projectCategory}>URL</div>
-                                <div className={main.projectContent}><a className={main.projectA} target="_blank" href=""></a></div>
+                                <div className={main.projectContent}><a className={main.projectA} target="_blank" href="https://web-portfolio-12fhqa2llocnq9ai.sel5.cloudtype.app/">https://web-portfolio-12fhqa2llocnq9ai.sel5.cloudtype.app/</a></div>
                             </div>
                         </div>
                     </div>

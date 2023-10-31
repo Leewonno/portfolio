@@ -34,7 +34,7 @@
 
 .home{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -378,7 +378,7 @@
 
 .my{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-color: black;
     display: flex;
     justify-content: center;
@@ -550,12 +550,14 @@
 
 .skill{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .skillTitle{
@@ -586,12 +588,17 @@
     border-radius: 10px;
     background-color: #2e2e2e;
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .skillImg{
     margin-right: 10px;
     margin-left: 10px;
-    height: 45px;
+    height: 40px;
+    margin-bottom: 8px;
+    margin-top: 8px;
 }
 
 .skillBox{
@@ -655,10 +662,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .projectBox{
     width: 1000px;
+}
+
+.projectName{
+    width: 1000px;
+    color: white;
+    font-family: 'S-CoreDream-9BLACK';
+    font-size: 25px;
+    margin-bottom: 10px;
+    opacity: 0.2;
+    transition: all 0.3s;
 }
 
 .projectItem{
@@ -723,4 +742,520 @@
 .projectA{
     text-decoration: none;
     color: #89a7ff;
+}
+
+@media (max-width:640px) {
+
+    .main{
+        
+    }
+    
+    .home{
+        
+    }
+    
+    .homeBg{
+        
+    }
+    
+    .introBox1{
+        width: 90%;
+    }
+    
+    .hello{
+        font-size: 4em;
+    }
+    
+    .hello2{
+        
+    }
+    
+    .reactLogo{
+        width: 4em;
+        top: 50%;
+        left: 10%;
+        animation: shoot2 1s;
+        animation-fill-mode: forwards;
+    }
+    
+    .jsLogo{
+        width: 4em;
+        height: 4em;
+        top: 50%;
+        left: 30%;
+        animation: shoot2 1s 0.5s;
+        animation-fill-mode: forwards;
+    }
+    
+    .cssLogo{
+        width: 4em;
+        height: 4em;
+        top: 50%;
+        left: 50%;
+        animation: shoot2 1s 1s;
+        animation-fill-mode: forwards;
+    }
+    
+    .htmlLogo{
+        width: 4em;
+        height: 4em;
+        top: 50%;
+        left: 70%;
+        animation: shoot2 1s 0.5s;
+        animation-fill-mode: forwards;
+    }
+    
+    .nodejsLogo{
+        width: 4em;
+        top: 50%;
+        left: 90%;
+        animation: shoot2 1s;
+        animation-fill-mode: forwards;
+    }
+    
+    .typeLogo{
+        width: 4em;
+        height: 4em;
+        top: 50%;
+    }
+    
+    .springLogo{
+        width: 4em;
+        height: 4em;
+        top: 50%;
+    }
+    
+    
+    @keyframes shoot2 {
+        0%{
+            transform: translateY(-2em);
+            height: 4em;
+            z-index: -1;
+            opacity: 0;
+        }
+        30%{
+            transform: translateY(0);
+            height: 2em;
+            z-index: -1;
+            opacity: 1;
+        }
+        60%{
+            transform: translateY(-4em);
+            height: 4em;
+            z-index: 0;
+        }
+        90%{
+            height: 3em;
+        }
+        100%{
+            transform: translateY(-4em);
+            opacity: 1;
+        }
+    }
+    
+    
+    @keyframes shoot6 {
+        0%{
+            transform: rotate(0deg);
+            left: calc(50% - 260px);
+            bottom: calc(50% + 100px);
+            height: 50px;
+            z-index: -1;
+            opacity: 0;
+        }
+        7%{
+            height: 25px;
+            opacity: 1;
+        }
+        15%{
+            bottom: calc(50% + 260px);
+            height: 75px;
+            z-index: -1;
+        }
+        35%{
+            left: calc(50% + 110px);
+            bottom: calc(50% - 15px);
+            z-index: 0;
+        }
+        45%{
+            left: calc(50% + 110px);
+            transform: rotate(360deg);
+            height: 50px;
+        }
+        50%{
+    
+        }
+        80%{
+            left: calc(50% -127px);
+        }
+        100%{
+            transform: rotate(-15deg);
+            left: calc(50% - 127px);
+            bottom: calc(50% - 15px);
+            opacity: 1;
+        }
+    }
+    
+    @keyframes shoot7 {
+        0%{
+            left: calc(50% - 260px);
+            bottom: calc(50% + 100px);
+            height: 45px;
+            z-index: -1;
+            opacity: 0;
+        }
+        15%{
+            height: 25px;
+            opacity: 1;
+        }
+        30%{
+            bottom: calc(50% + 260px);
+            height: 75px;
+            z-index: -1;
+        }
+        70%{
+            left: calc(50% - 180px);
+            bottom: calc(50% - 20px);
+            z-index: 0;
+        }
+        90%{
+            height: 40px;
+        }
+        100%{
+            left: calc(50% - 180px);
+            bottom: calc(50% - 20px);
+            opacity: 1;
+        }
+    }
+    
+    .my{
+        width: 100%;
+        min-height: 100vh;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .myBox{
+        width: 1000px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .aboutMe{
+        width: 100%;
+        font-size: 25px;
+        font-family: 'S-CoreDream-9BLACK';
+        color: white;
+        margin-bottom: 10px;
+        opacity: 0.2;
+        transition: all 0.3s;
+        /* margin-bottom: 100px; */
+    }
+    
+    .infoBox{
+        display: flex;
+        /* justify-content: space-between; */
+        width: 100%;
+        background-color: #1f1f1f;
+        padding: 30px;
+        box-sizing: border-box;
+        border-radius: 20px;
+        opacity: 0.2;
+        transition: all 0.3s;
+    }
+    
+    .infoBox:hover{
+        transform: scale(1.1);
+    }
+    
+    .imgBox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .profileImg{
+        width: 200px;
+        height: 200px;
+        border: 2px solid #e5e5e5;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    
+    .info{
+        color: white;
+        margin-left: 130px;
+    }
+    
+    .infoName{
+        font-family: 'GmarketSansBold';
+    }
+    
+    .infoItemBox{
+        margin-bottom: 20px;
+    }
+    
+    .nameBox{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    .name{
+        color: white;
+        font-size: 35px;
+        font-family: 'MYYeongnamnu';
+    }
+    
+    .lanternBox{
+    
+    }
+    
+    .lantern1{
+        width: 30px;
+        top:120px;
+        left:130px;
+        animation: up 1.5s ease-in 0.5s;
+        opacity: 0;
+    }
+    
+    .lantern2{
+        width: 50px;
+        top:60px;
+        right:130px;
+        animation: up 1.5s ease-in 1s;
+        opacity: 0;
+    }
+    
+    .lantern3{
+        width: 35px;
+        bottom:80px;
+        left:50px;
+        animation: up 1.5s ease-in;
+    }
+    
+    .lantern4{
+        width: 10px;
+        bottom:200px;
+        right:30px;
+        animation: up 1.5s ease-in;
+    }
+    
+    
+    .lantern5{
+        width: 20px;
+        bottom:120px;
+        right:180px;
+        animation: up 1.5s ease-in 0.5s;
+        opacity: 0;
+    }
+    
+    .lantern6{
+        width: 20px;
+        bottom:140px;
+        left:130px;
+        animation: up 1.5s ease-in 1s;
+        opacity: 0;
+    }
+    
+    .lantern7{
+        width: 25px;
+        top:240px;
+        right:370px;
+        animation: up 1.5s ease-in;
+    }
+    
+    .lantern8{
+        width: 50px;
+        top:210px;
+        left:370px;
+        animation: up 1.5s ease-in;
+    }
+    
+    .lantern1, .lantern2, .lantern3, .lantern4, .lantern5, .lantern6, .lantern7, .lantern8{
+        cursor: pointer;
+        position: absolute;
+        animation-fill-mode: forwards;
+        filter: drop-shadow(0 0 95px rgba(251, 255, 26, 0.56)) drop-shadow(0 0 33px rgba(251, 255, 26, 0.5)) drop-shadow(0 0 5px rgba(251, 255, 26, 0.5));
+        transition: all 0.3s;
+    }
+    
+    .lantern1:hover, .lantern2:hover, .lantern3:hover, .lantern4:hover, .lantern5:hover, .lantern6:hover, .lantern7:hover, .lantern8:hover{
+        filter: drop-shadow(0 0 46px rgba(251, 255, 26, 0.56)) drop-shadow(0 0 33px rgba(251, 255, 26, 0.5)) drop-shadow(0 0 5px rgba(251, 255, 26, 0.5));
+    }
+    
+    @keyframes up {
+        0% {
+            transform: translateY(0);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(-30px);
+            opacity: 1;
+        }
+    }
+    
+    .skill{
+        width: 100%;
+        min-height: 100vh;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    .skillTitle{
+        width: 1000px;
+        color: white;
+        font-family: 'S-CoreDream-9BLACK';
+        font-size: 25px;
+        margin-bottom: 10px;
+        opacity: 0.2;
+        transition: all 0.3s;
+    }
+    
+    .skillCategory{
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+    }
+    
+    .skillCategoryTitle{
+        font-family: 'S-CoreDream-9BLACK';
+        color: white;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .skillImgBox{
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #2e2e2e;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .skillImg{
+        margin-right: 10px;
+        margin-left: 10px;
+        height: 40px;
+        margin-bottom: 8px;
+        margin-top: 8px;
+    }
+    
+    .skillBox{
+        width: 1000px;
+        background-color: #1f1f1f;
+        padding: 30px;
+        box-sizing: border-box;
+        border-radius: 15px;
+        transition: all 0.3s;
+        opacity: 0.2;
+        transition: all 0.3s;
+    
+    }
+    
+    .skillBox:hover{
+        transform: scale(1.1);
+    }
+    
+    
+    .project{
+        width: 100%;
+        min-height: 100vh;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    .projectBox{
+        width: 1000px;
+    }
+    
+    .projectName{
+        width: 1000px;
+        color: white;
+        font-family: 'S-CoreDream-9BLACK';
+        font-size: 25px;
+        margin-bottom: 10px;
+        opacity: 0.2;
+        transition: all 0.3s;
+    }
+    
+    .projectItem{
+        width: 100%;
+        display: flex;
+        background-color: #1f1f1f;
+        margin-bottom: 30px;
+        border-radius: 15px;
+        padding: 30px;
+        box-sizing: border-box;
+        transition: all 0.3s;
+        opacity: 0.3;
+    }
+    
+    .projectItem:hover{
+        transform: scale(1.1);
+    }
+    
+    .projectImg{
+        width: 450px;
+    }
+    
+    .pjImg{
+        width: 100%;
+        border-radius: 5px;
+    }
+    
+    .projectInfo{
+        color: white;
+        margin-left: 30px;
+        font-family: 'S-CoreDream-3Light';
+    }
+    
+    .projectTitle{
+        font-size: 20px;
+        margin-bottom: 15px;
+        font-family: 'S-CoreDream-9BLACK';
+        /* border-bottom: 1px solid white; */
+    }
+    
+    .projectDesc{
+        margin-bottom: 15px;
+        width: 500px;
+        border-bottom: 1px solid white;
+        padding-bottom: 20px;
+    }
+    
+    .projectSet{
+        display: flex;
+        margin-bottom: 15px;
+    }
+    
+    .projectCategory{
+        width: 90px;
+        font-family: 'S-CoreDream-7EXTRA_BOLD';
+    }
+    
+    .projectContent{
+        width: 360px;
+    }
+    
+    .projectA{
+        text-decoration: none;
+        color: #89a7ff;
+    }
 }
