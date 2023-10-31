@@ -53,15 +53,24 @@ export default function MainSkill(){
                             <img src="https://img.shields.io/badge/Oracle SQL-F80000?style=flat&logo=oracle&logoColor=white" alt="oracle" className={main.skillImg}/>
                             <img src="https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonaws&logoColor=white" alt="aws" className={main.skillImg}/>
                             <img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat&logo=firebase&logoColor=white" alt="firebase" className={main.skillImg}/>
+                            <img src="https://img.shields.io/badge/springboot-6DB33F?style=flat&logo=springboot&logoColor=white" alt="springboot" className={main.skillImg}/>
                         </div>
                     </div>
                     <div className={main.skillCategory}>
                         <div className={main.skillCategoryTitle}>Programing</div>
                         <div className={main.skillImgBox}>
-                        <img src="https://img.shields.io/badge/Java-007396?style=flat&logo=Java&logoColor=white" alt="java" className={main.skillImg}/>
-  <img src="https://img.shields.io/badge/C++-00599C?style=flat&logo=cplusplus&logoColor=white" alt="c++" className={main.skillImg}/>
-  <img src="https://img.shields.io/badge/C-A8B9CC?style=flat&logo=c&logoColor=white" alt="c" className={main.skillImg}/>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" alt="python" className={main.skillImg}/>
+                            <img src="https://img.shields.io/badge/Java-007396?style=flat&logo=Java&logoColor=white" alt="java" className={main.skillImg}/>
+                            <img src="https://img.shields.io/badge/C++-00599C?style=flat&logo=cplusplus&logoColor=white" alt="c++" className={main.skillImg}/>
+                            <img src="https://img.shields.io/badge/C-A8B9CC?style=flat&logo=c&logoColor=white" alt="c" className={main.skillImg}/>
+                            <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" alt="python" className={main.skillImg}/>
+                        </div>
+                    </div>
+                    <div className={main.skillCategory}>
+                        <div className={main.skillCategoryTitle}>Graphic</div>
+                        <div className={main.skillImgBox}>
+                            <img src="https://img.shields.io/badge/Photoshop-31A8FF?style=flat&logo=adobephotoshop&logoColor=white" alt="photoshop" className={main.skillImg}/>
+                            <img src="https://img.shields.io/badge/Premiere Pro-9999FF?style=flat&logo=adobepremierepro&logoColor=white" alt="premierepro" className={main.skillImg}/>
+                            <img src="https://img.shields.io/badge/After Effects-9999FF?style=flat&logo=adobeaftereffects&logoColor=white" alt="aftereffect" className={main.skillImg} />
                         </div>
                     </div>
                 </div>
