@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import StatusContext from "../store/status-context";
 
 import main from "../css/main.module.css";
-import profileImg from "../img/lighting.jpg";
+import profileImg from "../img/lee.jpg";
 import lantern1 from "../img/lantern1.png";
 import lantern2 from "../img/lantern2.png";
 import lantern3 from "../img/lantern3.png";
@@ -18,7 +18,9 @@ export default function MainMy(){
 
     useEffect(()=>{
         if(context.light==="on"){
-            setStyleThema(thema);
+            if(width>640){
+                setStyleThema(thema);
+            }
             setStyleThema2(thema2);
             setStyleThema3(thema3);
         }
@@ -43,6 +45,26 @@ export default function MainMy(){
     const thema3 = {
         opacity:1,
     }
+
+    const [width, setWidth] = useState<number>(window.innerWidth);
+    const handleResize = () => {
+        setWidth(window.innerWidth);
+    };
+
+    useEffect(() => {
+        window.addEventListener("resize", handleResize);
+        return () => {
+            if(width<=640){
+                setStyleThema(none);
+            }
+            else{
+                if(context.light==="on"){
+                    setStyleThema(thema);
+                }
+            }
+            window.removeEventListener("resize", handleResize);
+        };
+    }, [width]);
 
     return(
         <>
