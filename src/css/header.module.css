@@ -38,6 +38,10 @@
     margin-right: 20px;
 }
 
+.maBox{
+    display: none;
+}
+
 .a{
     color: white;
     text-decoration: none;
@@ -47,4 +51,60 @@
 
 .a:hover{
     transform: scale(1.1);
+}
+
+.icon{
+    display: none;
+}
+
+@media (max-width:500px) {
+    .icon{
+        display: block;
+        margin-right: 20px;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .aBox{
+        display: none;
+    }
+
+    .maBox{
+        display: none;
+        background-color: gray;
+        width: 100%;
+        position: absolute;
+        top: 90px;
+        padding: 20px;
+        box-sizing: border-box;
+        border-radius: 15px;
+        flex-direction: column;
+        align-items: center;
+        transition: all 0.3s;
+        animation: menuDown 0.5s ease-out;
+        animation-fill-mode: forwards;
+    }
+
+    .a{
+        text-decoration: none;
+        margin-left: 0px;
+        transition: all 0.3s;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 20px;
+    }
+
+    
+}
+
+@keyframes menuDown {
+    0%{
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }

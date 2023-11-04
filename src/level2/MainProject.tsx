@@ -32,7 +32,7 @@ export default function MainProject(){
             <section id="project" className={main.project}>
                 <div className={main.projectBox}>
                     <div className={main.projectName} style={styleThema}>PROJECT</div>
-                    <div className={main.projectItem} style={styleThema}>
+                    {/* <div className={main.projectItem} style={styleThema}>
                         <div className={main.projectImg}>
                             <img src={novelcut} className={main.pjImg}></img>
                         </div>
@@ -64,7 +64,7 @@ export default function MainProject(){
                                 <div className={main.projectContent}><a className={main.projectA} target="_blank" href="https://web-novelcut-12fhqa2blnvnggha.sel5.cloudtype.app/">https://web-novelcut-12fhqa2blnvnggha.sel5.cloudtype.app/</a></div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                     <div className={main.projectItem} style={styleThema}>
                         <div className={main.projectImg}>
                             <img src={portfolio} className={main.pjImg}></img>

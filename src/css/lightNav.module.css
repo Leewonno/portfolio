@@ -100,3 +100,39 @@
 .box:active .hint{
     animation: wave 1.5s ease-in-out;
 }
+
+@media (max-width:640px) {
+    .box{
+        right: 20px;
+    }
+    
+    .line{
+
+    }
+    
+    .dot{
+
+    }
+    
+    .dotBuble{
+
+    }
+    
+    .hint{
+        
+    }
+    
+
+
+    .box:hover{
+    }
+    
+    .box:hover .hint{
+    }
+    
+    .box:active{
+    }
+    
+    .box:active .hint{
+    }
+}
