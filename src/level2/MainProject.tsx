@@ -71,6 +71,7 @@ export default function MainProject(){
                         </div>
                         <div className={main.projectInfo}>
                             <div className={main.projectTitle}>포트폴리오</div>
+                            <div className={main.projectType}>개인 프로젝트</div>
                             <div className={main.projectDesc}>포트폴리오 사이트입니다.</div>
                             <div className={main.projectSet}>
                                 <div className={main.projectCategory}>주요기능</div>
@@ -100,6 +101,7 @@ export default function MainProject(){
                         </div>
                         <div className={main.projectInfo}>
                             <div className={main.projectTitle}>NOVELCUT</div>
+                            <div className={main.projectType}>개인 프로젝트</div>
                             <div className={main.projectDesc}>컷툰처럼 새로운 보기 방식을 적용한 웹소설 연재 사이트입니다.</div>
                             <div className={main.projectSet}>
                                 <div className={main.projectCategory}>주요기능</div>
@@ -133,6 +135,7 @@ export default function MainProject(){
                         </div>
                         <div className={main.projectInfo}>
                             <div className={main.projectTitle}>MangoZ</div>
+                            <div className={main.projectType}>팀 프로젝트</div>
                             <div className={main.projectDesc}>음악 스트리밍 사이트입니다.</div>
                             <div className={main.projectSet}>
                                 <div className={main.projectCategory}>주요기능</div>
@@ -166,6 +169,7 @@ export default function MainProject(){
                         </div>
                         <div className={main.projectInfo}>
                             <div className={main.projectTitle}>LEBU</div>
+                            <div className={main.projectType}>팀 프로젝트</div>
                             <div className={main.projectDesc}>부산 관광 정보 사이트입니다.</div>
                             <div className={main.projectSet}>
                                 <div className={main.projectCategory}>주요기능</div>
@@ -195,6 +199,7 @@ export default function MainProject(){
                         </div>
                         <div className={main.projectInfo}>
                             <div className={main.projectTitle}>NOVELPEDIA</div>
+                            <div className={main.projectType}>팀 프로젝트</div>
                             <div className={main.projectDesc}>소설 및 만화 정보를 공유할 수 있는 위키 서비스 입니다. Scikit-Learn 라이브러리를 이용한 작품 추천 서비스를 제공합니다.</div>
                             <div className={main.projectSet}>
                                 <div className={main.projectCategory}>주요기능</div>

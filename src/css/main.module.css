@@ -713,9 +713,15 @@
 
 .projectTitle{
     font-size: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     font-family: 'S-CoreDream-9BLACK';
     /* border-bottom: 1px solid white; */
+}
+
+.projectType{
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #b1b1b1;
 }
 
 .projectDesc{
@@ -799,7 +805,7 @@
     }
     
     .my{
-        
+        overflow: visible;
     }
     
     .myBox{
