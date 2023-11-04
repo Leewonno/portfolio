@@ -1,6 +1,9 @@
 import { useContext, useEffect, useState } from "react";
 import StatusContext from "../store/status-context";
 
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import main from "../css/main.module.css";
 import profileImg from "../img/lee.jpg";
 import lantern1 from "../img/lantern1.png";
@@ -92,6 +95,10 @@ export default function MainMy(){
                             <div className={main.infoName} style={styleThema2}>Email</div>
                             <div className={main.infoItemBox}>
                                 <div>- dldnjssh123@naver.com</div>
+                            </div>
+                            <div className={main.infoName} style={styleThema2}>Github</div>
+                            <div className={main.infoItemBox}>
+                                <div><a href="https://github.com/Leewonno" target="_blank"><FontAwesomeIcon icon={faGithub} style={{fontSize:"30px", marginTop:"15px", color:"white"}} /></a></div>
                             </div>
                         </div>
                     </div>
