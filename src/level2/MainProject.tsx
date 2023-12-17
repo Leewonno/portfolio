@@ -7,6 +7,7 @@ import manogz from "../img/mangoz.png";
 import lebu from "../img/lebu.png";
 import novelpedia from "../img/novelpedia.png";
 import portfolio from "../img/portfolio.png";
+import demure from "../img/demure.png";
 
 export default function MainProject(){
 
@@ -91,7 +92,41 @@ export default function MainProject(){
                             </div>
                             <div className={main.projectSet}>
                                 <div className={main.projectCategory}>URL</div>
-                                <div className={main.projectContent}><a className={main.projectA} target="_blank" href="https://web-portfolio-12fhqa2llocnq9ai.sel5.cloudtype.app/">https://web-portfolio-12fhqa2llocnq9ai.sel5.cloudtype.app/</a></div>
+                                <div className={main.projectContent}><a className={main.projectA} target="_blank" href="https://portfolio-67029.web.app/">https://portfolio-67029.web.app/</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className={main.projectItem} style={styleThema}>
+                        <div className={main.projectImg}>
+                            <img src={demure} className={main.pjImg}></img>
+                        </div>
+                        <div className={main.projectInfo}>
+                            <div className={main.projectTitle}>Demure</div>
+                            <div className={main.projectType}>팀 프로젝트</div>
+                            <div className={main.projectDesc}>이케아(IKEA) 데이터를 활용한 가구 쇼핑몰 입니다.</div>
+                            <div className={main.projectSet}>
+                                <div className={main.projectCategory}>주요기능</div>
+                                <div className={main.projectContent}>로그인, 회원가입, 장바구니, 간편결제, 검색, 챗봇, 카카오 로그인, 쿠폰, 이벤트</div>
+                            </div>
+                            <div className={main.projectSet}>
+                                <div className={main.projectCategory}>Frontend</div>
+                                <div className={main.projectContent}>React, Typescript</div>
+                            </div>
+                            <div className={main.projectSet}>
+                                <div className={main.projectCategory}>Backend</div>
+                                <div className={main.projectContent}>NestJs, AWS</div>
+                            </div>
+                            <div className={main.projectSet}>
+                                <div className={main.projectCategory}>Database</div>
+                                <div className={main.projectContent}>PostgreSQL</div>
+                            </div>
+                            <div className={main.projectSet}>
+                                <div className={main.projectCategory}>Github</div>
+                                <div className={main.projectContent}><a className={main.projectA} target="_blank" href="https://github.com/KDT9Demure">https://github.com/KDT9Demure</a></div>
+                            </div>
+                            <div className={main.projectSet}>
+                                <div className={main.projectCategory}>URL</div>
+                                <div className={main.projectContent}><a className={main.projectA} target="_blank" href="https://demure2023.shop/">https://demure2023.shop/</a></div>
                             </div>
                         </div>
                     </div>
