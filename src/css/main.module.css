@@ -710,6 +710,17 @@
     color: white;
     margin-left: 30px;
     font-family: 'S-CoreDream-3Light';
+    position: relative;
+}
+
+.projectDetail{
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: 1px solid;
+    padding: 3px 8px;
+    border-radius: 15px;
+    cursor: pointer;
 }
 
 .projectTitle{
@@ -749,6 +760,85 @@
 .projectA{
     text-decoration: none;
     color: #89a7ff;
+}
+
+.modalBox{
+    width: 100%;
+}
+
+.modalProjectBox{
+
+}
+
+.modalProjectImg{
+    margin-bottom: 15px;
+}
+
+.modalProjectImgContent{
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #e5e5e5;
+}
+
+.modalProjectTitle{
+    font-family: 'S-CoreDream-9BLACK';
+    font-size: 20px;
+    padding-bottom: 10px;
+    /* border-bottom: 1px solid #e5e5e5; */
+    margin-bottom: 15px;
+}
+
+.modalProjectOutline{
+    margin-bottom: 15px;
+}
+
+.modalProjectOutlineTitle{
+    font-family: 'S-CoreDream-7EXTRA_BOLD';
+    font-size: 18px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.modalProjectOutlineContent{
+    font-family: 'S-CoreDream-3Light';
+    margin-top: 10px;
+}
+
+.modalProjectSkill{
+    margin-bottom: 15px;
+}
+
+.modalProjectSkillTitle{
+    font-family: 'S-CoreDream-7EXTRA_BOLD';
+    font-size: 18px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.modalProjectSkillContent{
+    margin-top: 10px;
+}
+
+.modalSkillImg{
+    height: 25px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.modalProjectMy{
+
+}
+
+.modalProjectMyTitle{
+    font-family: 'S-CoreDream-7EXTRA_BOLD';
+    font-size: 18px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.modalProjectMyContent{
+    font-family: 'S-CoreDream-3Light';
+    margin-top: 10px;
 }
 
 @media (max-width:640px) {
