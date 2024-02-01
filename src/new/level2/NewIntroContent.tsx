@@ -11,7 +11,7 @@ export default function NewIntroContent() {
         </div>
         <div className={style.myselfBox}>
           <div className={style.myselfTitle}>안녕하세요</div>
-          <div className={style.myself}>걸그룹 엔믹스를 좋아하는 FullStack 개발자 <span className={style.bold}>이원노</span>입니다</div>
+          <div className={style.myself}>걸그룹 엔믹스를 좋아하는 Full-Stack 개발자 <span className={style.bold}>이원노</span>입니다</div>
           <div className={style.myself}>엔믹스처럼 열정, 노력, 끈기를 바탕으로 최고의 실력자가 되겠습니다</div>
         </div>
       </div>

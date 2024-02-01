@@ -108,7 +108,7 @@
     transition: all 1s;
     width: 100%;
     height: 100vh;
-    filter: brightness(0.9);
+    filter: brightness(0.6);
     object-fit: cover;
 }
 
@@ -201,3 +201,92 @@
     font-size: 35px;
     font-family: 'MYYeongnamnu';
 }
+
+.skill{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('/public/nmixx_7.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+.skillTitleBox{
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 75px;
+}
+
+.skillTitle{
+    font-size: 40px;
+    font-family: 'S-CoreDream-9BLACK';
+    color: #fff;
+    text-shadow: 1px 1px 25px #000;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+.skillBox{
+    width: 1100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skillCategory{
+    display: flex;
+    flex-direction: column;
+}
+
+.skillCategoryBox{
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffffa8;
+    width: 353px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.skillCategoryTitle{
+    font-family: 'S-CoreDream-7EXTRA_BOLD';
+    color: white;
+    font-size: 21px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 8px;
+}
+
+.skillImgBox{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.skillImg{
+    margin-right: 5px;
+    margin-left: 5px;
+    height: 40px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+
+
+/* .skillBg{
+    position: absolute;
+    z-index: -1;
+    transition: all 1s;
+    width: 100%;
+    height: 100vh;
+    filter: brightness(0.9);
+    object-fit: cover;
+} */

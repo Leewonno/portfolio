@@ -8,7 +8,6 @@ import html from "../img/html5.png";
 import nodejs from "../img/nodejs.png";
 import typescript from "../img/typescript.png";
 import rct from "../img/react.png";
-import spring from "../img/spring.png";
 import springBoot from "../img/spring-boot.png";
 
 

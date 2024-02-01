@@ -2,7 +2,7 @@
 import header from "../css/header.module.css";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useCallback, useEffect, useLayoutEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function Header() {
 
@@ -92,9 +92,9 @@ export default function Header() {
         </div>
         <div className={header.maBox}>
           {/* <a href="#home" className={header.a}>HOME</a> */}
-          <a href="#my" className={header.a}>AboutMe</a>
-          <a href="#skill" className={header.a}>Skills</a>
-          <a href="#project" className={header.a}>Project</a>
+          <a href="#my" className={header.a} style={scroll ? headerFontColorNone : headerFontColor}>AboutMe</a>
+          <a href="#skill" className={header.a} style={scroll ? headerFontColorNone : headerFontColor}>Skills</a>
+          <a href="#project" className={header.a} style={scroll ? headerFontColorNone : headerFontColor}>Project</a>
         </div>
         <FontAwesomeIcon icon={faBars} className={header.icon} />
         {/* <LightNav /> */}
