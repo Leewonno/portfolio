@@ -1,0 +1,19 @@
+.intro{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    align-items: center;
+    position: relative;
+    z-index: -1;
+}
+
+.introBg{
+    position: fixed;
+    z-index: -1;
+    transition: all 1s;
+    width: 100%;
+    filter: brightness(0.4);
+}

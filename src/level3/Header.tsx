@@ -1,4 +1,4 @@
-import LightNav from '../level3/LightNav';
+// import LightNav from '../level3/LightNav';
 import header from "../css/header.module.css";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -44,22 +44,22 @@ export default function Header(){
         <header className={header.header}>
             <div className={header.headerBox}>
                 <div className={header.name}>
-                    <div>Leewonno</div>
+                    <div><a href="#intro">Leewonno's Portfolio</a></div>
                 </div>
                 <div className={header.aBox}>
-                    <a href="#home" className={header.a}>HOME</a>
-                    <a href="#my" className={header.a}>자기소개</a>
-                    <a href="#skill" className={header.a}>기술</a>
-                    <a href="#project" className={header.a}>프로젝트</a>
+                    {/* <a href="#home" className={header.a}>HOME</a> */}
+                    <a href="#my" className={header.a}>About Me</a>
+                    <a href="#skill" className={header.a}>Skills</a>
+                    <a href="#project" className={header.a}>Project</a>
                 </div>
                 <div className={header.maBox} style={menuStyle}>
-                    <a href="#home" className={header.a}>HOME</a>
-                    <a href="#my" className={header.a}>자기소개</a>
-                    <a href="#skill" className={header.a}>기술</a>
-                    <a href="#project" className={header.a}>프로젝트</a>
+                    {/* <a href="#home" className={header.a}>HOME</a> */}
+                    <a href="#my" className={header.a}>About Me</a>
+                    <a href="#skill" className={header.a}>Skills</a>
+                    <a href="#project" className={header.a}>Project</a>
                 </div>
                 <FontAwesomeIcon icon={faBars} className={header.icon} onClick={handleMenuBtn} />
-                <LightNav />
+                {/* <LightNav /> */}
             </div>
         </header>
     )
