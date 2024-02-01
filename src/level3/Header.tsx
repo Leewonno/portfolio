@@ -86,13 +86,13 @@ export default function Header() {
         </div>
         <div className={header.aBox}>
           {/* <a href="#home" className={header.a}>HOME</a> */}
-          <a href="#my" className={header.a} style={scroll ? headerFontColorNone : headerFontColor}>About Me</a>
+          <a href="#my" className={header.a} style={scroll ? headerFontColorNone : headerFontColor}>AboutMe</a>
           <a href="#skill" className={header.a} style={scroll ? headerFontColorNone : headerFontColor}>Skills</a>
           <a href="#project" className={header.a} style={scroll ? headerFontColorNone : headerFontColor}>Project</a>
         </div>
         <div className={header.maBox}>
           {/* <a href="#home" className={header.a}>HOME</a> */}
-          <a href="#my" className={header.a}>About Me</a>
+          <a href="#my" className={header.a}>AboutMe</a>
           <a href="#skill" className={header.a}>Skills</a>
           <a href="#project" className={header.a}>Project</a>
         </div>

@@ -113,7 +113,7 @@
 }
 
 .myBox{
-    width: 1000px;
+    width: 1100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -123,7 +123,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
 }
 
 .aboutMe{
@@ -139,37 +139,56 @@
 
 .infoBox{
     display: flex;
-    width: 100%;
-    padding: 30px;
+    width: 1100px;
+    /* padding: 30px; */
     box-sizing: border-box;
-    border-radius: 20px;
-}
-
-.imgBox{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.profileImg{
-    width: 200px;
-    height: 250px;
-    border: 2px solid #e5e5e5;
-    border-radius: 50%;
-    object-fit: cover;
+    /* border-radius: 20px; */
 }
 
 .info{
-    color: white;
-    margin-left: 130px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.itemBox{
+    background-color: #fff;
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    border-radius: 10px;
+    width: 353px;
+    box-sizing: border-box;
+    transition: all 0.3s;
+}
+
+.itemBox:hover{
+    transform: scale(1.05);
+}
+
+.leftBox{
+
+}
+
+.myIcon{
+    font-size: 30px;
+}
+
+.rightBox{
+    margin-left: 20px;
+    margin-top: -3px;
 }
 
 .infoName{
-    font-family: 'GmarketSansBold';
+    font-family: 'S-CoreDream-7EXTRA_BOLD';
+    font-size: 20px;
 }
 
 .infoItemBox{
-    margin-bottom: 20px;
+    margin-top: 5px;
+    font-size: 14px;
+    font-family: 'S-CoreDream-3Light';
 }
 
 .nameBox{
