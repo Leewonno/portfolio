@@ -46,7 +46,7 @@ export default function NewProject() {
               <img src={wenmixx} className={style.pjImg}></img>
             </div>
             <div className={style.projectInfo}>
-              <div className={style.projectDetail} onClick={() => handleProjectDetatil("portfolio")}>자세히</div>
+              {/* <div className={style.projectDetail} onClick={() => handleProjectDetatil("we-nmixx")}>자세히</div> */}
               <div className={style.projectTitle}>엔믹스 팬 커뮤니티, WE-NMIXX</div>
               <div className={style.projectType}>팀 프로젝트</div>
               <div className={style.projectDesc}>
