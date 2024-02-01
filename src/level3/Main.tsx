@@ -5,15 +5,15 @@ import MainMy from "../level2/MainMy";
 import MainProject from "../level2/MainProject";
 import MainSkill from "../level2/MainSkill";
 
-export default function Main(){
-    
+export default function Main() {
 
-    return(
-        <main className={main.main}>
-            <MainIntroduce></MainIntroduce>
-            <MainMy></MainMy>
-            <MainSkill></MainSkill>
-            <MainProject></MainProject>
-        </main>
-    )
+
+  return (
+    <main className={main.main}>
+      <MainIntroduce></MainIntroduce>
+      <MainMy></MainMy>
+      <MainSkill></MainSkill>
+      <MainProject></MainProject>
+    </main>
+  )
 }
