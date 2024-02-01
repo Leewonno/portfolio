@@ -4,12 +4,14 @@
     position: fixed;
     width: 100%;
     z-index: 1;
+    user-select: none;
+    transition: all 0.3s;
 }
 
 .headerBox{
     width: 95%;
-    /* height: 75px; */
-    margin-top: 25px;
+    height: 75px;
+    /* margin-top: 25px; */
     /* background-color: rgb(25 25 25); */
     /* border-radius: 15px; */
     display: flex;
@@ -27,22 +29,22 @@
     margin-left: 20px;
     font-family: 'S-CoreDream-7EXTRA_BOLD';
     cursor: pointer;
-    transition: all 0.3s;
+    /* transition: all 0.3s; */
 }
 
 .name > div > a {
     color: #a3a3a3;
     text-decoration: none;
-    transition: all 0.3s;
+    /* transition: all 0.3s; */
 }
 
 .name > div > a:hover{
     color: #fff;
 }
 
-.name:hover{
+/* .name:hover{
     transform: scale(1.01);
-}
+} */
 
 
 .aBox{
@@ -63,7 +65,7 @@
 
 .a:hover{
     color: #fff;
-    transform: scale(1.05);
+    /* transform: scale(1.05); */
 }
 
 .icon{
