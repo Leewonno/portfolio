@@ -28,6 +28,7 @@ export default function NewProject() {
       height: "600px",
       padding: "25px",
       overflow: "scroll",
+      borderRadius:"0px"
     },
   };
 
@@ -58,7 +59,7 @@ export default function NewProject() {
               </div>
               <div className={style.projectSet}>
                 <div className={style.projectCategory}>주요기능</div>
-                <div className={style.projectContent}>프로젝트 소개, 프로젝트 자세히 보기</div>
+                <div className={style.projectContent}></div>
               </div>
               <div className={style.projectSet}>
                 <div className={style.projectCategory}>Frontend</div>

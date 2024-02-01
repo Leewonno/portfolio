@@ -100,6 +100,10 @@
     align-items: center;
     position: relative;
     overflow: hidden;
+    background-image: url('/public/nmixx.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
 }
 
 .myBg{
@@ -476,4 +480,193 @@
 .br{
     height: 10px;
     display: block;
+}
+
+
+@media (max-width:640px) {
+
+    .intro{
+        
+    }
+    
+    .introBg{
+        
+    }
+    
+    .introBox{
+        width: 90%;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .wordBox{
+
+    }
+
+    .word{
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    
+
+    .myselfBox{
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .myselfTitle{
+        font-size: 20px;
+    }
+
+    .myself{
+        font-size: 13px;
+    }
+
+    .bold{
+        font-size: 14px;
+    }
+
+    .myBox{
+        width: 90%;
+        margin-bottom: 50px;
+    }
+
+    .aboutMeBox{
+        margin-top: 75px;
+        margin-bottom: 20px;
+    }
+    
+    .aboutMe{
+        font-size: 25px;
+    }
+    
+    .infoBox{
+        width: 90%;
+        /* flex-direction: column; */
+    }
+    
+    .info{
+        
+    }
+
+    .itemBox{
+        width: 100%;
+    }
+
+    .leftBox{
+
+    }
+
+    .myIcon{
+
+    }
+
+    .rightBox{
+
+    }
+
+    .infoName{
+
+    }
+
+    .infoItemBox{
+
+    }
+    
+    
+    .skill{
+    }
+    
+    .skillTitleBox{
+        margin-bottom: 25px;
+        width: 90%;
+    }
+
+    .skillTitle{
+        font-size: 25px;
+    }
+
+    .skillBox{
+        width: 90%;
+        gap: 0px;
+    }
+    
+    .skillCategory{
+    }
+
+    .skillCategoryBox{
+        width: 100%;
+    }
+    
+    .skillCategoryTitle{
+        font-size: 18px;
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+    }
+    
+    .skillImgBox{
+        
+    }
+    
+    .skillImg{
+        height: 30px;
+    }
+
+    
+    .project{
+    }
+    
+    .projectBox{
+        width: 90%;
+    }
+    
+    .projectName{
+        margin-bottom: 25px;
+        font-size: 25px;
+    }
+    
+    .projectItem{
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .projectItem:hover{
+    }
+    
+    .projectImg{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .pjImg{
+    }
+    
+    .projectInfo{
+        margin-left: 0px;
+    }
+    
+    .projectTitle{
+        font-size: 20px;
+        margin-bottom: 15px;
+        /* border-bottom: 1px solid white; */
+    }
+    
+    .projectDesc{
+        width: 100%;
+    }
+    
+    .projectSet{
+        flex-wrap: wrap;
+    }
+    
+    .projectCategory{
+    }
+    
+    .projectContent{
+    }
+    
+    .projectA{
+    }
 }

@@ -21,12 +21,12 @@ export default function NewMy() {
                   <FontAwesomeIcon icon={faUser} className={style.myIcon}/>
                 </div>
                 <div className={style.rightBox}>
-                <div className={style.infoName}>이름</div>
+                  <div className={style.infoName}>이름</div>
                   <div className={style.infoItemBox}>
                     이원노
                   </div>
+                  </div>
                 </div>
-              </div>
               <div className={style.itemBox}>
                 <div className={style.leftBox}>
                   <FontAwesomeIcon icon={faCalendar} className={style.myIcon}/>
@@ -91,7 +91,7 @@ export default function NewMy() {
             </div>
           </div>
         </div>
-        <img src={bg} alt="섹션1_배경" className={style.myBg}></img>
+        {/* <img src={bg} alt="섹션1_배경" className={style.myBg}></img> */}
       </section>
     </>
   )

@@ -29,11 +29,11 @@ export default function Header() {
     setPrevY(window.scrollY);
   };
 
-  const headerDisplay = {
+  const headerBackgoundColor = {
     backgroundColor: "#000",
   }
 
-  const headerDisplayNone = {
+  const headerBackgoundColorNone = {
   }
 
   const headerFontColor = {
@@ -44,42 +44,42 @@ export default function Header() {
 
   }
 
-  // const [width, setWidth] = useState<number>(window.innerWidth);
-  // const [menu, setMenu] = useState<string>("off");
-  // const [menuStyle, setMenuStyle] = useState<object>({});
+  const [width, setWidth] = useState<number>(window.innerWidth);
+  const [menu, setMenu] = useState<string>("off");
+  const [menuStyle, setMenuStyle] = useState<object>({});
 
-  // const handleMenuBtn = ()=>{
-  //     if(menu === "off"){
-  //         setMenu("on");
-  //         setMenuStyle(headerDisplay);
-  //     }
-  //     else{
-  //         setMenu("off");
-  //         setMenuStyle({});
-  //     }
-  // }
+  const handleMenuBtn = ()=>{
+      if(menu === "off"){
+          setMenu("on");
+          setMenuStyle(headerDisplay);
+      }
+      else{
+          setMenu("off");
+          setMenuStyle({});
+      }
+  }
 
-  // const headerDisplay = {
-  //     display:"flex",
-  // }
+  const headerDisplay = {
+      display:"flex",
+  }
 
-  // const handleResize = () => {
-  //     setWidth(window.innerWidth);
-  // };
+  const handleResize = () => {
+      setWidth(window.innerWidth);
+  };
 
-  // useEffect(() => {
-  //     window.addEventListener("resize", handleResize);
-  //     return () => {
-  //         if(width>500){
-  //             setMenuStyle({});
-  //             setMenu("off");
-  //         }
-  //         window.removeEventListener("resize", handleResize);
-  //     };
-  // }, [width]);
+  useEffect(() => {
+      window.addEventListener("resize", handleResize);
+      return () => {
+          if(width>500){
+              setMenuStyle({});
+              setMenu("off");
+          }
+          window.removeEventListener("resize", handleResize);
+      };
+  }, [width]);
 
   return (
-    <header className={header.header} style={scroll ? headerDisplayNone : headerDisplay}>
+    <header className={header.header} style={scroll ? headerBackgoundColorNone : headerBackgoundColor}>
       <div className={header.headerBox}>
         <div className={header.name}>
           <div><a href="#intro" style={scroll ? headerFontColorNone : headerFontColor}>LIKE NMIXX</a></div>
@@ -90,13 +90,13 @@ export default function Header() {
           <a href="#skill" className={header.a} style={scroll ? headerFontColorNone : headerFontColor}>Skills</a>
           <a href="#project" className={header.a} style={scroll ? headerFontColorNone : headerFontColor}>Project</a>
         </div>
-        <div className={header.maBox}>
+        <div className={header.maBox} style={menuStyle}>
           {/* <a href="#home" className={header.a}>HOME</a> */}
           <a href="#my" className={header.a} style={scroll ? headerFontColorNone : headerFontColor}>AboutMe</a>
           <a href="#skill" className={header.a} style={scroll ? headerFontColorNone : headerFontColor}>Skills</a>
           <a href="#project" className={header.a} style={scroll ? headerFontColorNone : headerFontColor}>Project</a>
         </div>
-        <FontAwesomeIcon icon={faBars} className={header.icon} />
+        <FontAwesomeIcon icon={faBars} className={header.icon} onClick={handleMenuBtn}/>
         {/* <LightNav /> */}
       </div>
     </header>
