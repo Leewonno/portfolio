@@ -1,6 +1,6 @@
 import style from "../../css/newMain.module.css"
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faUser, faCalendar, faEnvelope, faGraduationCap, faPlaneDeparture, faPaperclip, faShare } from "@fortawesome/free-solid-svg-icons";
+import { faUser, faCalendar, faEnvelope, faGraduationCap, faPlaneDeparture, faPaperclip, faBoxArchive } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import bg from "../../img/nmixx.png";
 
@@ -79,10 +79,10 @@ export default function NewMy() {
               </div>
               <div className={style.itemBox}>
                 <div className={style.leftBox}>
-                  <FontAwesomeIcon icon={faShare} className={style.myIcon} />
+                  <FontAwesomeIcon icon={faBoxArchive} className={style.myIcon} />
                 </div>
                 <div className={style.rightBox}>
-                <div className={style.infoName}>BLOG</div>
+                <div className={style.infoName}>아카이빙</div>
                   <div className={style.infoItemBox}>
                     <a href="https://github.com/Leewonno" target="_blank"><FontAwesomeIcon icon={faGithub} style={{ fontSize: "35px", color: "black" }} /></a>
                   </div>

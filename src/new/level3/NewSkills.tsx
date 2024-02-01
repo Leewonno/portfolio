@@ -33,6 +33,7 @@ export default function NewSkills() {
                 <img src="https://img.shields.io/badge/Next.js-000000?style=flat&logo=nextdotjs&logoColor=white" alt="Next" className={style.skillImg} />
                 <img src="https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white" alt="vite" className={style.skillImg} />
                 <img src="https://img.shields.io/badge/Redux-764ABC?style=flat&logo=redux&logoColor=white" alt="redux" className={style.skillImg} />
+                <img src="https://img.shields.io/badge/React Router-CA4245?style=flat&logo=reactrouter&logoColor=white" alt="reactrouter" className={style.skillImg} />
                 <img src="https://img.shields.io/badge/Recoil-3578E5?style=flat&logo=recoil&logoColor=white" alt="recoil" className={style.skillImg} />
                 <img src="https://img.shields.io/badge/Jquery-0769AD?style=flat&logo=jquery&logoColor=white" alt="jquery" className={style.skillImg} />
               </div>
