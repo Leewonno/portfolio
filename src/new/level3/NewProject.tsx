@@ -53,7 +53,7 @@ export default function NewProject() {
               <div className={style.projectDesc}>
                 K-POP 걸그룹 NMIXX 팬 커뮤니티 제작 프로젝트입니다.
                 <span className={style.br}></span>
-                <span className={style.projectDescStrong}> Next.js + NestJS</span>를 이용해 <span className={style.projectDescStrong}>현재 개발 중인</span> 프로젝트입니다.
+                <span className={style.projectDescStrong}> Next.js + NestJS</span>를 이용해 현재 <span className={style.projectDescStrong}>개발 중인</span> 프로젝트입니다.
                 <span className={style.br}></span>
                 <span className={style.projectDescStrong}>2023.12 ~ (진행 중)</span>
               </div>
