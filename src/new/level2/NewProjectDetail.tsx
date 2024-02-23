@@ -13,7 +13,7 @@ export default function MainProjectDetail(props: any) {
     portfolio: {
       mainImg: portfolio,
       title: "포트폴리오",
-      outline: "포트폴리오 사이트입니다. HOME, 자기소개, 기술, 프로젝트 4가지 Section으로 만들었고, 우측 상단에 줄을 잡아 당기면 불이 켜지는 효과를 느낄 수 있도록 했습니다.",
+      outline: "포트폴리오 사이트입니다. 자기 소개, 사용 가능 기술, 진행한 프로젝트 내용을 확인할 수 있습니다.",
       skill: [
         {
           src: "https://img.shields.io/badge/React-61DAFB?style=flat&logo=React&logoColor=white",
@@ -30,7 +30,8 @@ export default function MainProjectDetail(props: any) {
       ],
       role: [
         "프로젝트 전체 기획 및 개발",
-
+        "React-Modal 라이브러리를 이용한 모달창 제작",
+        "Firebase를 이용한 배포"
       ]
     },
     demure: {
@@ -60,8 +61,13 @@ export default function MainProjectDetail(props: any) {
         }
       ],
       role: [
+        "프로젝트 전체 기획 및 리딩",
         "NodeMailer를 이용한 이메일 인증",
-        "JWT, Bcrypt를 이용한 회원가입"
+        "JWT, Bcrypt를 이용한 회원가입 및 인증",
+        "Redux-Toolkit을 이용한 전역 상태 관리",
+        "Kakao 소셜 로그인",
+        "AWS EC2를 통한 배포",
+        "쿠폰 발급 및 사용",
       ]
     },
     novelcut: {
@@ -84,12 +90,15 @@ export default function MainProjectDetail(props: any) {
       ],
       role: [
         "프로젝트 전체 기획 및 개발",
+        "useContext Hook을 이용한 전역 상태를 관리",
+        "JWT, Bcrypt를 이용한 회원가입 및 인증",
+        "CLOUDTYPE을 이용한 배포"
       ]
     },
     mangoz: {
       mainImg: manogz,
       title: "MangoZ",
-      outline: "음악 스트리밍 사이트입니다.",
+      outline: "음악 스트리밍 사이트입니다. 템플릿 엔진으로 EJS를 이용했습니다.",
       skill: [
         {
           src: "https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=HTML5&logoColor=white",
@@ -118,12 +127,10 @@ export default function MainProjectDetail(props: any) {
       ],
       role: [
         "JQuery를 이용한 SPA구조화",
-        "마이페이지",
-        "곡 정보 페이지",
-        "곡 플레이리스트에 추가",
-        "플레이리스트 곡 순서 드로그 앤 드랍으로 변경",
-        "플레이리스트 곡 재생",
+        "Multer를 이용한 AWS S3 이미지 업로드",
+        "드로그 앤 드랍으로 플레이리스트 곡 순서 변경",
         "Node.js를 이용한 음악 스트리밍",
+        "Socket.io를 이용한 채팅방 구현",
         "AWS를 통한 배포",
       ]
     },
@@ -150,17 +157,15 @@ export default function MainProjectDetail(props: any) {
         },
       ],
       role: [
-        "메인페이지 애니메이션",
         "메인페이지, Map 태그를 이용한 이미지 영역 분할",
         "기상청 오픈 API를 이용한 날씨 데이터 가져오기",
-        "헤더, 푸터 디자인",
         "Netlify를 이용한 배포",
       ]
     },
     novelpedia: {
       mainImg: novelpedia,
       title: "NOVELPEDIA",
-      outline: "소설 및 만화 정보를 공유할 수 있는 위키 서비스 입니다. Scikit-Learn 라이브러리를 이용한 작품 추천 서비스를 제공합니다.",
+      outline: "소설 및 만화 정보를 공유할 수 있는 위키 서비스 입니다. Scikit-Learn 라이브러리를 이용한 작품 추천 서비스(아이템 기반 협업 필터링)를 제공합니다.",
       skill: [
         {
           src: "https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=HTML5&logoColor=white",
@@ -188,12 +193,10 @@ export default function MainProjectDetail(props: any) {
         },
       ],
       role: [
-        "프로젝트 전체 기획",
-        "AWS Lambda를 이용한 추천 알고리즘 동작",
+        "프로젝트 전체 기획 및 리딩",
+        "AWS Lambda를 이용한 추천 알고리즘(아이템 기반 협업 필터링) 동작",
         "Python을 이용한 추천 알고리즘 개발",
-        "메인페이지 디자인 및 기능 개발",
-        "작품, 작가, 출판사 페이지 디자인 및 기능 개발",
-        "편집, 역사 페이지 디자인 및 기능 개발",
+        "작품, 작가, 출판사 역사 페이지 데이터 관리",
         "Firebase를 이용한 로그인/회원가입",
         "Firebase를 이용한 배포",
       ]
