@@ -1,0 +1,672 @@
+.intro{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    align-items: center;
+    position: relative;
+}
+
+.introBg{
+    position: fixed;
+    z-index: -1;
+    transition: all 1s;
+    width: 100%;
+    height: 100vh;
+    filter: brightness(0.4);
+    object-fit: cover;
+}
+
+.introBox{
+    width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: flex-end; */
+}
+
+.wordBox{
+
+}
+
+.word{
+    font-size: 80px;
+    font-family: 'Kristi', cursive;
+    color: #a3a3a3;
+    z-index: 0;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+}
+
+.word:hover{
+    color: #fff;
+}
+
+.myselfBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.myself{
+    font-family: 'S-CoreDream-3Light';
+    color: #fff;
+    font-size: 20px;
+}
+
+.bold{
+    font-size: 25px;
+    font-family: 'S-CoreDream-7EXTRA_BOLD';
+}
+
+.myselfTitle{
+    font-family: 'S-CoreDream-3Light';
+    color: #fff;
+    font-size: 30px;
+}
+
+.downBox{
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+}
+
+.down{
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.downBox:hover .down{
+    animation: wave 1.5s ease-in-out;
+}
+
+@keyframes wave {
+    0%, 40%, 100% {transform: translateY(0);}
+    20%{transform: translateY(-15px);}
+    60%{transform: translateY(-5px);}
+}
+
+
+.my{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background-image: url('/public/nmixx.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+.myBg{
+    position: absolute;
+    z-index: -1;
+    transition: all 1s;
+    width: 100%;
+    height: 100vh;
+    filter: brightness(0.6);
+    object-fit: cover;
+}
+
+.myBox{
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.aboutMeBox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.aboutMe{
+    font-size: 40px;
+    font-family: 'S-CoreDream-9BLACK';
+    color: #fff;
+    text-shadow: 1px 1px 25px #000;
+    /* padding-bottom: 15px;
+    border-bottom: 1px solid #fff; */
+    user-select: none;
+    cursor: pointer;
+}
+
+.infoBox{
+    display: flex;
+    width: 1100px;
+    /* padding: 30px; */
+    box-sizing: border-box;
+    /* border-radius: 20px; */
+}
+
+.info{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.itemBox{
+    background-color: #fff;
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    border-radius: 10px;
+    width: 353px;
+    box-sizing: border-box;
+    transition: all 0.3s;
+}
+
+.itemBox:hover{
+    transform: scale(1.05);
+}
+
+.leftBox{
+
+}
+
+.myIcon{
+    font-size: 30px;
+}
+
+.rightBox{
+    margin-left: 20px;
+    margin-top: -3px;
+}
+
+.infoName{
+    font-family: 'S-CoreDream-7EXTRA_BOLD';
+    font-size: 20px;
+}
+
+.infoItemBox{
+    margin-top: 5px;
+    font-size: 14px;
+    font-family: 'S-CoreDream-3Light';
+}
+
+.nameBox{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.name{
+    color: white;
+    font-size: 35px;
+    font-family: 'MYYeongnamnu';
+}
+
+.skill{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('/public/nmixx_7.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+.skillTitleBox{
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 75px;
+}
+
+.skillTitle{
+    font-size: 40px;
+    font-family: 'S-CoreDream-9BLACK';
+    color: #fff;
+    text-shadow: 1px 1px 25px #000;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+.skillBox{
+    width: 1100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.skillCategory{
+    display: flex;
+    flex-direction: column;
+}
+
+.skillCategoryBox{
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffffa8;
+    width: 353px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.skillCategoryTitle{
+    font-family: 'S-CoreDream-7EXTRA_BOLD';
+    color: white;
+    font-size: 21px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 8px;
+}
+
+.skillImgBox{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.skillImg{
+    margin-right: 5px;
+    margin-left: 5px;
+    height: 40px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+
+.project{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.projectBox{
+    width: 1100px;
+}
+
+.projectName{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 50px;
+    margin-top: 75px;
+    font-size: 40px;
+    font-family: 'S-CoreDream-9BLACK';
+    color: #fff;
+    text-shadow: 1px 1px 25px #000;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+.projectItem{
+    width: 100%;
+    display: flex;
+    background-color: #1f1f1f;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    padding: 30px;
+    box-sizing: border-box;
+    transition: all 0.3s;
+}
+
+.projectImg{
+    width: 450px;
+}
+
+.pjImg{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.projectInfo{
+    color: white;
+    margin-left: 30px;
+    font-family: 'S-CoreDream-3Light';
+    position: relative;
+}
+
+.projectDetail{
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: 1px solid;
+    padding: 3px 8px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.projectTitle{
+    font-size: 25px;
+    margin-bottom: 5px;
+    font-family: 'S-CoreDream-7EXTRA_BOLD';
+    /* border-bottom: 1px solid white; */
+}
+
+.projectType{
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #b1b1b1;
+}
+
+.projectDesc{
+    margin-bottom: 15px;
+    width: 500px;
+    color: #b1b1b1;
+    border-bottom: 1px solid white;
+    padding-bottom: 20px;
+    line-height: 25px;
+}
+
+.projectDescStrong{
+    color: #fff;
+    font-weight: 600;
+}
+
+.projectSet{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.projectCategory{
+    width: 90px;
+    font-family: 'S-CoreDream-7EXTRA_BOLD';
+}
+
+.projectContent{
+    width: 360px;
+}
+
+.projectA{
+    text-decoration: none;
+    color: #89a7ff;
+}
+
+.modalBox{
+    width: 100%;
+}
+
+.modalProjectBox{
+
+}
+
+.modalProjectImg{
+    margin-bottom: 15px;
+}
+
+.modalProjectImgContent{
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #e5e5e5;
+}
+
+.modalProjectTitle{
+    font-family: 'S-CoreDream-9BLACK';
+    font-size: 20px;
+    padding-bottom: 10px;
+    /* border-bottom: 1px solid #e5e5e5; */
+    margin-bottom: 15px;
+}
+
+.modalProjectOutline{
+    margin-bottom: 15px;
+}
+
+.modalProjectOutlineTitle{
+    font-family: 'S-CoreDream-7EXTRA_BOLD';
+    font-size: 18px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.modalProjectOutlineContent{
+    font-family: 'S-CoreDream-3Light';
+    margin-top: 10px;
+}
+
+.modalProjectSkill{
+    margin-bottom: 15px;
+}
+
+.modalProjectSkillTitle{
+    font-family: 'S-CoreDream-7EXTRA_BOLD';
+    font-size: 18px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.modalProjectSkillContent{
+    margin-top: 10px;
+}
+
+.modalSkillImg{
+    height: 25px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.modalProjectMy{
+
+}
+
+.modalProjectMyTitle{
+    font-family: 'S-CoreDream-7EXTRA_BOLD';
+    font-size: 18px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.modalProjectMyContent{
+    font-family: 'S-CoreDream-3Light';
+    margin-top: 10px;
+}
+
+.br{
+    height: 10px;
+    display: block;
+}
+
+
+@media (max-width:640px) {
+
+    .intro{
+        
+    }
+    
+    .introBg{
+        
+    }
+    
+    .introBox{
+        width: 90%;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .wordBox{
+
+    }
+
+    .word{
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    
+
+    .myselfBox{
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .myselfTitle{
+        font-size: 20px;
+    }
+
+    .myself{
+        font-size: 13px;
+    }
+
+    .bold{
+        font-size: 14px;
+    }
+
+    .myBox{
+        width: 90%;
+        margin-bottom: 50px;
+    }
+
+    .aboutMeBox{
+        margin-top: 75px;
+        margin-bottom: 20px;
+    }
+    
+    .aboutMe{
+        font-size: 25px;
+    }
+    
+    .infoBox{
+        width: 90%;
+        /* flex-direction: column; */
+    }
+    
+    .info{
+        
+    }
+
+    .itemBox{
+        width: 100%;
+    }
+
+    .leftBox{
+
+    }
+
+    .myIcon{
+
+    }
+
+    .rightBox{
+
+    }
+
+    .infoName{
+
+    }
+
+    .infoItemBox{
+
+    }
+    
+    
+    .skill{
+    }
+    
+    .skillTitleBox{
+        margin-bottom: 25px;
+        width: 90%;
+    }
+
+    .skillTitle{
+        font-size: 25px;
+    }
+
+    .skillBox{
+        width: 90%;
+        gap: 0px;
+    }
+    
+    .skillCategory{
+    }
+
+    .skillCategoryBox{
+        width: 100%;
+    }
+    
+    .skillCategoryTitle{
+        font-size: 18px;
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+    }
+    
+    .skillImgBox{
+        
+    }
+    
+    .skillImg{
+        height: 30px;
+    }
+
+    
+    .project{
+    }
+    
+    .projectBox{
+        width: 90%;
+    }
+    
+    .projectName{
+        margin-bottom: 25px;
+        font-size: 25px;
+    }
+    
+    .projectItem{
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .projectItem:hover{
+    }
+    
+    .projectImg{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .pjImg{
+    }
+    
+    .projectInfo{
+        margin-left: 0px;
+    }
+    
+    .projectTitle{
+        font-size: 20px;
+        margin-bottom: 15px;
+        /* border-bottom: 1px solid white; */
+    }
+    
+    .projectDesc{
+        width: 100%;
+    }
+    
+    .projectSet{
+        flex-wrap: wrap;
+    }
+    
+    .projectCategory{
+    }
+    
+    .projectContent{
+    }
+    
+    .projectA{
+    }
+}

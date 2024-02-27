@@ -1,0 +1,1066 @@
+
+.main{
+    width: 100%;
+}
+
+.home{
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 100px;
+    box-sizing: border-box;
+    align-items: center;
+    position: relative;
+    z-index: -1;
+}
+
+.homeBg{
+    position: fixed;
+    z-index: -1;
+    opacity: 0.1;
+    transition: all 1s;
+    width: 100%;
+}
+
+.introBox1{
+    width: 1000px;
+}
+
+.hello{
+    font-size: 60px;
+    font-family: 'GmarketSansBold';
+    color: #222222;
+    z-index: 0;
+    position: relative;
+    margin-top: -45px;
+}
+
+.hello2{
+    font-size: 40px;
+    font-family: 'GmarketSansBold';
+    color: #222222;
+    margin-top: -5px;
+}
+
+.reactLogo{
+    position: absolute;
+    width: 50px;
+    opacity: 0;
+    animation: shoot 1s 1;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+}
+
+.jsLogo{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    animation:shoot2 1s 1 0.5s ;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.cssLogo{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    animation: shoot3 1s 1 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.htmlLogo{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    animation: shoot4 1s 1 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.nodejsLogo{
+    position: absolute;
+    width: 50px;
+    animation: shoot5 1s 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.typeLogo{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    animation: shoot6 2s 1 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+.springLogo{
+    position: absolute;
+    width: 50px;
+    height: 45px;
+    animation:shoot7 1s 1 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    cursor: pointer;
+}
+
+@keyframes shoot {
+    0%{
+        left: calc(50% - 500px);
+        bottom: 50%;
+        height: 50px;
+        z-index: -1;
+        opacity: 0;
+    }
+    30%{
+        left: calc(50% - 500px);
+        bottom: 50%;
+        height: 25px;
+        z-index: -1;
+        opacity: 1;
+    }
+    60%{
+        left: calc(50% - 500px);
+        bottom: calc(50% + 50px);
+        height: 50px;
+        z-index: 0;
+    }
+    90%{
+        left: calc(50% - 500px);
+        bottom: calc(50% + 50px);
+        height: 40px;
+    }
+    100%{
+        left: calc(50% - 500px);
+        bottom: calc(50% + 50px);
+        opacity: 1;
+    }
+}
+
+@keyframes shoot2 {
+    0%{
+        left: calc(50% - 440px);
+        bottom: 50%;
+        height: 50px;
+        z-index: -1;
+        opacity: 0;
+    }
+    30%{
+        left: calc(50% - 440px);
+        bottom: 50%;
+        height: 25px;
+        z-index: -1;
+        opacity: 1;
+    }
+    60%{
+        left: calc(50% - 440px);
+        bottom: calc(50% + 50px);
+        height: 50px;
+        z-index: 0;
+    }
+    90%{
+        left: calc(50% - 440px);
+        bottom: calc(50% + 50px);
+        height: 40px;
+    }
+    100%{
+        left: calc(50% - 440px);
+        bottom: calc(50% + 50px);
+        opacity: 1;
+    }
+}
+
+@keyframes shoot3 {
+    0%{
+        left: calc(50% - 380px);
+        bottom: 50%;
+        height: 50px;
+        z-index: -1;
+        opacity: 0;
+    }
+    30%{
+        left: calc(50% - 380px);
+        bottom: 50%;
+        height: 25px;
+        z-index: -1;
+        opacity: 1;
+    }
+    60%{
+        left: calc(50% - 380px);
+        bottom: calc(50% + 50px);
+        height: 50px;
+        z-index: 0;
+    }
+    90%{
+        left: calc(50% - 380px);
+        bottom: calc(50% + 50px);
+        height: 40px;
+    }
+    100%{
+        left: calc(50% - 380px);
+        bottom: calc(50% + 50px);
+        opacity: 1;
+    }
+}
+
+@keyframes shoot4 {
+    0%{
+        left: calc(50% - 320px);
+        bottom: 50%;
+        height: 50px;
+        z-index: -1;
+        opacity: 0;
+    }
+    30%{
+        bottom: 50%;
+        height: 25px;
+        z-index: -1;
+        opacity: 1;
+    }
+    60%{
+        bottom: calc(50% + 50px);
+        height: 50px;
+        z-index: 0;
+    }
+    90%{
+        height: 40px;
+    }
+    100%{
+        left: calc(50% - 320px);
+        bottom: calc(50% + 50px);
+        opacity: 1;
+    }
+}
+
+
+@keyframes shoot5 {
+    0%{
+        left: calc(50% - 260px);
+        bottom: 50%;
+        height: 50px;
+        z-index: -1;
+        opacity: 0;
+    }
+    30%{
+        bottom: 50%;
+        height: 25px;
+        z-index: -1;
+        opacity: 1;
+    }
+    60%{
+        bottom: calc(50% + 50px);
+        height: 50px;
+        z-index: 0;
+    }
+    90%{
+        height: 40px;
+    }
+    100%{
+        left: calc(50% - 260px);
+        bottom: calc(50% + 50px);
+        opacity: 1;
+    }
+}
+
+
+@keyframes shoot6 {
+    0%{
+        transform: rotate(0deg);
+        left: calc(50% - 260px);
+        bottom: calc(50% + 100px);
+        height: 50px;
+        z-index: -1;
+        opacity: 0;
+    }
+    7%{
+        height: 25px;
+        opacity: 1;
+    }
+    15%{
+        bottom: calc(50% + 260px);
+        height: 75px;
+        z-index: -1;
+    }
+    35%{
+        left: calc(50% + 110px);
+        bottom: calc(50% - 15px);
+        z-index: 0;
+    }
+    45%{
+        left: calc(50% + 110px);
+        transform: rotate(360deg);
+        height: 50px;
+    }
+    50%{
+
+    }
+    80%{
+        left: calc(50% -127px);
+    }
+    100%{
+        transform: rotate(-15deg);
+        left: calc(50% - 127px);
+        bottom: calc(50% - 15px);
+        opacity: 1;
+    }
+}
+
+@keyframes shoot7 {
+    0%{
+        left: calc(50% - 260px);
+        bottom: calc(50% + 100px);
+        height: 45px;
+        z-index: -1;
+        opacity: 0;
+    }
+    15%{
+        height: 25px;
+        opacity: 1;
+    }
+    30%{
+        bottom: calc(50% + 260px);
+        height: 75px;
+        z-index: -1;
+    }
+    70%{
+        left: calc(50% - 180px);
+        bottom: calc(50% - 20px);
+        z-index: 0;
+    }
+    90%{
+        height: 40px;
+    }
+    100%{
+        left: calc(50% - 180px);
+        bottom: calc(50% - 20px);
+        opacity: 1;
+    }
+}
+
+.my{
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.myBox{
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.aboutMe{
+    width: 100%;
+    font-size: 25px;
+    font-family: 'S-CoreDream-9BLACK';
+    color: white;
+    margin-bottom: 10px;
+    opacity: 0.2;
+    transition: all 0.3s;
+    /* margin-bottom: 100px; */
+}
+
+.infoBox{
+    display: flex;
+    /* justify-content: space-between; */
+    width: 100%;
+    background-color: #1f1f1f;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    opacity: 0.2;
+    transition: all 0.3s;
+}
+
+.infoBox:hover{
+    transform: scale(1.1);
+}
+
+.imgBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profileImg{
+    width: 200px;
+    height: 250px;
+    border: 2px solid #e5e5e5;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.info{
+    color: white;
+    margin-left: 130px;
+}
+
+.infoName{
+    font-family: 'GmarketSansBold';
+}
+
+.infoItemBox{
+    margin-bottom: 20px;
+}
+
+.nameBox{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.name{
+    color: white;
+    font-size: 35px;
+    font-family: 'MYYeongnamnu';
+}
+
+.lanternBox{
+
+}
+
+.lantern1{
+    width: 30px;
+    top:120px;
+    left:130px;
+    animation: up 1.5s ease-in 0.5s;
+    opacity: 0;
+}
+
+.lantern2{
+    width: 50px;
+    top:60px;
+    right:130px;
+    animation: up 1.5s ease-in 1s;
+    opacity: 0;
+}
+
+.lantern3{
+    width: 35px;
+    bottom:80px;
+    left:50px;
+    animation: up 1.5s ease-in;
+}
+
+.lantern4{
+    width: 10px;
+    bottom:200px;
+    right:30px;
+    animation: up 1.5s ease-in;
+}
+
+
+.lantern5{
+    width: 20px;
+    bottom:120px;
+    right:180px;
+    animation: up 1.5s ease-in 0.5s;
+    opacity: 0;
+}
+
+.lantern6{
+    width: 20px;
+    bottom:140px;
+    left:130px;
+    animation: up 1.5s ease-in 1s;
+    opacity: 0;
+}
+
+.lantern7{
+    width: 25px;
+    top:240px;
+    right:370px;
+    animation: up 1.5s ease-in;
+}
+
+.lantern8{
+    width: 50px;
+    top:210px;
+    left:370px;
+    animation: up 1.5s ease-in;
+}
+
+.lantern1, .lantern2, .lantern3, .lantern4, .lantern5, .lantern6, .lantern7, .lantern8{
+    cursor: pointer;
+    position: absolute;
+    animation-fill-mode: forwards;
+    filter: drop-shadow(0 0 95px rgba(251, 255, 26, 0.56)) drop-shadow(0 0 33px rgba(251, 255, 26, 0.5)) drop-shadow(0 0 5px rgba(251, 255, 26, 0.5));
+    transition: all 0.3s;
+}
+
+.lantern1:hover, .lantern2:hover, .lantern3:hover, .lantern4:hover, .lantern5:hover, .lantern6:hover, .lantern7:hover, .lantern8:hover{
+    filter: drop-shadow(0 0 46px rgba(251, 255, 26, 0.56)) drop-shadow(0 0 33px rgba(251, 255, 26, 0.5)) drop-shadow(0 0 5px rgba(251, 255, 26, 0.5));
+}
+
+@keyframes up {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(-30px);
+        opacity: 1;
+    }
+}
+
+.skill{
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.skillTitle{
+    width: 1000px;
+    color: white;
+    font-family: 'S-CoreDream-9BLACK';
+    font-size: 25px;
+    margin-bottom: 10px;
+    opacity: 0.2;
+    transition: all 0.3s;
+}
+
+.skillCategory{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.skillCategoryTitle{
+    font-family: 'S-CoreDream-9BLACK';
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.skillImgBox{
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #2e2e2e;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.skillImg{
+    margin-right: 10px;
+    margin-left: 10px;
+    height: 40px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.skillBox{
+    width: 1000px;
+    background-color: #1f1f1f;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    transition: all 0.3s;
+    opacity: 0.2;
+    transition: all 0.3s;
+
+}
+
+.skillBox:hover{
+    transform: scale(1.1);
+}
+
+/* .skillItem{
+    margin-bottom: 10px;
+}
+
+.skillItemBox{
+    display: flex;
+    justify-content: space-between;
+}
+
+.skillImgBox{
+    width: 150px;
+    display: flex;
+    align-items: center;
+}
+
+.skillPercentBox{
+    background-color: white;
+    border-radius: 20px;
+    width: 800px;
+    height: 15px;
+    margin-left: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.skillPercent{
+    position: absolute;
+    height: 15px;
+    background-color: #3171b8;
+    border-radius: 20px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.skillPercent:hover{
+    transform: scale(1.05);
+} */
+
+.project{
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.projectBox{
+    width: 1000px;
+}
+
+.projectName{
+    width: 1000px;
+    color: white;
+    font-family: 'S-CoreDream-9BLACK';
+    font-size: 25px;
+    margin-bottom: 10px;
+    opacity: 0.2;
+    transition: all 0.3s;
+}
+
+.projectItem{
+    width: 100%;
+    display: flex;
+    background-color: #1f1f1f;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    padding: 30px;
+    box-sizing: border-box;
+    transition: all 0.3s;
+    opacity: 0.3;
+}
+
+.projectItem:hover{
+    transform: scale(1.1);
+}
+
+.projectImg{
+    width: 450px;
+}
+
+.pjImg{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.projectInfo{
+    color: white;
+    margin-left: 30px;
+    font-family: 'S-CoreDream-3Light';
+    position: relative;
+}
+
+.projectDetail{
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: 1px solid;
+    padding: 3px 8px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.projectTitle{
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-family: 'S-CoreDream-9BLACK';
+    /* border-bottom: 1px solid white; */
+}
+
+.projectType{
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #b1b1b1;
+}
+
+.projectDesc{
+    margin-bottom: 15px;
+    width: 500px;
+    border-bottom: 1px solid white;
+    padding-bottom: 20px;
+}
+
+.projectSet{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.projectCategory{
+    width: 90px;
+    font-family: 'S-CoreDream-7EXTRA_BOLD';
+}
+
+.projectContent{
+    width: 360px;
+}
+
+.projectA{
+    text-decoration: none;
+    color: #89a7ff;
+}
+
+.modalBox{
+    width: 100%;
+}
+
+.modalProjectBox{
+
+}
+
+.modalProjectImg{
+    margin-bottom: 15px;
+}
+
+.modalProjectImgContent{
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #e5e5e5;
+}
+
+.modalProjectTitle{
+    font-family: 'S-CoreDream-9BLACK';
+    font-size: 20px;
+    padding-bottom: 10px;
+    /* border-bottom: 1px solid #e5e5e5; */
+    margin-bottom: 15px;
+}
+
+.modalProjectOutline{
+    margin-bottom: 15px;
+}
+
+.modalProjectOutlineTitle{
+    font-family: 'S-CoreDream-7EXTRA_BOLD';
+    font-size: 18px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.modalProjectOutlineContent{
+    font-family: 'S-CoreDream-3Light';
+    margin-top: 10px;
+}
+
+.modalProjectSkill{
+    margin-bottom: 15px;
+}
+
+.modalProjectSkillTitle{
+    font-family: 'S-CoreDream-7EXTRA_BOLD';
+    font-size: 18px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.modalProjectSkillContent{
+    margin-top: 10px;
+}
+
+.modalSkillImg{
+    height: 25px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.modalProjectMy{
+
+}
+
+.modalProjectMyTitle{
+    font-family: 'S-CoreDream-7EXTRA_BOLD';
+    font-size: 18px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.modalProjectMyContent{
+    font-family: 'S-CoreDream-3Light';
+    margin-top: 10px;
+}
+
+@media (max-width:640px) {
+
+    .main{
+        
+    }
+    
+    .home{
+        
+    }
+    
+    .homeBg{
+        
+    }
+    
+    .introBox1{
+        width: 90%;
+    }
+    
+    .hello{
+        font-size: 4em;
+    }
+    
+    .hello2{
+        
+    }
+    
+    .reactLogo{
+        animation: none;
+    }
+    
+    .jsLogo{
+        animation: none;
+    }
+    
+    .cssLogo{
+        animation: none;
+    }
+    
+    .htmlLogo{
+        animation: none;
+    }
+    
+    .nodejsLogo{
+        animation: none;
+    }
+    
+    .typeLogo{
+        animation: none;
+    }
+    
+    .springLogo{
+        animation: none;
+    }
+    
+    .my{
+        overflow: visible;
+    }
+    
+    .myBox{
+        width: 90%;
+    }
+    
+    .aboutMe{
+        /* margin-bottom: 100px; */
+    }
+    
+    .infoBox{
+        flex-direction: column;
+    }
+    
+    .infoBox:hover{
+    }
+    
+    .imgBox{
+        margin-bottom: 20px;
+    }
+    
+    .profileImg{
+        
+    }
+    
+    .info{
+        margin-left: 0px;
+    }
+    
+    .infoName{
+    }
+    
+    .infoItemBox{
+    }
+    
+    .nameBox{
+    }
+    
+    .name{
+    }
+    
+    .lanternBox{
+    
+    }
+    
+    .lantern1{
+        /* width: 30px;
+        top:120px;
+        left:130px;
+        animation: up 1.5s ease-in 0.5s;
+        opacity: 0; */
+    }
+    
+    .lantern2{
+        /* width: 50px;
+        top:60px;
+        right:130px;
+        animation: up 1.5s ease-in 1s;
+        opacity: 0; */
+    }
+    
+    .lantern3{
+        /* width: 35px;
+        bottom:80px;
+        left:50px;
+        animation: up 1.5s ease-in; */
+    }
+    
+    .lantern4{
+        /* width: 10px;
+        bottom:200px;
+        right:30px;
+        animation: up 1.5s ease-in; */
+    }
+    
+    
+    .lantern5{
+        /* width: 20px;
+        bottom:120px;
+        right:180px;
+        animation: up 1.5s ease-in 0.5s;
+        opacity: 0; */
+    }
+    
+    .lantern6{
+        /* width: 20px;
+        bottom:140px;
+        left:130px;
+        animation: up 1.5s ease-in 1s;
+        opacity: 0; */
+    }
+    
+    .lantern7{
+        /* width: 25px;
+        top:240px;
+        right:370px;
+        animation: up 1.5s ease-in; */
+    }
+    
+    .lantern8{
+        /* width: 50px;
+        top:210px;
+        left:370px;
+        animation: up 1.5s ease-in; */
+    }
+    
+    .lantern1, .lantern2, .lantern3, .lantern4, .lantern5, .lantern6, .lantern7, .lantern8{
+        display: none;
+    }
+    
+    .lantern1:hover, .lantern2:hover, .lantern3:hover, .lantern4:hover, .lantern5:hover, .lantern6:hover, .lantern7:hover, .lantern8:hover{
+        /* filter: drop-shadow(0 0 46px rgba(251, 255, 26, 0.56)) drop-shadow(0 0 33px rgba(251, 255, 26, 0.5)) drop-shadow(0 0 5px rgba(251, 255, 26, 0.5)); */
+    }
+    
+    .skill{
+    }
+    
+    .skillTitle{
+        width: 90%;
+    }
+    
+    .skillCategory{
+    }
+    
+    .skillCategoryTitle{
+    }
+    
+    .skillImgBox{
+    }
+    
+    .skillImg{
+    }
+    
+    .skillBox{
+        width: 90%;
+    }
+    
+    .skillBox:hover{
+    }
+    
+    
+    .project{
+    }
+    
+    .projectBox{
+        width: 90%;
+    }
+    
+    .projectName{
+        width: 90%;
+    }
+    
+    .projectItem{
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .projectItem:hover{
+    }
+    
+    .projectImg{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .pjImg{
+    }
+    
+    .projectInfo{
+        margin-left: 0px;
+    }
+    
+    .projectTitle{
+        font-size: 20px;
+        margin-bottom: 15px;
+        font-family: 'S-CoreDream-9BLACK';
+        /* border-bottom: 1px solid white; */
+    }
+    
+    .projectDesc{
+        width: 100%;
+    }
+    
+    .projectSet{
+        flex-wrap: wrap;
+    }
+    
+    .projectCategory{
+    }
+    
+    .projectContent{
+    }
+    
+    .projectA{
+    }
+}
