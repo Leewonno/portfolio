@@ -58,6 +58,9 @@ export default function NewSkills() {
                 <img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat&logo=firebase&logoColor=white" alt="firebase" className={style.skillImg} />
               </div>
             </div>
+            
+          </div>
+          <div className={style.skillCategory}>
             <div className={style.skillCategoryBox}>
               <div className={style.skillCategoryTitle}>Deploy</div>
               <div className={style.skillImgBox}>
@@ -67,16 +70,14 @@ export default function NewSkills() {
                 <img src="https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel&logoColor=white" alt="Vercel" className={style.skillImg} />
               </div>
             </div>
-          </div>
-          <div className={style.skillCategory}>
-            <div className={style.skillCategoryBox}>
+            {/* <div className={style.skillCategoryBox}>
               <div className={style.skillCategoryTitle}>Graphic</div>
               <div className={style.skillImgBox}>
                 <img src="https://img.shields.io/badge/Photoshop-31A8FF?style=flat&logo=adobephotoshop&logoColor=white" alt="photoshop" className={style.skillImg} />
                 <img src="https://img.shields.io/badge/Premiere Pro-9999FF?style=flat&logo=adobepremierepro&logoColor=white" alt="premierepro" className={style.skillImg} />
                 <img src="https://img.shields.io/badge/After Effects-9999FF?style=flat&logo=adobeaftereffects&logoColor=white" alt="aftereffect" className={style.skillImg} />
               </div>
-            </div>
+            </div> */}
           </div>
           {/* <div className={style.skillCategory}>
             
