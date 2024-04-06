@@ -47,6 +47,7 @@ export default function NewSkills() {
                 <img src="https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white" alt="Nodejs" className={style.skillImg} />
                 <img src="https://img.shields.io/badge/NestJs-E0234E?style=flat&logo=nestjs&logoColor=white" alt="NestJs" className={style.skillImg} />
                 <img src="https://img.shields.io/badge/springboot-6DB33F?style=flat&logo=springboot&logoColor=white" alt="springboot" className={style.skillImg} />
+                <img src="https://img.shields.io/badge/Django-092E20?style=flat&logo=django&logoColor=white" alt="springboot" className={style.skillImg} />
               </div>
             </div>
             <div className={style.skillCategoryBox}>
