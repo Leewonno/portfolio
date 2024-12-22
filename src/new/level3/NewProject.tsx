@@ -5,6 +5,7 @@ import lebu from "../../img/lebu.png";
 import novelpedia from "../../img/novelpedia.png";
 import portfolio from "../../img/portfolio.png";
 import demure from "../../img/demure.png";
+import bumil from "../../img/bumil.png";
 import wenmixx from "../../img/we-nmixx.png"
 import Modal from "react-modal";
 import MainProjectDetail from "../level2/NewProjectDetail";
@@ -42,6 +43,42 @@ export default function NewProject() {
       <section id="project" className={style.project}>
         <div className={style.projectBox}>
           <div className={style.projectName}><FontAwesomeIcon icon={faPaperclip} /> PROJECT</div>
+          <div className={style.projectItem}>
+            <div className={style.projectImg}>
+              <img src={bumil} className={style.pjImg}></img>
+            </div>
+            <div className={style.projectInfo}>
+              <div className={style.projectDetail} onClick={() => handleProjectDetatil("bumil")}>자세히</div>
+              <div className={style.projectTitle}>범일운수 ERP 프로젝트</div>
+              <div className={style.projectType}>회사 프로젝트</div>
+              <div className={style.projectDesc}>
+                범일운수 ERP 프로젝트 입니다. 
+                <span className={style.projectDescStrong}> 자재관리</span><span> 모듈 개발에 참여했습니다.</span>
+                <span className={style.br}></span>
+                <span className={style.projectDescStrong}>2024.04 ~ 2024.11</span>
+              </div>
+              <div className={style.projectSet}>
+                <div className={style.projectCategory}>주요기능</div>
+                <div className={style.projectContent}></div>
+              </div>
+              <div className={style.projectSet}>
+                <div className={style.projectCategory}>Frontend</div>
+                <div className={style.projectContent}>Django Templates, JQuery</div>
+              </div>
+              <div className={style.projectSet}>
+                <div className={style.projectCategory}>Backend</div>
+                <div className={style.projectContent}>Django</div>
+              </div>
+              <div className={style.projectSet}>
+                <div className={style.projectCategory}>Github</div>
+                <div className={style.projectContent}><a className={style.projectA} target="_blank" href="">비공개</a></div>
+              </div>
+              <div className={style.projectSet}>
+                <div className={style.projectCategory}>URL</div>
+                <div className={style.projectContent}><a className={style.projectA} target="_blank" href="">X</a></div>
+              </div>
+            </div>
+          </div>
           <div className={style.projectItem}>
             <div className={style.projectImg}>
               <img src={wenmixx} className={style.pjImg}></img>

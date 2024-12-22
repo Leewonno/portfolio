@@ -6,10 +6,35 @@ import lebu from "../img/lebu.png";
 import novelpedia from "../img/novelpedia.png";
 import portfolio from "../img/portfolio.png";
 import demure from "../img/demure.png";
+import bumil from "../img/bumil.png";
 
 export default function MainProjectDetail(props:any){
 
     const projectData = {
+        bumil:{
+            mainImg:bumil,
+            title:"범일운수 ERP 프로젝트",
+            outline:"범일운수 ERP 프로젝트입니다. 선입선출 로직을 이용해 자재관리 모듈 개발에 참여했습니다.",
+            skill:[
+                {
+                    src:"https://img.shields.io/badge/React-61DAFB?style=flat&logo=React&logoColor=white",
+                    alt:"Django",
+                },
+                {
+                    src:"https://img.shields.io/badge/typescript-3178C6?style=flat&logo=typescript&logoColor=white",
+                    alt:"AWS",
+                },
+                {
+                    src:"https://img.shields.io/badge/Firebase-FFCA28?style=flat&logo=firebase&logoColor=white",
+                    alt:"JQuery",
+                }
+            ],
+            role:[
+                "자재관리 모듈 개발",
+                "식단관리 모듈 개발",
+                "점검정비 모듈 개발",
+            ]
+        },
         portfolio:{
             mainImg:portfolio,
             title:"포트폴리오",

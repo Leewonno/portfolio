@@ -6,10 +6,45 @@ import lebu from "../../img/lebu.png";
 import novelpedia from "../../img/novelpedia.png";
 import portfolio from "../../img/portfolio.png";
 import demure from "../../img/demure.png";
+import bumil from "../../img/bumil.png";
 
 export default function MainProjectDetail(props: any) {
 
   const projectData = {
+    bumil: {
+      mainImg: bumil,
+      title: "범일운수 ERP 프로젝트",
+      outline: "범일운수 ERP 프로젝트입니다. 선입선출 로직을 이용해 자재관리 모듈 개발에 참여했습니다.",
+      skill: [
+        {
+          src: "https://img.shields.io/badge/Django-092E20?style=flat&logo=django&logoColor=white",
+          alt: "Django",
+        },
+        {
+          src: "https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white",
+          alt: "Python",
+        },
+        {
+          src: "https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonaws&logoColor=white",
+          alt: "AWS",
+        },
+        {
+          src: "https://img.shields.io/badge/Javascript-F7DF1E?style=flat&logo=javascript&logoColor=white",
+          alt: "JavaScript",
+        },
+        {
+          src: "https://img.shields.io/badge/Jquery-0769AD?style=flat&logo=jquery&logoColor=white",
+          alt: "JQuery",
+        }
+      ],
+      role: [
+        "자재관리 모듈 개발",
+        "(자재) 입고, 출고, 단가조회",
+        "(자재) 바코드 출력 및 출고",
+        "식단관리 모듈 개발",
+        "점검정비 모듈 개발",
+      ]
+    },
     portfolio: {
       mainImg: portfolio,
       title: "포트폴리오",
@@ -226,6 +261,9 @@ export default function MainProjectDetail(props: any) {
     }
     else if (props.project === "novelpedia") {
       setItem(projectData.novelpedia)
+    }
+    else if (props.project === "bumil") {
+      setItem(projectData.bumil)
     }
 
   }, [props.project])
