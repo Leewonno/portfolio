@@ -149,7 +149,7 @@ export default function NewProject() {
               </div>
               <div className={style.projectSet}>
                 <div className={style.projectCategory}>URL</div>
-                <div className={style.projectContent}><a className={style.projectA} target="_blank" href="https://portfolio-67029.web.app/new">https://portfolio-67029.web.app/new</a></div>
+                <div className={style.projectContent}><a className={style.projectA} target="_blank" href="https://portfolio-67029.web.app/">https://portfolio-67029.web.app/</a></div>
               </div>
             </div>
           </div>
