@@ -47,7 +47,7 @@ export default function NewSkills() {
                 <img src="https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white" alt="Nodejs" className={style.skillImg} />
                 <img src="https://img.shields.io/badge/NestJs-E0234E?style=flat&logo=nestjs&logoColor=white" alt="NestJs" className={style.skillImg} />
                 {/* <img src="https://img.shields.io/badge/springboot-6DB33F?style=flat&logo=springboot&logoColor=white" alt="springboot" className={style.skillImg} /> */}
-                <img src="https://img.shields.io/badge/Django-092E20?style=flat&logo=django&logoColor=white" alt="springboot" className={style.skillImg} />
+                <img src="https://img.shields.io/badge/Django-092E20?style=flat&logo=django&logoColor=white" alt="Django" className={style.skillImg} />
               </div>
             </div>
             <div className={style.skillCategoryBox}>
@@ -65,7 +65,7 @@ export default function NewSkills() {
             <div className={style.skillCategoryBox}>
               <div className={style.skillCategoryTitle}>Deploy</div>
               <div className={style.skillImgBox}>
-                <img src="https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonaws&logoColor=white" alt="aws" className={style.skillImg} />
+                <img src="https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonwebservices&logoColor=white" alt="aws" className={style.skillImg} />
                 <img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat&logo=firebase&logoColor=white" alt="firebase" className={style.skillImg} />
                 <img src="https://img.shields.io/badge/Netlify-00C7B7?style=flat&logo=netlify&logoColor=white" alt="Netlify" className={style.skillImg} />
                 <img src="https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel&logoColor=white" alt="Vercel" className={style.skillImg} />
@@ -80,17 +80,7 @@ export default function NewSkills() {
               </div>
             </div> */}
           </div>
-          {/* <div className={style.skillCategory}>
-            
-          </div>
-          <div className={style.skillCategory}>
-            
-          </div>
-          <div className={style.skillCategory}>
-            
-          </div> */}
         </div>
-        {/* <img src={bg} alt="섹션3_배경" className={style.skillBg}></img> */}
       </section>
     </>
   )

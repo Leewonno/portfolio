@@ -12,6 +12,7 @@ import MainProjectDetail from "../level2/NewProjectDetail";
 import { useState } from "react";
 import { faPaperclip } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import SkillDefaultBox from "../common/SkillDefaultBox";
 
 export default function NewProject() {
 
@@ -29,7 +30,7 @@ export default function NewProject() {
       height: "600px",
       padding: "25px",
       overflow: "scroll",
-      borderRadius:"0px"
+      borderRadius: "0px"
     },
   };
 
@@ -42,7 +43,7 @@ export default function NewProject() {
     <>
       <section id="project" className={style.project}>
         <div className={style.projectBox}>
-          <div className={style.projectName}><FontAwesomeIcon icon={faPaperclip} /> PROJECT</div>
+          <div className={style.projectName}><FontAwesomeIcon icon={faPaperclip} /> PROJECTS</div>
           <div className={style.projectItem}>
             <div className={style.projectImg}>
               <img src={bumil} className={style.pjImg} alt="pj_img"></img>
@@ -52,30 +53,33 @@ export default function NewProject() {
               <div className={style.projectTitle}>범일운수 ERP 프로젝트</div>
               <div className={style.projectType}>회사 프로젝트</div>
               <div className={style.projectDesc}>
-                범일운수 ERP 프로젝트 입니다. 
+                범일운수 ERP 프로젝트 입니다.
                 <span className={style.projectDescStrong}> 자재관리</span><span> 모듈 개발에 참여했습니다.</span>
                 <span className={style.br}></span>
                 <span className={style.projectDescStrong}>2024.04 ~ 2024.11</span>
               </div>
               <div className={style.projectSet}>
                 <div className={style.projectCategory}>주요기능</div>
-                <div className={style.projectContent}></div>
+                <div className={style.projectContent}>배차, 급여, 자재, 정비, 회계 관리</div>
               </div>
               <div className={style.projectSet}>
                 <div className={style.projectCategory}>Frontend</div>
-                <div className={style.projectContent}>Django Templates, JQuery</div>
+                <div className={style.projectContent}>
+                  <SkillDefaultBox>
+                    <img src="https://img.shields.io/badge/Django_Templates-092E20?style=flat&logo=django&logoColor=white" alt="Django Templates" />
+                  </SkillDefaultBox>
+                  <SkillDefaultBox>
+                    <img src="https://img.shields.io/badge/Jquery-0769AD?style=flat&logo=jquery&logoColor=white" alt="jquery" />
+                  </SkillDefaultBox>
+                </div>
               </div>
               <div className={style.projectSet}>
                 <div className={style.projectCategory}>Backend</div>
-                <div className={style.projectContent}>Django</div>
-              </div>
-              <div className={style.projectSet}>
-                <div className={style.projectCategory}>Github</div>
-                <div className={style.projectContent}><a className={style.projectA} target="_blank" rel="noreferrer" href="">비공개</a></div>
-              </div>
-              <div className={style.projectSet}>
-                <div className={style.projectCategory}>URL</div>
-                <div className={style.projectContent}><a className={style.projectA} target="_blank" rel="noreferrer" href="">X</a></div>
+                <div className={style.projectContent}>
+                  <SkillDefaultBox>
+                    <img src="https://img.shields.io/badge/Django-092E20?style=flat&logo=django&logoColor=white" alt="Django" />
+                  </SkillDefaultBox>
+                </div>
               </div>
             </div>
           </div>
@@ -96,29 +100,43 @@ export default function NewProject() {
               </div>
               <div className={style.projectSet}>
                 <div className={style.projectCategory}>주요기능</div>
-                <div className={style.projectContent}></div>
+                <div className={style.projectContent}>커뮤니티 게시판</div>
               </div>
               <div className={style.projectSet}>
                 <div className={style.projectCategory}>Frontend</div>
-                <div className={style.projectContent}>Next.js, Recoil, React-Query</div>
+                <div className={style.projectContent}>
+                  <SkillDefaultBox>
+                    <img src="https://img.shields.io/badge/Next.js-000000?style=flat&logo=nextdotjs&logoColor=white" alt="Next" />
+                  </SkillDefaultBox>
+                  <SkillDefaultBox>
+                    <img src="https://img.shields.io/badge/Recoil-3578E5?style=flat&logo=recoil&logoColor=white" alt="recoil" />
+                  </SkillDefaultBox>
+                </div>
               </div>
               <div className={style.projectSet}>
                 <div className={style.projectCategory}>Backend</div>
-                <div className={style.projectContent}>NestJs, Vercel</div>
+                <div className={style.projectContent}>
+                  <SkillDefaultBox>
+                    <img src="https://img.shields.io/badge/NestJs-E0234E?style=flat&logo=nestjs&logoColor=white" alt="NestJs" />
+                  </SkillDefaultBox>
+                  <SkillDefaultBox>
+                    <img src="https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel&logoColor=white" alt="Vercel" />
+                  </SkillDefaultBox>
+                </div>
               </div>
               <div className={style.projectSet}>
                 <div className={style.projectCategory}>Github</div>
                 <div className={style.projectContent}><a className={style.projectA} target="_blank" rel="noreferrer" href="https://github.com/nmixxfans">https://github.com/nmixxfans</a></div>
               </div>
-              <div className={style.projectSet}>
+              {/* <div className={style.projectSet}>
                 <div className={style.projectCategory}>URL</div>
                 <div className={style.projectContent}><a className={style.projectA} target="_blank" rel="noreferrer" href="">X</a></div>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className={style.projectItem}>
             <div className={style.projectImg}>
-              <img src={portfolio} className={style.pjImg} alt="pj_img"></img>
+              <img src={portfolio} className={style.pjImg} alt="pj_img" />
             </div>
             <div className={style.projectInfo}>
               <div className={style.projectDetail} onClick={() => handleProjectDetatil("portfolio")}>자세히</div>
@@ -133,15 +151,23 @@ export default function NewProject() {
               </div>
               <div className={style.projectSet}>
                 <div className={style.projectCategory}>주요기능</div>
-                <div className={style.projectContent}>프로젝트 소개, 프로젝트 자세히 보기</div>
+                <div className={style.projectContent}>프로젝트 소개</div>
               </div>
               <div className={style.projectSet}>
                 <div className={style.projectCategory}>Frontend</div>
-                <div className={style.projectContent}>React, TypeScript</div>
+                <div className={style.projectContent}>
+                  <SkillDefaultBox>
+                    <img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=React&logoColor=white" alt="React" />
+                  </SkillDefaultBox>
+                </div>
               </div>
               <div className={style.projectSet}>
                 <div className={style.projectCategory}>Backend</div>
-                <div className={style.projectContent}>Firebase Hosting</div>
+                <div className={style.projectContent}>
+                  <SkillDefaultBox>
+                    <img src="https://img.shields.io/badge/Firebase_Hosting-FFCA28?style=flat&logo=firebase&logoColor=white" alt="firebase" />
+                  </SkillDefaultBox>
+                </div>
               </div>
               <div className={style.projectSet}>
                 <div className={style.projectCategory}>Github</div>
@@ -188,24 +214,45 @@ export default function NewProject() {
               </div>
               <div className={style.projectSet}>
                 <div className={style.projectCategory}>Frontend</div>
-                <div className={style.projectContent}>React, Typescript</div>
+                <div className={style.projectContent}>
+                  <SkillDefaultBox>
+                    <img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=React&logoColor=white" alt="React" />
+                  </SkillDefaultBox>
+                </div>
               </div>
               <div className={style.projectSet}>
                 <div className={style.projectCategory}>Backend</div>
-                <div className={style.projectContent}>NestJs, AWS</div>
+                <div className={style.projectContent}>
+                  <SkillDefaultBox>
+                    <img src="https://img.shields.io/badge/NestJs-E0234E?style=flat&logo=nestjs&logoColor=white" alt="NestJs" />
+                  </SkillDefaultBox>
+                  <SkillDefaultBox>
+                    <img src="https://img.shields.io/badge/AWS_EC2-FF9900?style=flat&logo=amazonec2&logoColor=white" alt="aws_ec2" />
+                  </SkillDefaultBox>
+                  <SkillDefaultBox>
+                    <img src="https://img.shields.io/badge/AWS_RDS-527FFF?style=flat&logo=amazonrds&logoColor=white" alt="aws_rds" />
+                  </SkillDefaultBox>
+                  <SkillDefaultBox>
+                    <img src="https://img.shields.io/badge/AWS_S3-569A31?style=flat&logo=amazons3&logoColor=white" alt="aws_s3" />
+                  </SkillDefaultBox>
+                </div>
               </div>
               <div className={style.projectSet}>
                 <div className={style.projectCategory}>Database</div>
-                <div className={style.projectContent}>PostgreSQL</div>
+                <div className={style.projectContent}>
+                  <SkillDefaultBox>
+                    <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+                  </SkillDefaultBox>
+                </div>
               </div>
               <div className={style.projectSet}>
                 <div className={style.projectCategory}>Github</div>
                 <div className={style.projectContent}><a className={style.projectA} target="_blank" rel="noreferrer" href="https://github.com/KDT9Demure">https://github.com/KDT9Demure</a></div>
               </div>
-              <div className={style.projectSet}>
+              {/* <div className={style.projectSet}>
                 <div className={style.projectCategory}>URL</div>
                 <div className={style.projectContent}><a className={style.projectA} target="_blank" rel="noreferrer" href="https://demure2023.shop/">https://demure2023.shop/</a></div>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className={style.projectItem}>
@@ -231,24 +278,39 @@ export default function NewProject() {
               </div>
               <div className={style.projectSet}>
                 <div className={style.projectCategory}>Frontend</div>
-                <div className={style.projectContent}>React</div>
+                <div className={style.projectContent}>
+                  <SkillDefaultBox>
+                    <img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=React&logoColor=white" alt="React" />
+                  </SkillDefaultBox>
+                </div>
               </div>
               <div className={style.projectSet}>
                 <div className={style.projectCategory}>Backend</div>
-                <div className={style.projectContent}>Node.js, CloudType</div>
+                <div className={style.projectContent}>
+                  <SkillDefaultBox>
+                    <img src="https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white" alt="Nodejs" />
+                  </SkillDefaultBox>
+                  <SkillDefaultBox>
+                    <span>CloudType</span>
+                  </SkillDefaultBox>
+                </div>
               </div>
               <div className={style.projectSet}>
                 <div className={style.projectCategory}>Database</div>
-                <div className={style.projectContent}>MySQL</div>
+                <div className={style.projectContent}>
+                  <SkillDefaultBox>
+                    <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white" alt="mysql" />
+                  </SkillDefaultBox>
+                </div>
               </div>
               <div className={style.projectSet}>
                 <div className={style.projectCategory}>Github</div>
                 <div className={style.projectContent}><a className={style.projectA} target="_blank" rel="noreferrer" href="https://github.com/Leewonno/project3">https://github.com/Leewonno/project3</a></div>
               </div>
-              <div className={style.projectSet}>
+              {/* <div className={style.projectSet}>
                 <div className={style.projectCategory}>URL</div>
                 <div className={style.projectContent}><a className={style.projectA} target="_blank" rel="noreferrer" href="https://web-novelcut-12fhqa2blnvnggha.sel5.cloudtype.app/">https://web-novelcut-12fhqa2blnvnggha.sel5.cloudtype.app/</a></div>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className={style.projectItem}>
@@ -272,28 +334,55 @@ export default function NewProject() {
               </div>
               <div className={style.projectSet}>
                 <div className={style.projectCategory}>주요기능</div>
-                <div className={style.projectContent}>음악 스트리밍, 플레이리스트 생성 및 좋아요, 재생 순서 변경(Drog & Drop), 아티스트 톡방(Socket.io), 회원가입(JWT/Bcrypt)</div>
+                <div className={style.projectContent}>음악 스트리밍, 플레이리스트 생성, 재생 순서 변경(Drog & Drop), 채팅방(Socket.io), 회원가입(JWT/Bcrypt)</div>
               </div>
               <div className={style.projectSet}>
                 <div className={style.projectCategory}>Frontend</div>
-                <div className={style.projectContent}>HTML, CSS, JavaScript</div>
+                <div className={style.projectContent}>
+                  <SkillDefaultBox>
+                    <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=HTML5&logoColor=white" alt="HTML" />
+                  </SkillDefaultBox>
+                  <SkillDefaultBox>
+                    <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=CSS3&logoColor=white" alt="CSS" />
+                  </SkillDefaultBox>
+                  <SkillDefaultBox>
+                    <img src="https://img.shields.io/badge/Javascript-F7DF1E?style=flat&logo=javascript&logoColor=white" alt="JS" />
+                  </SkillDefaultBox>
+                </div>
               </div>
               <div className={style.projectSet}>
                 <div className={style.projectCategory}>Backend</div>
-                <div className={style.projectContent}>Node.js, AWS</div>
+                <div className={style.projectContent}>
+                  <SkillDefaultBox>
+                    <img src="https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white" alt="Nodejs" />
+                  </SkillDefaultBox>
+                  <SkillDefaultBox>
+                    <img src="https://img.shields.io/badge/AWS_EC2-FF9900?style=flat&logo=amazonec2&logoColor=white" alt="aws_ec2" />
+                  </SkillDefaultBox>
+                  <SkillDefaultBox>
+                    <img src="https://img.shields.io/badge/AWS_RDS-527FFF?style=flat&logo=amazonrds&logoColor=white" alt="aws_rds" />
+                  </SkillDefaultBox>
+                  <SkillDefaultBox>
+                    <img src="https://img.shields.io/badge/AWS_S3-569A31?style=flat&logo=amazons3&logoColor=white" alt="aws_s3" />
+                  </SkillDefaultBox>
+                </div>
               </div>
               <div className={style.projectSet}>
                 <div className={style.projectCategory}>Database</div>
-                <div className={style.projectContent}>MySQL</div>
+                <div className={style.projectContent}>
+                  <SkillDefaultBox>
+                    <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white" alt="mysql" />
+                  </SkillDefaultBox>
+                </div>
               </div>
               <div className={style.projectSet}>
                 <div className={style.projectCategory}>Github</div>
                 <div className={style.projectContent}><a className={style.projectA} target="_blank" rel="noreferrer" href="https://github.com/Leewonno/project2">https://github.com/Leewonno/project2</a></div>
               </div>
-              <div className={style.projectSet}>
+              {/* <div className={style.projectSet}>
                 <div className={style.projectCategory}>URL</div>
-                <div className={style.projectContent}><a className={style.projectA} target="_blank" rel="noreferrer" href="" style={{textDecoration:"line-through"}}>배포 중단</a></div>
-              </div>
+                <div className={style.projectContent}><a className={style.projectA} target="_blank" rel="noreferrer" href="" style={{ textDecoration: "line-through" }}>배포 중단</a></div>
+              </div> */}
             </div>
           </div>
           <div className={style.projectItem}>
@@ -321,11 +410,25 @@ export default function NewProject() {
               </div>
               <div className={style.projectSet}>
                 <div className={style.projectCategory}>Frontend</div>
-                <div className={style.projectContent}>HTML, CSS, JavaScript</div>
+                <div className={style.projectContent}>
+                  <SkillDefaultBox>
+                    <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=HTML5&logoColor=white" alt="HTML" />
+                  </SkillDefaultBox>
+                  <SkillDefaultBox>
+                    <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=CSS3&logoColor=white" alt="CSS" />
+                  </SkillDefaultBox>
+                  <SkillDefaultBox>
+                    <img src="https://img.shields.io/badge/Javascript-F7DF1E?style=flat&logo=javascript&logoColor=white" alt="JS" />
+                  </SkillDefaultBox>
+                </div>
               </div>
               <div className={style.projectSet}>
                 <div className={style.projectCategory}>Backend</div>
-                <div className={style.projectContent}>Netlify</div>
+                <div className={style.projectContent}>
+                  <SkillDefaultBox>
+                    <img src="https://img.shields.io/badge/Netlify-00C7B7?style=flat&logo=netlify&logoColor=white" alt="Netlify" />
+                  </SkillDefaultBox>
+                </div>
               </div>
               <div className={style.projectSet}>
                 <div className={style.projectCategory}>Github</div>
@@ -360,15 +463,39 @@ export default function NewProject() {
               </div>
               <div className={style.projectSet}>
                 <div className={style.projectCategory}>Frontend</div>
-                <div className={style.projectContent}>HTML, CSS, JavaScript</div>
+                <div className={style.projectContent}>
+                  <SkillDefaultBox>
+                    <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=HTML5&logoColor=white" alt="HTML" />
+                  </SkillDefaultBox>
+                  <SkillDefaultBox>
+                    <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=CSS3&logoColor=white" alt="CSS" />
+                  </SkillDefaultBox>
+                  <SkillDefaultBox>
+                    <img src="https://img.shields.io/badge/Javascript-F7DF1E?style=flat&logo=javascript&logoColor=white" alt="JS" />
+                  </SkillDefaultBox>
+                </div>
               </div>
               <div className={style.projectSet}>
                 <div className={style.projectCategory}>Backend</div>
-                <div className={style.projectContent}>Firebase, AWS, Python</div>
+                <div className={style.projectContent}>
+                  <SkillDefaultBox>
+                    <img src="https://img.shields.io/badge/Firebase_Hosting-FFCA28?style=flat&logo=firebase&logoColor=white" alt="firebase" />
+                  </SkillDefaultBox>
+                  <SkillDefaultBox>
+                    <img src="https://img.shields.io/badge/AWS_Lambda-FF9900?style=flat&logo=awslambda&logoColor=white" alt="awslambda" />
+                  </SkillDefaultBox>
+                  <SkillDefaultBox>
+                    <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" alt="python" />
+                  </SkillDefaultBox>
+                </div>
               </div>
               <div className={style.projectSet}>
                 <div className={style.projectCategory}>Database</div>
-                <div className={style.projectContent}>Firebase Cloud Firestore</div>
+                <div className={style.projectContent}>
+                  <SkillDefaultBox>
+                    <img src="https://img.shields.io/badge/Firebase_Cloud_Firestore-FFCA28?style=flat&logo=firebase&logoColor=white" alt="firebase_db" />
+                  </SkillDefaultBox>
+                </div>
               </div>
               <div className={style.projectSet}>
                 <div className={style.projectCategory}>Github</div>
