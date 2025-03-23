@@ -45,7 +45,7 @@ export default function NewProject() {
           <div className={style.projectName}><FontAwesomeIcon icon={faPaperclip} /> PROJECT</div>
           <div className={style.projectItem}>
             <div className={style.projectImg}>
-              <img src={bumil} className={style.pjImg}></img>
+              <img src={bumil} className={style.pjImg} alt="pj_img"></img>
             </div>
             <div className={style.projectInfo}>
               <div className={style.projectDetail} onClick={() => handleProjectDetatil("bumil")}>자세히</div>
@@ -71,17 +71,17 @@ export default function NewProject() {
               </div>
               <div className={style.projectSet}>
                 <div className={style.projectCategory}>Github</div>
-                <div className={style.projectContent}><a className={style.projectA} target="_blank" href="">비공개</a></div>
+                <div className={style.projectContent}><a className={style.projectA} target="_blank" rel="noreferrer" href="">비공개</a></div>
               </div>
               <div className={style.projectSet}>
                 <div className={style.projectCategory}>URL</div>
-                <div className={style.projectContent}><a className={style.projectA} target="_blank" href="">X</a></div>
+                <div className={style.projectContent}><a className={style.projectA} target="_blank" rel="noreferrer" href="">X</a></div>
               </div>
             </div>
           </div>
           <div className={style.projectItem}>
             <div className={style.projectImg}>
-              <img src={wenmixx} className={style.pjImg}></img>
+              <img src={wenmixx} className={style.pjImg} alt="pj_img"></img>
             </div>
             <div className={style.projectInfo}>
               {/* <div className={style.projectDetail} onClick={() => handleProjectDetatil("we-nmixx")}>자세히</div> */}
@@ -108,17 +108,17 @@ export default function NewProject() {
               </div>
               <div className={style.projectSet}>
                 <div className={style.projectCategory}>Github</div>
-                <div className={style.projectContent}><a className={style.projectA} target="_blank" href="https://github.com/nmixxfans">https://github.com/nmixxfans</a></div>
+                <div className={style.projectContent}><a className={style.projectA} target="_blank" rel="noreferrer" href="https://github.com/nmixxfans">https://github.com/nmixxfans</a></div>
               </div>
               <div className={style.projectSet}>
                 <div className={style.projectCategory}>URL</div>
-                <div className={style.projectContent}><a className={style.projectA} target="_blank" href="">X</a></div>
+                <div className={style.projectContent}><a className={style.projectA} target="_blank" rel="noreferrer" href="">X</a></div>
               </div>
             </div>
           </div>
           <div className={style.projectItem}>
             <div className={style.projectImg}>
-              <img src={portfolio} className={style.pjImg}></img>
+              <img src={portfolio} className={style.pjImg} alt="pj_img"></img>
             </div>
             <div className={style.projectInfo}>
               <div className={style.projectDetail} onClick={() => handleProjectDetatil("portfolio")}>자세히</div>
@@ -145,17 +145,17 @@ export default function NewProject() {
               </div>
               <div className={style.projectSet}>
                 <div className={style.projectCategory}>Github</div>
-                <div className={style.projectContent}><a className={style.projectA} target="_blank" href="https://github.com/Leewonno/portfolio">https://github.com/Leewonno/portfolio</a></div>
+                <div className={style.projectContent}><a className={style.projectA} target="_blank" rel="noreferrer" href="https://github.com/Leewonno/portfolio">https://github.com/Leewonno/portfolio</a></div>
               </div>
               <div className={style.projectSet}>
                 <div className={style.projectCategory}>URL</div>
-                <div className={style.projectContent}><a className={style.projectA} target="_blank" href="https://portfolio-67029.web.app/">https://portfolio-67029.web.app/</a></div>
+                <div className={style.projectContent}><a className={style.projectA} target="_blank" rel="noreferrer" href="https://portfolio-67029.web.app/">https://portfolio-67029.web.app/</a></div>
               </div>
             </div>
           </div>
           <div className={style.projectItem}>
             <div className={style.projectImg}>
-              <img src={demure} className={style.pjImg}></img>
+              <img src={demure} className={style.pjImg} alt="pj_img"></img>
             </div>
             <div className={style.projectInfo}>
               <div className={style.projectDetail} onClick={() => handleProjectDetatil("demure")}>자세히</div>
@@ -200,17 +200,17 @@ export default function NewProject() {
               </div>
               <div className={style.projectSet}>
                 <div className={style.projectCategory}>Github</div>
-                <div className={style.projectContent}><a className={style.projectA} target="_blank" href="https://github.com/KDT9Demure">https://github.com/KDT9Demure</a></div>
+                <div className={style.projectContent}><a className={style.projectA} target="_blank" rel="noreferrer" href="https://github.com/KDT9Demure">https://github.com/KDT9Demure</a></div>
               </div>
               <div className={style.projectSet}>
                 <div className={style.projectCategory}>URL</div>
-                <div className={style.projectContent}><a className={style.projectA} target="_blank" href="https://demure2023.shop/">https://demure2023.shop/</a></div>
+                <div className={style.projectContent}><a className={style.projectA} target="_blank" rel="noreferrer" href="https://demure2023.shop/">https://demure2023.shop/</a></div>
               </div>
             </div>
           </div>
           <div className={style.projectItem}>
             <div className={style.projectImg}>
-              <img src={novelcut} className={style.pjImg}></img>
+              <img src={novelcut} className={style.pjImg} alt="pj_img"></img>
             </div>
             <div className={style.projectInfo}>
               <div className={style.projectDetail} onClick={() => handleProjectDetatil("novelcut")}>자세히</div>
@@ -243,17 +243,17 @@ export default function NewProject() {
               </div>
               <div className={style.projectSet}>
                 <div className={style.projectCategory}>Github</div>
-                <div className={style.projectContent}><a className={style.projectA} target="_blank" href="https://github.com/Leewonno/project3">https://github.com/Leewonno/project3</a></div>
+                <div className={style.projectContent}><a className={style.projectA} target="_blank" rel="noreferrer" href="https://github.com/Leewonno/project3">https://github.com/Leewonno/project3</a></div>
               </div>
               <div className={style.projectSet}>
                 <div className={style.projectCategory}>URL</div>
-                <div className={style.projectContent}><a className={style.projectA} target="_blank" href="https://web-novelcut-12fhqa2blnvnggha.sel5.cloudtype.app/">https://web-novelcut-12fhqa2blnvnggha.sel5.cloudtype.app/</a></div>
+                <div className={style.projectContent}><a className={style.projectA} target="_blank" rel="noreferrer" href="https://web-novelcut-12fhqa2blnvnggha.sel5.cloudtype.app/">https://web-novelcut-12fhqa2blnvnggha.sel5.cloudtype.app/</a></div>
               </div>
             </div>
           </div>
           <div className={style.projectItem}>
             <div className={style.projectImg}>
-              <img src={manogz} className={style.pjImg}></img>
+              <img src={manogz} className={style.pjImg} alt="pj_img"></img>
             </div>
             <div className={style.projectInfo}>
               <div className={style.projectDetail} onClick={() => handleProjectDetatil("mangoz")}>자세히</div>
@@ -288,17 +288,17 @@ export default function NewProject() {
               </div>
               <div className={style.projectSet}>
                 <div className={style.projectCategory}>Github</div>
-                <div className={style.projectContent}><a className={style.projectA} target="_blank" href="https://github.com/Leewonno/project2">https://github.com/Leewonno/project2</a></div>
+                <div className={style.projectContent}><a className={style.projectA} target="_blank" rel="noreferrer" href="https://github.com/Leewonno/project2">https://github.com/Leewonno/project2</a></div>
               </div>
               <div className={style.projectSet}>
                 <div className={style.projectCategory}>URL</div>
-                <div className={style.projectContent}><a className={style.projectA} target="_blank" href="" style={{textDecoration:"line-through"}}>배포 중단</a></div>
+                <div className={style.projectContent}><a className={style.projectA} target="_blank" rel="noreferrer" href="" style={{textDecoration:"line-through"}}>배포 중단</a></div>
               </div>
             </div>
           </div>
           <div className={style.projectItem}>
             <div className={style.projectImg}>
-              <img src={lebu} className={style.pjImg}></img>
+              <img src={lebu} className={style.pjImg} alt="pj_img"></img>
             </div>
             <div className={style.projectInfo}>
               <div className={style.projectDetail} onClick={() => handleProjectDetatil("lebu")}>자세히</div>
@@ -329,17 +329,17 @@ export default function NewProject() {
               </div>
               <div className={style.projectSet}>
                 <div className={style.projectCategory}>Github</div>
-                <div className={style.projectContent}><a className={style.projectA} target="_blank" href="https://github.com/Leewonno/project1">https://github.com/Leewonno/project1</a></div>
+                <div className={style.projectContent}><a className={style.projectA} target="_blank" rel="noreferrer" href="https://github.com/Leewonno/project1">https://github.com/Leewonno/project1</a></div>
               </div>
               <div className={style.projectSet}>
                 <div className={style.projectCategory}>URL</div>
-                <div className={style.projectContent}><a className={style.projectA} target="_blank" href="https://poetic-druid-deac2a.netlify.app/">https://poetic-druid-deac2a.netlify.app/</a></div>
+                <div className={style.projectContent}><a className={style.projectA} target="_blank" rel="noreferrer" href="https://poetic-druid-deac2a.netlify.app/">https://poetic-druid-deac2a.netlify.app/</a></div>
               </div>
             </div>
           </div>
           <div className={style.projectItem}>
             <div className={style.projectImg}>
-              <img src={novelpedia} className={style.pjImg}></img>
+              <img src={novelpedia} className={style.pjImg} alt="pj_img"></img>
             </div>
             <div className={style.projectInfo}>
               <div className={style.projectDetail} onClick={() => handleProjectDetatil("novelpedia")}>자세히</div>
@@ -372,11 +372,11 @@ export default function NewProject() {
               </div>
               <div className={style.projectSet}>
                 <div className={style.projectCategory}>Github</div>
-                <div className={style.projectContent}><a className={style.projectA} target="_blank" href="https://github.com/novelpedia/graduation">https://github.com/novelpedia/graduation</a></div>
+                <div className={style.projectContent}><a className={style.projectA} target="_blank" rel="noreferrer" href="https://github.com/novelpedia/graduation">https://github.com/novelpedia/graduation</a></div>
               </div>
               <div className={style.projectSet}>
                 <div className={style.projectCategory}>URL</div>
-                <div className={style.projectContent}><a className={style.projectA} target="_blank" href="https://novelpedia.co.kr/">https://novelpedia.co.kr/</a></div>
+                <div className={style.projectContent}><a className={style.projectA} target="_blank" rel="noreferrer" href="https://novelpedia.co.kr/">https://novelpedia.co.kr/</a></div>
               </div>
             </div>
           </div>

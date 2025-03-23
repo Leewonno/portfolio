@@ -1,4 +1,4 @@
-import { useContext, useEffect, useRef, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import StatusContext from "../store/status-context";
 import main from "../css/main.module.css";
 
@@ -14,6 +14,7 @@ export default function MainIntroFirst(){
         else{
             setHelloStyle({});
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     },[context.light]);
 
     const thema = {

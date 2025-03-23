@@ -2,7 +2,6 @@ import style from "../../css/newMain.module.css"
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faUser, faCalendar, faEnvelope, faGraduationCap, faPlaneDeparture, faPaperclip, faBoxArchive } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import bg from "../../img/nmixx.png";
 
 export default function NewMy() {
   return (
@@ -84,14 +83,13 @@ export default function NewMy() {
                 <div className={style.rightBox}>
                 <div className={style.infoName}>아카이빙</div>
                   <div className={style.infoItemBox}>
-                    <a href="https://github.com/Leewonno" target="_blank"><FontAwesomeIcon icon={faGithub} style={{ fontSize: "35px", color: "black" }} /></a>
+                    <a href="https://github.com/Leewonno" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub} style={{ fontSize: "35px", color: "black" }} /></a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        {/* <img src={bg} alt="섹션1_배경" className={style.myBg}></img> */}
       </section>
     </>
   )

@@ -26,6 +26,7 @@ export default function MainProject(){
         else{
             setStyleThema({});
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     },[context.light]);
 
     const thema={
@@ -91,7 +92,7 @@ export default function MainProject(){
                     </div> */}
                     <div className={main.projectItem} style={styleThema}>
                         <div className={main.projectImg}>
-                            <img src={portfolio} className={main.pjImg}></img>
+                            <img src={portfolio} className={main.pjImg} alt="pj_img" />
                         </div>
                         <div className={main.projectInfo}>
                             <div className={main.projectDetail} onClick={()=>handleProjectDetatil("portfolio")}>자세히</div>
@@ -112,17 +113,17 @@ export default function MainProject(){
                             </div>
                             <div className={main.projectSet}>
                                 <div className={main.projectCategory}>Github</div>
-                                <div className={main.projectContent}><a className={main.projectA} target="_blank" href="https://github.com/Leewonno/portfolio">https://github.com/Leewonno/portfolio</a></div>
+                                <div className={main.projectContent}><a className={main.projectA} target="_blank" rel="noreferrer" href="https://github.com/Leewonno/portfolio">https://github.com/Leewonno/portfolio</a></div>
                             </div>
                             <div className={main.projectSet}>
                                 <div className={main.projectCategory}>URL</div>
-                                <div className={main.projectContent}><a className={main.projectA} target="_blank" href="https://portfolio-67029.web.app/">https://portfolio-67029.web.app/</a></div>
+                                <div className={main.projectContent}><a className={main.projectA} target="_blank" rel="noreferrer" href="https://portfolio-67029.web.app/">https://portfolio-67029.web.app/</a></div>
                             </div>
                         </div>
                     </div>
                     <div className={main.projectItem} style={styleThema}>
                         <div className={main.projectImg}>
-                            <img src={demure} className={main.pjImg}></img>
+                            <img src={demure} className={main.pjImg} alt="pj_img"></img>
                         </div>
                         <div className={main.projectInfo}>
                             <div className={main.projectDetail} onClick={()=>handleProjectDetatil("demure")}>자세히</div>
@@ -147,17 +148,17 @@ export default function MainProject(){
                             </div>
                             <div className={main.projectSet}>
                                 <div className={main.projectCategory}>Github</div>
-                                <div className={main.projectContent}><a className={main.projectA} target="_blank" href="https://github.com/KDT9Demure">https://github.com/KDT9Demure</a></div>
+                                <div className={main.projectContent}><a className={main.projectA} target="_blank" rel="noreferrer" href="https://github.com/KDT9Demure">https://github.com/KDT9Demure</a></div>
                             </div>
                             <div className={main.projectSet}>
                                 <div className={main.projectCategory}>URL</div>
-                                <div className={main.projectContent}><a className={main.projectA} target="_blank" href="https://demure2023.shop/">https://demure2023.shop/</a></div>
+                                <div className={main.projectContent}><a className={main.projectA} target="_blank" rel="noreferrer" href="https://demure2023.shop/">https://demure2023.shop/</a></div>
                             </div>
                         </div>
                     </div>
                     <div className={main.projectItem} style={styleThema}>
                         <div className={main.projectImg}>
-                            <img src={novelcut} className={main.pjImg}></img>
+                            <img src={novelcut} className={main.pjImg} alt="pj_img"></img>
                         </div>
                         <div className={main.projectInfo}>
                             <div className={main.projectDetail} onClick={()=>handleProjectDetatil("novelcut")}>자세히</div>
@@ -182,17 +183,17 @@ export default function MainProject(){
                             </div>
                             <div className={main.projectSet}>
                                 <div className={main.projectCategory}>Github</div>
-                                <div className={main.projectContent}><a className={main.projectA} target="_blank" href="https://github.com/Leewonno/project3">https://github.com/Leewonno/project3</a></div>
+                                <div className={main.projectContent}><a className={main.projectA} target="_blank" rel="noreferrer" href="https://github.com/Leewonno/project3">https://github.com/Leewonno/project3</a></div>
                             </div>
                             <div className={main.projectSet}>
                                 <div className={main.projectCategory}>URL</div>
-                                <div className={main.projectContent}><a className={main.projectA} target="_blank" href="https://web-novelcut-12fhqa2blnvnggha.sel5.cloudtype.app/">https://web-novelcut-12fhqa2blnvnggha.sel5.cloudtype.app/</a></div>
+                                <div className={main.projectContent}><a className={main.projectA} target="_blank" rel="noreferrer" href="https://web-novelcut-12fhqa2blnvnggha.sel5.cloudtype.app/">https://web-novelcut-12fhqa2blnvnggha.sel5.cloudtype.app/</a></div>
                             </div>
                         </div>
                     </div>
                     <div className={main.projectItem} style={styleThema}>
                         <div className={main.projectImg}>
-                            <img src={manogz} className={main.pjImg}></img>
+                            <img src={manogz} className={main.pjImg} alt="pj_img"></img>
                         </div>
                         <div className={main.projectInfo}>
                             <div className={main.projectDetail} onClick={()=>handleProjectDetatil("mangoz")}>자세히</div>
@@ -217,17 +218,17 @@ export default function MainProject(){
                             </div>
                             <div className={main.projectSet}>
                                 <div className={main.projectCategory}>Github</div>
-                                <div className={main.projectContent}><a className={main.projectA} target="_blank" href="https://github.com/Leewonno/project2">https://github.com/Leewonno/project2</a></div>
+                                <div className={main.projectContent}><a className={main.projectA} target="_blank" rel="noreferrer" href="https://github.com/Leewonno/project2">https://github.com/Leewonno/project2</a></div>
                             </div>
                             <div className={main.projectSet}>
                                 <div className={main.projectCategory}>URL</div>
-                                <div className={main.projectContent}><a className={main.projectA} target="_blank" href="http://13.238.96.99/">http://13.238.96.99/</a></div>
+                                <div className={main.projectContent}><a className={main.projectA} target="_blank" rel="noreferrer" href="http://13.238.96.99/">http://13.238.96.99/</a></div>
                             </div>
                         </div>
                     </div>
                     <div className={main.projectItem} style={styleThema}>
                         <div className={main.projectImg}>
-                            <img src={lebu} className={main.pjImg}></img>
+                            <img src={lebu} className={main.pjImg} alt="pj_img"></img>
                         </div>
                         <div className={main.projectInfo}>
                             <div className={main.projectDetail} onClick={()=>handleProjectDetatil("lebu")}>자세히</div>
@@ -248,17 +249,17 @@ export default function MainProject(){
                             </div>
                             <div className={main.projectSet}>
                                 <div className={main.projectCategory}>Github</div>
-                                <div className={main.projectContent}><a className={main.projectA} target="_blank" href="https://github.com/Leewonno/project1">https://github.com/Leewonno/project1</a></div>
+                                <div className={main.projectContent}><a className={main.projectA} target="_blank" rel="noreferrer" href="https://github.com/Leewonno/project1">https://github.com/Leewonno/project1</a></div>
                             </div>
                             <div className={main.projectSet}>
                                 <div className={main.projectCategory}>URL</div>
-                                <div className={main.projectContent}><a className={main.projectA} target="_blank" href="https://poetic-druid-deac2a.netlify.app/">https://poetic-druid-deac2a.netlify.app/</a></div>
+                                <div className={main.projectContent}><a className={main.projectA} target="_blank" rel="noreferrer" href="https://poetic-druid-deac2a.netlify.app/">https://poetic-druid-deac2a.netlify.app/</a></div>
                             </div>
                         </div>
                     </div>
                     <div className={main.projectItem} style={styleThema}>
                         <div className={main.projectImg}>
-                            <img src={novelpedia} className={main.pjImg}></img>
+                            <img src={novelpedia} className={main.pjImg} alt="pj_img"></img>
                         </div>
                         <div className={main.projectInfo}>
                             <div className={main.projectDetail} onClick={()=>handleProjectDetatil("novelpedia")}>자세히</div>
@@ -283,11 +284,11 @@ export default function MainProject(){
                             </div>
                             <div className={main.projectSet}>
                                 <div className={main.projectCategory}>Github</div>
-                                <div className={main.projectContent}><a className={main.projectA} target="_blank" href="https://github.com/novelpedia/graduation">https://github.com/novelpedia/graduation</a></div>
+                                <div className={main.projectContent}><a className={main.projectA} target="_blank" rel="noreferrer" href="https://github.com/novelpedia/graduation">https://github.com/novelpedia/graduation</a></div>
                             </div>
                             <div className={main.projectSet}>
                                 <div className={main.projectCategory}>URL</div>
-                                <div className={main.projectContent}><a className={main.projectA} target="_blank" href="https://novelpedia.co.kr/">https://novelpedia.co.kr/</a></div>
+                                <div className={main.projectContent}><a className={main.projectA} target="_blank" rel="noreferrer" href="https://novelpedia.co.kr/">https://novelpedia.co.kr/</a></div>
                             </div>
                         </div>
                     </div>

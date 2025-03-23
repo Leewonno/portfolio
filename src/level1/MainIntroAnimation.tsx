@@ -23,6 +23,7 @@ export default function MainIntroAnimation(){
         else{
             setStyleThema(none);
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     },[context.light]);
 
     const thema={

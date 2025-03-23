@@ -265,7 +265,7 @@ export default function MainProjectDetail(props: any) {
     else if (props.project === "bumil") {
       setItem(projectData.bumil)
     }
-
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [props.project])
 
   return <>
