@@ -44,7 +44,7 @@ export default function NewProject() {
       <section id="project" className={style.project}>
         <div className={style.projectBox}>
           <div className={style.projectName}><FontAwesomeIcon icon={faPaperclip} /> PROJECTS</div>
-          <div className={style.projectItem}>
+          {/* <div className={style.projectItem}>
             <div className={style.projectImg}>
               <img src={bumil} className={style.pjImg} alt="pj_img"></img>
             </div>
@@ -82,7 +82,7 @@ export default function NewProject() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           <div className={style.projectItem}>
             <div className={style.projectImg}>
               <img src={wenmixx} className={style.pjImg} alt="pj_img"></img>
