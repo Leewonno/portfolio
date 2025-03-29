@@ -271,6 +271,8 @@ export default function NewProject() {
                 <span className={style.projectDescStrong}>React</span>를 이용한 첫 프로젝트라 어려움이 있었지만, React에서 제공하는 Hook의 편리함을 느끼게 된 프로젝트였습니다.
                 <span className={style.br}></span>
                 <span className={style.projectDescStrong}>useContext</span> Hook을 이용해 전역 상태를 관리했고, <span className={style.projectDescStrong}>CloudType</span>을 이용해 배포했습니다.
+                <span className={style.br}></span>
+                <span className={style.projectDescStrong}>Hosting, DB 비용 문제로 배포되어있는 사이트는 Firebase의 Firestore, Authentication, Storage, Hosting을 이용해 다시 개발했습니다.</span>
               </div>
               <div className={style.projectSet}>
                 <div className={style.projectCategory}>주요기능</div>
