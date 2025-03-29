@@ -5,7 +5,6 @@ import lebu from "../../img/lebu.png";
 import novelpedia from "../../img/novelpedia.png";
 import portfolio from "../../img/portfolio.png";
 import demure from "../../img/demure.png";
-import bumil from "../../img/bumil.png";
 import wenmixx from "../../img/we-nmixx.png"
 import Modal from "react-modal";
 import MainProjectDetail from "../level2/NewProjectDetail";
@@ -43,7 +42,7 @@ export default function NewProject() {
     <>
       <section id="project" className={style.project}>
         <div className={style.projectBox}>
-          <div className={style.projectName}><FontAwesomeIcon icon={faPaperclip} /> PROJECTS</div>
+          <div className={style.projectName} title="엔믹스처럼"><FontAwesomeIcon icon={faPaperclip} /> PROJECTS</div>
           {/* <div className={style.projectItem}>
             <div className={style.projectImg}>
               <img src={bumil} className={style.pjImg} alt="pj_img"></img>

@@ -7,7 +7,7 @@ export default function NewSkills() {
     <>
       <section id="skill" className={style.skill}>
         <div className={style.skillTitleBox}>
-          <div className={style.skillTitle}>
+          <div className={style.skillTitle} title="LIKE NMIXX">
             <FontAwesomeIcon icon={faPaperclip} /> SKILLS
           </div>
         </div>

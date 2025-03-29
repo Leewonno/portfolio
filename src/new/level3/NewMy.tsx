@@ -9,7 +9,7 @@ export default function NewMy() {
       <section className={style.my} id="my">
         <div className={style.myBox}>
           <div className={style.aboutMeBox}>
-            <div className={style.aboutMe}>
+            <div className={style.aboutMe} title="NSWER 1기, NSWER 2기">
               <FontAwesomeIcon icon={faPaperclip} /> ABOUT ME
             </div>
           </div>
