@@ -307,10 +307,10 @@ export default function NewProject() {
                 <div className={style.projectCategory}>Github</div>
                 <div className={style.projectContent}><a className={style.projectA} target="_blank" rel="noreferrer" href="https://github.com/Leewonno/project3">https://github.com/Leewonno/project3</a></div>
               </div>
-              {/* <div className={style.projectSet}>
+              <div className={style.projectSet}>
                 <div className={style.projectCategory}>URL</div>
-                <div className={style.projectContent}><a className={style.projectA} target="_blank" rel="noreferrer" href="https://web-novelcut-12fhqa2blnvnggha.sel5.cloudtype.app/">https://web-novelcut-12fhqa2blnvnggha.sel5.cloudtype.app/</a></div>
-              </div> */}
+                <div className={style.projectContent}><a className={style.projectA} target="_blank" rel="noreferrer" href="https://novelcut-1f6f2.web.app/">https://novelcut-1f6f2.web.app/</a></div>
+              </div>
             </div>
           </div>
           <div className={style.projectItem}>
