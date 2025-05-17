@@ -1,4 +1,3 @@
-import React from 'react';
 import Header from './level3/Header';
 import Footer from './level3/Footer';
 
