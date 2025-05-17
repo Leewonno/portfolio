@@ -1,9 +1,13 @@
-// import footer from "../css/footer.module.css";
+import styled from "styled-components"
 
-export default function Footer(){
-    return(
-        <footer>
-            
-        </footer>
-    )
+const Container = styled.footer`
+    
+`
+
+export default function Footer() {
+  return (
+    <Container>
+
+    </Container>
+  )
 }

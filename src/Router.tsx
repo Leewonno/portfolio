@@ -4,6 +4,7 @@ import MainVer1 from "./level3/Main";
 import Main from "./ver3/Main";
 import My from "./my/My";
 import MainVer2 from "./ver2/Main";
+import Home from "./ver3/Home";
 
 const router = createBrowserRouter([
   {
@@ -12,7 +13,13 @@ const router = createBrowserRouter([
     children: [
       {
         path: "",
-        element:<Main />
+        element:<Main />,
+        children:[
+          {
+            path:"",
+            element:<Home />
+          }
+        ],
       },
       {
         path: "ver2",
