@@ -1,8 +1,9 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "./App";
-import Main from "./level3/Main";
-import NewMain from "./ver2/NewMain";
+import MainVer1 from "./level3/Main";
+import Main from "./ver3/Main";
 import My from "./my/My";
+import MainVer2 from "./ver2/Main";
 
 const router = createBrowserRouter([
   {
@@ -11,16 +12,20 @@ const router = createBrowserRouter([
     children: [
       {
         path: "",
-        element:<NewMain />
+        element:<Main />
+      },
+      {
+        path: "ver2",
+        element:<MainVer2 />
+      },
+      {
+        path:"ver1",
+        element:<MainVer1 />
       },
       {
         path:"my",
         element:<My />
       },
-      {
-        path:"old",
-        element:<Main />
-      }
     ]
   }
 ])
