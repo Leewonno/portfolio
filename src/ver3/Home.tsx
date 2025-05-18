@@ -2,11 +2,13 @@ import styled from "styled-components"
 import Intro from "./Intro"
 import nmixx from "../img/nmixx_gray.png"
 import Release from "./Release"
+import My from "./My"
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
+  scroll-behavior: smooth;
 `
 
 const FixedBackground = styled.img`
@@ -27,6 +29,7 @@ export default function Home() {
       {/* 배포된 프로젝트 */}
       <Release />
       {/* 나에 대해서 */}
+      <My />
       {/* 자기소개 */}
       {/* 기술스택 */}
       {/* 프로젝트 */}

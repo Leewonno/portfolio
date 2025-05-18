@@ -1,8 +1,13 @@
 import styled from "styled-components"
 import oo from "../img/new/oo_logo.png"
-import know from "../img/new/know.png"
-import { useEffect, useRef } from "react"
+// import know from "../img/new/know.png"
+import { useEffect, useRef, useState } from "react"
 import { media } from "./lib/styles/media"
+import Modal from "react-modal";
+import { motion } from 'framer-motion';
+import { customChildVariants, customVariants } from "./lib/styles/animation"
+import useObserver from "./lib/hook/useObserver"
+import Bold from "./common/Bold";
 
 const Section = styled.section`
   width: 100%;
@@ -13,6 +18,7 @@ const Section = styled.section`
   box-sizing: border-box;
   align-items: center;
   position: relative;
+  scroll-snap-align: start;
 `
 
 const AnimationBox = styled.div`
@@ -52,7 +58,7 @@ const AnimationText = styled.div`
   }
 `
 
-const TextBox = styled.div`
+const TextBox = styled(motion.div)`
   position: absolute;
   top: 75%;
   display: flex;
@@ -61,23 +67,45 @@ const TextBox = styled.div`
   align-items: center;
 `
 
-const Title = styled.div`
+const Title = styled(motion.div)`
   font-family: 'S-CoreDream-3Light';
   color: #fff;
   font-size: 30px;
 `
 
-const Text = styled.div`
+const Text = styled(motion.div)`
   font-family: 'S-CoreDream-3Light';
   color: #fff;
   font-size: 20px;
 `
 
-const Bold = styled.span`
-  font-family: 'S-CoreDream-7EXTRA_BOLD';
+const Iframe = styled.iframe`
+  
 `
 
 export default function Intro() {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+
+  const customStyles = {
+    overlay: {
+      backgroundColor: "rgba(0,0,0,0.5)",
+      zIndex: 3,
+    },
+    content: {
+      inset: "10%",
+      margin: "auto",
+      padding: "0px",
+      overflow: "hidden",
+      borderRadius: "25px",
+      border: "none",
+      background: "#000",
+    },
+  };
+
+  const handleOpenModal = () => {
+    setIsOpen(true);
+  }
+
   const sectionRef = useRef<HTMLDivElement>(null);
   const aniRef = useRef<HTMLDivElement>(null);
 
@@ -92,16 +120,15 @@ export default function Intro() {
   }
 
   useEffect(() => {
-    const section = sectionRef.current
-    const ani = aniRef.current
-    if (!section || !ani) return;
-    // section 위치
-    const sectionTop = section.offsetTop;
-    // section, ani 요소의 높이
-    const sectionHeight = section.offsetHeight;
-    const imgHeight = ani.offsetHeight;
-    
     const handleScroll = () => {
+      const section = sectionRef.current
+      const ani = aniRef.current
+      if (!section || !ani) return;
+      // section 위치
+      const sectionTop = section.offsetTop;
+      // section, ani 요소의 높이
+      const sectionHeight = section.offsetHeight;
+      const imgHeight = ani.offsetHeight;
       // 현재 스크롤 위치
       const scrollY = window.scrollY;
       
@@ -112,7 +139,7 @@ export default function Intro() {
       // 0 ~ 1 로 고정
       const scrollRatio = Math.min(Math.max(distanceScrolled / scrollableHeight, 0), 1);
       // 확대 범위: 2 ~ 3
-      targetScale.current = 2 + scrollRatio
+      targetScale.current = 2 + scrollRatio;
 
       // 스크롤이 가장 상단일 때는 200vh 기준 50vh
       // 스크롤이 100vh 이상일 때는 150vh 에 고정
@@ -121,11 +148,12 @@ export default function Intro() {
       targetTop.current = Math.min(baseTop + scrollY - sectionTop, maxTop) - (imgHeight * targetScale.current)
     }
 
-    const onScroll = () => {
-      handleScroll()
-      requestAnimationFrame(onScroll)
-    }
-    onScroll()
+    // const onScroll = () => {
+    //   handleScroll()
+    //   requestAnimationFrame(onScroll)
+    // }
+    // onScroll()
+    handleScroll();
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
@@ -147,19 +175,24 @@ export default function Intro() {
     animate()
   }, [])
 
+  const { ref, animation } = useObserver();
+
   return (
     <Section ref={sectionRef}>
       {/* 엔믹스 + O.O 확대 애니메이션 */}
-      <AnimationBox ref={aniRef}>
+      <AnimationBox ref={aniRef} onClick={()=>handleOpenModal()}>
         <AnimationText>▶︎</AnimationText>
         <IntroImage src={oo} alt="oo_logo"/>
       </AnimationBox>
       {/* 소개문구 75% 위치에 고정 */}
-      <TextBox>
-        <Title>안녕하세요</Title>
-        <Text>걸그룹 엔믹스를 좋아하는 Full-Stack 개발자 <Bold>이원노</Bold>입니다</Text>
-        <Text>엔믹스처럼 열정, 노력, 끈기를 바탕으로 최고의 실력자가 되겠습니다</Text>
+      <TextBox ref={ref} animate={animation} variants={customVariants}>
+        <Title variants={customChildVariants}>안녕하세요</Title>
+        <Text variants={customChildVariants}>걸그룹 엔믹스를 좋아하는 Full-Stack 개발자 <Bold>이원노</Bold>입니다</Text>
+        <Text variants={customChildVariants}>엔믹스처럼 열정, 노력, 끈기를 바탕으로 꼼꼼한 개발자가 되겠습니다</Text>
       </TextBox>
+      <Modal isOpen={isOpen} ariaHideApp={false} style={customStyles} onRequestClose={() => setIsOpen(false)}>
+        <Iframe width="100%" height="100%" src="https://www.youtube.com/embed/MMtRxcy8PX0?list=RDGMEM0s70dY0AfCwh3LqQ-Bv1xg&cc_load_policy=1" title="NMIXX “Soñar (Breaker)” M/V" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen />
+      </Modal>
     </Section>
   )
 }
