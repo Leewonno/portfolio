@@ -5,6 +5,7 @@ import { faScissors, faAddressCard, faBookOpen, faPlane, faFile } from "@fortawe
 import { customChildVariants, customVariants, rotateChildVariants, rotateVariants } from "./lib/styles/animation";
 import useObserver from "./lib/hook/useObserver";
 import Bold from "./common/Bold";
+import { media } from "./lib/styles/media";
 
 const Section = styled.section`
   width: 100%;
@@ -24,6 +25,13 @@ const LinkBox = styled(motion.div)`
   display: flex;
   justify-content: center;
   gap: 10px;
+
+  ${media.phone`
+    padding: 0px 20px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  `}
 `
 
 const LinkButton = styled(motion.a)`
@@ -42,17 +50,30 @@ const LinkButton = styled(motion.a)`
   &:hover{
     background-color: #d9d9d9;
   }
+
+  ${media.phone`
+    padding: 8px 12px;
+    font-size: 14px;
+  `}
 `
 
 const TextBox = styled(motion.div)`
   display: flex;
   justify-content: center;
+
+  ${media.phone`
+    padding: 0px 20px;
+  `}
 `
 
 const Text = styled(motion.div)`
   font-size: 20px;
   font-family: 'S-CoreDream-3Light';
   color: #fff;
+
+  ${media.phone`
+    font-size: 18px;
+  `}
 `
 
 export default function Release() {
@@ -74,7 +95,7 @@ export default function Release() {
         </LinkButton>
         <LinkButton variants={rotateChildVariants} href="https://nmixxfantube-96477.web.app/" target={"_blank"}>
           <FontAwesomeIcon icon={faFile} />
-          LIKE NMIXX
+          LYRICS
         </LinkButton>
         <LinkButton variants={rotateChildVariants} href="https://poetic-druid-deac2a.netlify.app/" target={"_blank"}>
           <FontAwesomeIcon icon={faPlane} />

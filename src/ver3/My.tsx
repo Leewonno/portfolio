@@ -1,11 +1,14 @@
 import styled from "styled-components"
 import bg from "../img/nmixx.png"
+import lee from "../img/new/lee2.png"
+import back from "../img/new/back.jpg"
 import { motion } from "framer-motion"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBoxArchive, faCalendar, faEnvelope, faGraduationCap, faPaperclip, faPaperPlane, faPlaneDeparture, faUser } from "@fortawesome/free-solid-svg-icons"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import useObserver from "./lib/hook/useObserver"
 import { customChildVariants, rotateChildVariants, rotateVariants } from "./lib/styles/animation"
+import { media } from "./lib/styles/media"
 
 const Section = styled.section`
   width: 100%;
@@ -22,6 +25,10 @@ const Section = styled.section`
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
+
+  ${media.phone`
+    padding: 20px;
+  `}
 `
 
 const TopBox = styled(motion.div)`
@@ -34,6 +41,13 @@ const BottomBox = styled.div`
   justify-content: space-between;
   gap: 20px;
   box-sizing: border-box;
+
+  ${media.phone`
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+  `}
 `
 
 const TitleBox = styled.div`
@@ -41,6 +55,11 @@ const TitleBox = styled.div`
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+
+  ${media.phone`
+    font-size: 25px;
+    margin-bottom: 20px;
+  `}
 `
 
 const Title = styled.div`
@@ -50,6 +69,10 @@ const Title = styled.div`
   text-shadow: 1px 1px 25px #000;
   user-select: none;
   cursor: pointer;
+
+  ${media.phone`
+    font-size: 25px;
+  `}
 `
 
 const LeftBox = styled.div`
@@ -60,14 +83,35 @@ const LeftBox = styled.div`
   align-items: center;
   background-color: #fff;
   border-radius: 10px;
+  box-sizing: border-box;
+
+  ${media.phone`
+    width: 100%;
+    padding: 20px;
+  `}
 `
 
 const ImageBox = styled.div`
-  
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  background: url(${back});
+
+  ${media.phone`
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+  `}
 `
 
 const Image = styled.img`
-  
+  width: 80%;
+  object-fit: cover;
+  object-position: 0px 5px;
 `
 
 const MyBox = styled.div`
@@ -83,12 +127,16 @@ const MyContent = styled.div`
 `
 
 const RightBox = styled(motion.div)`
-  width: 700px;
+  width: 780px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   box-sizing: border-box;
+
+  ${media.phone`
+    width: 100%;
+  `}
 `
 
 const ItemBox = styled(motion.div)`
@@ -105,9 +153,13 @@ const Item = styled(motion.div)`
   align-items: flex-start;
   padding: 20px;
   border-radius: 10px;
-  width: 350px;
+  width: 380px;
   box-sizing: border-box;
   transition: all 0.3s;
+
+  ${media.phone`
+    width: 100%;
+  `}
 `
 
 const LeftItem = styled.div`
@@ -122,16 +174,28 @@ const RightItem = styled.div`
 const ItemTitle = styled.div`
   font-family: 'S-CoreDream-7EXTRA_BOLD';
   font-size: 20px;
+
+  ${media.phone`
+    font-size: 18px;
+  `}
 `
 
 const ItemContent = styled.div`
   margin-top: 5px;
   font-size: 14px;
   font-family: 'S-CoreDream-3Light';
+
+  ${media.phone`
+    font-size: 13px;
+  `}
 `
 
 const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
   font-size: 30px;
+
+  ${media.phone`
+    font-size: 25px;
+  `}
 `
 
 const Link = styled.a`
@@ -148,6 +212,10 @@ const Link = styled.a`
   &:hover{
     background-color: #d9d9d9;
   }
+
+  ${media.phone`
+    padding: 4px 8px;
+  `}
 `
 
 export default function My() {
@@ -171,7 +239,7 @@ export default function My() {
         {/* 사진 or 자기소개 */}
         <LeftBox>
           <ImageBox>
-            <Image src="" />
+            <Image src={lee} />
           </ImageBox>
           {/* <MyBox>
             <MyTitle>개발자가 된 이유</MyTitle>

@@ -65,18 +65,30 @@ const TextBox = styled(motion.div)`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  ${media.phone`
+    padding: 20px;
+  `}
 `
 
 const Title = styled(motion.div)`
   font-family: 'S-CoreDream-3Light';
   color: #fff;
   font-size: 30px;
+
+  ${media.phone`
+    font-size: 25px;
+  `}
 `
 
 const Text = styled(motion.div)`
   font-family: 'S-CoreDream-3Light';
   color: #fff;
   font-size: 20px;
+
+  ${media.phone`
+    font-size: 16px;
+  `}
 `
 
 const Iframe = styled.iframe`
