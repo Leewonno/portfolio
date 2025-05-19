@@ -36,6 +36,7 @@ const LinkBox = styled(motion.div)`
 
 const LinkButton = styled(motion.a)`
   display: flex;
+  align-items: center;
   gap: 5px;
   padding: 10px 15px;
   border-radius: 5px;
