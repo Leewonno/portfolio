@@ -5,9 +5,7 @@ import { media } from "./lib/styles/media"
 import { motion } from "framer-motion"
 import { customChildVariants, customVariants } from "./lib/styles/animation"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faBell, faCircleQuestion, faLaptop, faMicrophone, faPaperclip, faThumbtack } from "@fortawesome/free-solid-svg-icons"
-import Bold from "./common/Bold"
-import Under from "./common/Under"
+import { faBell, faMicrophone } from "@fortawesome/free-solid-svg-icons"
 import SemiBold from "./common/SemiBold"
 
 const Section = styled.section`
@@ -65,6 +63,10 @@ const ListBox = styled(motion.div)`
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  ${media.phone`
+    width: 100%;
+  `}
 `
 
 const ItemBox = styled(motion.div)`
@@ -91,7 +93,7 @@ const CustomSemiBold = styled.span`
   font-weight: 400;
 
   ${ItemBox}:hover & {
-    font-weight: 600;
+    font-family: 'S-CoreDream-7EXTRA_BOLD';
   } 
 `
 

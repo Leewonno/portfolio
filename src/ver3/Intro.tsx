@@ -116,9 +116,9 @@ export default function Intro() {
     },
   };
 
-  const handleOpenModal = () => {
-    setIsOpen(true);
-  }
+  // const handleOpenModal = () => {
+  //   setIsOpen(true);
+  // }
 
   const sectionRef = useRef<HTMLDivElement>(null);
   const aniRef = useRef<HTMLDivElement>(null);

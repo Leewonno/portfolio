@@ -1,11 +1,12 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { motion } from "framer-motion"
 import styled from "styled-components"
-import { faScissors, faAddressCard, faBookOpen, faPlane, faFile } from "@fortawesome/free-solid-svg-icons";
+import { faScissors, faAddressCard, faBookOpen, faPlane, faFile, faSquareArrowUpRight } from "@fortawesome/free-solid-svg-icons";
 import { customChildVariants, customVariants, rotateChildVariants, rotateVariants } from "./lib/styles/animation";
 import useObserver from "./lib/hook/useObserver";
 import Bold from "./common/Bold";
 import { media } from "./lib/styles/media";
+import { useLocation } from "react-router-dom";
 
 const Section = styled.section`
   width: 100%;
@@ -19,6 +20,10 @@ const Section = styled.section`
   position: relative;
   /* background-color: #fff; */
   scroll-snap-align: start;
+
+  ${media.phone`
+    padding: 20px;
+  `}
 `
 
 const LinkBox = styled(motion.div)`
@@ -27,7 +32,6 @@ const LinkBox = styled(motion.div)`
   gap: 10px;
 
   ${media.phone`
-    padding: 0px 20px;
     width: 100%;
     flex-wrap: wrap;
     justify-content: center;
@@ -62,10 +66,6 @@ const LinkButton = styled(motion.a)`
 const TextBox = styled(motion.div)`
   display: flex;
   justify-content: center;
-
-  ${media.phone`
-    padding: 0px 20px;
-  `}
 `
 
 const Text = styled(motion.div)`
@@ -78,8 +78,39 @@ const Text = styled(motion.div)`
   `}
 `
 
+const ProjectButton = styled(motion.a)`
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 15px;
+  color: #000;
+  text-decoration: none;
+  background-color: #e9e9e9;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: #d9d9d9;
+  }
+`
+
+const IconBox = styled(motion.div)`
+  display: flex;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+  padding: 6px;
+  transition: all 0.3s;
+`
+
 export default function Release() {
   const { ref, animation } = useObserver();
+
+  // 포폴 사이트 리팩토링 가능성 있으므로
+  // 이전 기능 유지 위해
+  const location = useLocation();
+  const currentPath = location.pathname; // 현재 경로
+  const projectPath = `${currentPath.replace(/\/$/, '')}/project`; // 중복 슬래시 방지
 
   return (
     <Section>
@@ -108,6 +139,12 @@ export default function Release() {
           노벨피디아
         </LinkButton>
       </LinkBox>
+      <ProjectButton href={projectPath} target={'_blank'}>
+        프로젝트 상세
+        <IconBox>
+          <FontAwesomeIcon icon={faSquareArrowUpRight} />
+        </IconBox>
+      </ProjectButton>
     </Section>
   )
 }

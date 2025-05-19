@@ -4,6 +4,7 @@ import nmixx from "../img/nmixx_gray.png"
 import Release from "./Release"
 import My from "./My"
 import Personal from "./Personal"
+import Career from "./Career"
 
 const Container = styled.div`
   display: flex;
@@ -31,6 +32,8 @@ export default function Home() {
       <Release />
       {/* 나에 대해서 */}
       <My />
+      {/* 경력 */}
+      <Career />
       {/* 자기소개 */}
       <Personal />
       {/* 기술스택 */}

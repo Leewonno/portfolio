@@ -1,8 +1,9 @@
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faSquareArrowUpRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from 'react';
 import styled from "styled-components";
 import { media } from "../lib/styles/media";
+import { useLocation } from "react-router-dom";
 
 const Container = styled.header`
   display: flex;
@@ -88,6 +89,7 @@ const Link = styled.a`
   margin-left: 15px;
   transition: all 0.3s;
   font-weight: 600;
+  cursor: pointer;
 
   &:hover{
     color: #fff;
@@ -144,6 +146,13 @@ export default function Header() {
     color: "#fff"
   }
 
+  const headerBackgoundColor = {
+    backgroundColor: "#000",
+  }
+
+  const headerBackgoundColorNone = {
+  }
+
   const headerFontColorNone = {}
 
   const [width, setWidth] = useState<number>(window.innerWidth);
@@ -180,21 +189,41 @@ export default function Header() {
     };
   }, [width]);
 
+  const handleLinkClick = (section:number) => {
+    window.scrollTo({
+      top: window.innerHeight * section,
+    });
+  }
+
+  // 포폴 사이트 리팩토링 가능성 있으므로
+  // 이전 기능 유지 위해
+  const location = useLocation();
+  const currentPath = location.pathname; // 현재 경로
+  const projectPath = `${currentPath.replace(/\/$/, '')}/project`; // 중복 슬래시 방지
+
   return (
-    <Container>
+    <Container style={scroll ? headerBackgoundColorNone : headerBackgoundColor}>
       <Box>
         <LogoBox>
           <Logo href="/" style={scroll ? headerFontColorNone : headerFontColor}>LIKE NMIXX</Logo>
         </LogoBox>
         <LinkBox>
-          <Link href="#my" style={scroll ? headerFontColorNone : headerFontColor}>ABOUT ME</Link>
-          <Link href="#skill" style={scroll ? headerFontColorNone : headerFontColor}>SKILLS</Link>
-          <Link href="#project" style={scroll ? headerFontColorNone : headerFontColor}>PROJECTS</Link>
+          <Link onClick={()=>handleLinkClick(3)} style={scroll ? headerFontColorNone : headerFontColor}>ABOUT ME</Link>
+          <Link onClick={()=>handleLinkClick(4)} style={scroll ? headerFontColorNone : headerFontColor}>CAREER</Link>
+          {/* <Link onClick={()=>handleLinkClick(2)} style={scroll ? headerFontColorNone : headerFontColor}>SKILLS</Link> */}
+          <Link onClick={()=>handleLinkClick(5)} style={scroll ? headerFontColorNone : headerFontColor}>자기소개서</Link>
+          <Link href={projectPath} target="_blank" style={scroll ? headerFontColorNone : headerFontColor}>
+            PROJECTS <FontAwesomeIcon icon={faSquareArrowUpRight} />
+          </Link>
         </LinkBox>
         <MBox style={menuStyle}>
-          <Link href="#my" style={scroll ? headerFontColorNone : headerFontColor}>About Me</Link>
-          <Link href="#skill" style={scroll ? headerFontColorNone : headerFontColor}>Skills</Link>
-          <Link href="#project" style={scroll ? headerFontColorNone : headerFontColor}>Project</Link>
+          <Link onClick={()=>handleLinkClick(3)} style={scroll ? headerFontColorNone : headerFontColor}>ABOUT ME</Link>
+          <Link onClick={()=>handleLinkClick(4)} style={scroll ? headerFontColorNone : headerFontColor}>CAREER</Link>
+          {/* <Link onClick={()=>handleLinkClick(2)} style={scroll ? headerFontColorNone : headerFontColor}>SKILLS</Link> */}
+          <Link onClick={()=>handleLinkClick(5)} style={scroll ? headerFontColorNone : headerFontColor}>자기소개서</Link>
+          <Link href={projectPath} target="_blank" style={scroll ? headerFontColorNone : headerFontColor}>
+            PROJECTS <FontAwesomeIcon icon={faSquareArrowUpRight} />
+          </Link>
         </MBox>
         <StyledFontAwesomeIcon icon={faBars} onClick={handleMenuBtn} />
       </Box>
