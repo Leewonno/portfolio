@@ -47,6 +47,7 @@ const LinkButton = styled(motion.a)`
   color: #000;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
+  white-space: nowrap;
 
   &:hover{
     background-color: #d9d9d9;

@@ -8,6 +8,8 @@ import { motion } from 'framer-motion';
 import { customChildVariants, customVariants } from "./lib/styles/animation"
 import useObserver from "./lib/hook/useObserver"
 import Bold from "./common/Bold";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDownLong } from "@fortawesome/free-solid-svg-icons";
 
 const Section = styled.section`
   width: 100%;
@@ -143,7 +145,7 @@ export default function Intro() {
       const imgHeight = ani.offsetHeight;
       // 현재 스크롤 위치
       const scrollY = window.scrollY;
-      
+
       // 현재 스크롤 위치 - section 위치 = section 위치 부터 스크롤한 거리
       const distanceScrolled = scrollY - sectionTop;
       const scrollableHeight = sectionHeight - window.innerHeight;
@@ -159,12 +161,6 @@ export default function Intro() {
       const maxTop = sectionTop + sectionHeight - window.innerHeight / 2 // 150vh
       targetTop.current = Math.min(baseTop + scrollY - sectionTop, maxTop) - (imgHeight * targetScale.current)
     }
-
-    // const onScroll = () => {
-    //   handleScroll()
-    //   requestAnimationFrame(onScroll)
-    // }
-    // onScroll()
     handleScroll();
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
@@ -187,14 +183,22 @@ export default function Intro() {
     animate()
   }, [])
 
+  const handleDownClick = () => {
+    window.scrollTo({
+      top: window.innerHeight * 1,
+    });
+  }
+
   const { ref, animation } = useObserver();
 
   return (
     <Section ref={sectionRef}>
       {/* 엔믹스 + O.O 확대 애니메이션 */}
-      <AnimationBox ref={aniRef} onClick={()=>handleOpenModal()}>
-        <AnimationText>▶︎</AnimationText>
-        <IntroImage src={oo} alt="oo_logo"/>
+      <AnimationBox ref={aniRef} onClick={() => handleDownClick()}>
+        {/* <AnimationBox ref={aniRef} onClick={()=>handleOpenModal()}> */}
+        {/* <AnimationText>▶︎</AnimationText> */}
+        <AnimationText><FontAwesomeIcon icon={faDownLong} /></AnimationText>
+        <IntroImage src={oo} alt="oo_logo" />
       </AnimationBox>
       {/* 소개문구 75% 위치에 고정 */}
       <TextBox ref={ref} animate={animation} variants={customVariants}>
