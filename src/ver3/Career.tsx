@@ -57,6 +57,32 @@ const Title = styled.div`
   `}
 `
 
+const BottomBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1100px;
+`
+
+const Item = styled.div`
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+`
+
+const ItemDate = styled.div`
+  font-size: 14px;
+`
+
+const ItemTitle = styled.div`
+  font-size: 20px;
+  font-family: 'S-CoreDream-7EXTRA_BOLD';
+`
+
 // 경력
 export default function Career() {
   const { ref, animation } = useObserver();
@@ -70,6 +96,12 @@ export default function Career() {
           </Title>
         </TitleBox>
       </TopBox>
+      <BottomBox>
+        <Item>
+          <ItemDate>2024.04 ~ </ItemDate>
+          <ItemTitle>서울소프트</ItemTitle>
+        </Item>
+      </BottomBox>
     </Section>
   )
 }
