@@ -7,6 +7,7 @@ import { motion } from "framer-motion"
 import { customChildVariants, customVariants } from "./lib/styles/animation"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faFolderOpen, faPeopleGroup } from "@fortawesome/free-solid-svg-icons"
+import SemiBold from "./common/SemiBold"
 
 const Section = styled.section`
   width: 100%;
@@ -93,25 +94,71 @@ const ItemTitle = styled.div`
 
 const ItemDate = styled.div`
   font-size: 15px;
+  font-family: 'S-CoreDream-3Light';
 `
 
-const ItemDepartment = styled.div`
+const ItemDepartmentBox = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 5px;
   font-size: 15px;
 `
 
+const Department = styled.div`
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 3px 6px;
+  user-select: none;
+  font-family: 'S-CoreDream-3Light';
+`
+
 const ItemContent = styled.div`
-  margin-top: 5px;
-  font-size: 16px;
+  font-size: 15px;
+  background-color: #f2f2f2;
+  padding: 5px 10px;
+  border-radius: 5px;
+  line-height: 1.6;
+  font-family: 'S-CoreDream-3Light';
+`
+
+const ItemSkillContainer = styled.div`
+  margin-top: 10px;
+  display: flex;
+  gap: 5px;
+  font-family: 'S-CoreDream-3Light';
 `
 
 const ItemSkillBox = styled.div`
+  position: relative;
   display: flex;
-  gap: 5px;
-  margin-top: 20px;
+  cursor: pointer;
+`
+
+const ItemSkillInfoBox = styled.div`
+  position: absolute;
+  display: none;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #4c4c4cc1;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #fff;
+  white-space: nowrap;
+  top: 165%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  ${ItemSkillBox}:hover & {
+    display: flex;
+  }
 `
 
 const ItemSkill = styled.img`
   height: 25px;
+`
+
+const Dot = styled.span`
+  margin-right: 15px;
 `
 
 // 경력
@@ -134,20 +181,32 @@ export default function Career() {
             <ItemTitle>서울소프트</ItemTitle>
             <ItemDate>2024.04 ~ (재직중)</ItemDate>
           </ItemTitleBox>
-          <ItemDepartment>
-            <FontAwesomeIcon icon={faPeopleGroup} /> 모빌리티 개발팀 • 풀스택 개발
-          </ItemDepartment>
+          <ItemDepartmentBox>
+            <Department><FontAwesomeIcon icon={faPeopleGroup} style={{marginRight:'5px'}} />모빌리티 개발팀</Department>
+            <Department>풀스택 개발</Department> 
+          </ItemDepartmentBox>
           <ItemContent>
-            • 운수사 ERP 서비스 개발 <br />
-            • 운수사 ERP 서비스 개발 <br />
-            • 운수사 ERP 서비스 개발 <br />
-            • 운수사 ERP 서비스 개발 <br />
-            • 운수사 ERP 서비스 개발 <br />
+            <Dot>•</Dot>운수사 <SemiBold>ERP 서비스</SemiBold> 개발 <br />
+            <Dot>•</Dot><SemiBold>Django</SemiBold> 기반 <SemiBold>MVT 패턴</SemiBold>을 활용한 웹 서비스 개발 <br />
           </ItemContent>
-          <ItemSkillBox>
-            <ItemSkill src="https://img.shields.io/badge/Django-092E20?style=flat&logo=django&logoColor=white" alt="Django" />
-            <ItemSkill src="https://img.shields.io/badge/Jquery-0769AD?style=flat&logo=jquery&logoColor=white" alt="jquery" />
-          </ItemSkillBox>
+          <ItemSkillContainer>
+            <ItemSkillBox>
+              <ItemSkill src="https://img.shields.io/badge/Django-092E20?style=flat&logo=django&logoColor=white" alt="Django" />
+              <ItemSkillInfoBox>Python기반 웹 프레임워크</ItemSkillInfoBox>
+            </ItemSkillBox>
+            <ItemSkillBox>
+              <ItemSkill src="https://img.shields.io/badge/JQuery-0769AD?style=flat&logo=jquery&logoColor=white" alt="jquery" />
+              <ItemSkillInfoBox>JavaScript 라이브러리</ItemSkillInfoBox>
+            </ItemSkillBox>
+            <ItemSkillBox>
+              <ItemSkill src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white" alt="mysql" />
+              <ItemSkillInfoBox>RDBMS</ItemSkillInfoBox>
+            </ItemSkillBox>
+            <ItemSkillBox>
+              <ItemSkill src="https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonwebservices&logoColor=white" alt="aws" />
+              <ItemSkillInfoBox>EC2, RDS, S3</ItemSkillInfoBox>
+            </ItemSkillBox>
+          </ItemSkillContainer>
         </Item>
       </BottomBox>
     </Section>
