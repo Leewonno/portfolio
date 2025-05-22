@@ -199,6 +199,7 @@ export default function Header() {
   // 이전 기능 유지 위해
   const location = useLocation();
   const currentPath = location.pathname; // 현재 경로
+  const is_home = currentPath === '/';
   const projectPath = `${currentPath.replace(/\/$/, '')}/project`; // 중복 슬래시 방지
 
   return (
@@ -208,19 +209,27 @@ export default function Header() {
           <Logo href="/" style={scroll ? headerFontColorNone : headerFontColor}>LIKE NMIXX</Logo>
         </LogoBox>
         <LinkBox>
-          <Link onClick={()=>handleLinkClick(3)} style={scroll ? headerFontColorNone : headerFontColor}>ABOUT ME</Link>
-          <Link onClick={()=>handleLinkClick(4)} style={scroll ? headerFontColorNone : headerFontColor}>CAREER</Link>
-          {/* <Link onClick={()=>handleLinkClick(2)} style={scroll ? headerFontColorNone : headerFontColor}>SKILLS</Link> */}
-          <Link onClick={()=>handleLinkClick(5)} style={scroll ? headerFontColorNone : headerFontColor}>자기소개서</Link>
+          {is_home ?
+            <>
+              <Link onClick={()=>handleLinkClick(3)} style={scroll ? headerFontColorNone : headerFontColor}>ABOUT ME</Link>
+              <Link onClick={()=>handleLinkClick(4)} style={scroll ? headerFontColorNone : headerFontColor}>CAREER</Link>
+              {/* <Link onClick={()=>handleLinkClick(2)} style={scroll ? headerFontColorNone : headerFontColor}>SKILLS</Link> */}
+              <Link onClick={()=>handleLinkClick(5)} style={scroll ? headerFontColorNone : headerFontColor}>자기소개서</Link>
+            </> : <></>
+          }
           <Link href={projectPath} target="_blank" style={scroll ? headerFontColorNone : headerFontColor}>
             PROJECTS <FontAwesomeIcon icon={faSquareArrowUpRight} />
           </Link>
         </LinkBox>
         <MBox style={menuStyle}>
-          <Link onClick={()=>handleLinkClick(3)} style={scroll ? headerFontColorNone : headerFontColor}>ABOUT ME</Link>
-          <Link onClick={()=>handleLinkClick(4)} style={scroll ? headerFontColorNone : headerFontColor}>CAREER</Link>
-          {/* <Link onClick={()=>handleLinkClick(2)} style={scroll ? headerFontColorNone : headerFontColor}>SKILLS</Link> */}
-          <Link onClick={()=>handleLinkClick(5)} style={scroll ? headerFontColorNone : headerFontColor}>자기소개서</Link>
+          {is_home ? 
+          <>
+            <Link onClick={()=>handleLinkClick(3)} style={scroll ? headerFontColorNone : headerFontColor}>ABOUT ME</Link>
+            <Link onClick={()=>handleLinkClick(4)} style={scroll ? headerFontColorNone : headerFontColor}>CAREER</Link>
+            {/* <Link onClick={()=>handleLinkClick(2)} style={scroll ? headerFontColorNone : headerFontColor}>SKILLS</Link> */}
+            <Link onClick={()=>handleLinkClick(5)} style={scroll ? headerFontColorNone : headerFontColor}>자기소개서</Link>
+          </> : <></>  
+          }
           <Link href={projectPath} target="_blank" style={scroll ? headerFontColorNone : headerFontColor}>
             PROJECTS <FontAwesomeIcon icon={faSquareArrowUpRight} />
           </Link>

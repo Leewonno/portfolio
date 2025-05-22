@@ -6,7 +6,7 @@ import { media } from "./lib/styles/media"
 import { motion } from "framer-motion"
 import { customChildVariants, customVariants } from "./lib/styles/animation"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faFolderOpen, faPeopleGroup } from "@fortawesome/free-solid-svg-icons"
+import { faFolderOpen, faHammer, faPeopleGroup } from "@fortawesome/free-solid-svg-icons"
 import SemiBold from "./common/SemiBold"
 
 const Section = styled.section`
@@ -64,6 +64,10 @@ const BottomBox = styled(motion.div)`
   flex-direction: column;
   align-items: center;
   width: 1100px;
+
+  ${media.phone`
+    width: 100%;
+  `}
 `
 
 const Item = styled(motion.div)`
@@ -74,6 +78,7 @@ const Item = styled(motion.div)`
   display: flex;
   flex-direction: column;
   gap: 8px;
+  box-sizing: border-box;
 `
 const ItemLogo = styled.img`
   width: 75px;
@@ -90,11 +95,19 @@ const ItemTitleBox = styled.div`
 const ItemTitle = styled.div`
   font-size: 25px;
   font-family: 'S-CoreDream-7EXTRA_BOLD';
+
+  ${media.phone`
+    font-size: 18px;
+  `}
 `
 
 const ItemDate = styled.div`
   font-size: 15px;
   font-family: 'S-CoreDream-3Light';
+  
+  ${media.phone`
+    font-size: 14px;
+  `}
 `
 
 const ItemDepartmentBox = styled.div`
@@ -102,6 +115,10 @@ const ItemDepartmentBox = styled.div`
   align-items: center;
   gap: 5px;
   font-size: 15px;
+
+  ${media.phone`
+    font-size: 14px;
+  `}
 `
 
 const Department = styled.div`
@@ -119,13 +136,21 @@ const ItemContent = styled.div`
   border-radius: 5px;
   line-height: 1.6;
   font-family: 'S-CoreDream-3Light';
+
+  ${media.phone`
+    font-size: 14px;
+  `}
 `
 
 const ItemSkillContainer = styled.div`
-  margin-top: 10px;
+  /* margin-top: 10px; */
   display: flex;
   gap: 5px;
   font-family: 'S-CoreDream-3Light';
+  
+  ${media.phone`
+    flex-wrap: wrap;
+  `}
 `
 
 const ItemSkillBox = styled.div`
@@ -139,7 +164,7 @@ const ItemSkillInfoBox = styled.div`
   display: none;
   font-size: 14px;
   font-weight: 600;
-  background-color: #4c4c4cc1;
+  background-color: #333333c1;
   padding: 5px 10px;
   border-radius: 5px;
   color: #fff;
@@ -155,10 +180,18 @@ const ItemSkillInfoBox = styled.div`
 
 const ItemSkill = styled.img`
   height: 25px;
+
+  ${media.phone`
+    height: 22px;
+  `}
 `
 
 const Dot = styled.span`
   margin-right: 15px;
+
+  ${media.phone`
+    margin-right: 5px;
+  `}
 `
 
 // 경력
@@ -176,14 +209,14 @@ export default function Career() {
       </TopBox>
       <BottomBox ref={ref} animate={animation} variants={customVariants}>
         <Item variants={customChildVariants}>
-          <ItemLogo src={seoulsoft} />
+          {/* <ItemLogo src={seoulsoft} /> */}
           <ItemTitleBox>
             <ItemTitle>서울소프트</ItemTitle>
             <ItemDate>2024.04 ~ (재직중)</ItemDate>
           </ItemTitleBox>
           <ItemDepartmentBox>
             <Department><FontAwesomeIcon icon={faPeopleGroup} style={{marginRight:'5px'}} />모빌리티 개발팀</Department>
-            <Department>풀스택 개발</Department> 
+            <Department><FontAwesomeIcon icon={faHammer} style={{marginRight:'5px'}} />풀스택 개발</Department> 
           </ItemDepartmentBox>
           <ItemContent>
             <Dot>•</Dot>운수사 <SemiBold>ERP 서비스</SemiBold> 개발 <br />
