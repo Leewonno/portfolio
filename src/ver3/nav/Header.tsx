@@ -217,7 +217,7 @@ export default function Header() {
               <Link onClick={()=>handleLinkClick(5)} style={scroll ? headerFontColorNone : headerFontColor}>자기소개서</Link>
             </> : <></>
           }
-          <Link href={projectPath} target="_blank" style={scroll ? headerFontColorNone : headerFontColor}>
+          <Link href={"/project"} target="_blank" style={scroll ? headerFontColorNone : headerFontColor}>
             PROJECTS <FontAwesomeIcon icon={faSquareArrowUpRight} />
           </Link>
         </LinkBox>
@@ -230,7 +230,7 @@ export default function Header() {
             <Link onClick={()=>handleLinkClick(5)} style={scroll ? headerFontColorNone : headerFontColor}>자기소개서</Link>
           </> : <></>  
           }
-          <Link href={projectPath} target="_blank" style={scroll ? headerFontColorNone : headerFontColor}>
+          <Link href={"/project"} target="_blank" style={scroll ? headerFontColorNone : headerFontColor}>
             PROJECTS <FontAwesomeIcon icon={faSquareArrowUpRight} />
           </Link>
         </MBox>

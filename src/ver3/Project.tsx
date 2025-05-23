@@ -1,5 +1,7 @@
 import styled from "styled-components"
 import nmixx from "../img/nmixx_gray.png"
+import ProjectManageBox from "./components/project/ProjectManageBox"
+import Section from "./common/Section"
 
 const Container = styled.div`
   display: flex;
@@ -21,6 +23,9 @@ const FixedBackground = styled.img`
 export default function Project() {
   return (
     <Container>
+      <Section>
+        <ProjectManageBox />
+      </Section>
       <FixedBackground src={nmixx} alt="섹션1_배경" />
     </Container>
   )
