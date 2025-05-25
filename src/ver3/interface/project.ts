@@ -1,4 +1,4 @@
-export type ProjectKeyType = "demure" | "novelpedia" | "lebu" | "novelcut" | "mangoz"
+export type ProjectKeyType = "demure" | "novelpedia" | "lebu" | "novelcut" | "mangoz" | "lyrics"
 
 export interface CarouselImageType {
   url: string, // 이미지 url
@@ -14,6 +14,7 @@ export interface ProjectDataType {
   lebu: CarouselImagePropsType;
   novelcut: CarouselImagePropsType;
   mangoz: CarouselImagePropsType;
+  lyrics: CarouselImagePropsType;
 };
 
 export const projectData: ProjectDataType = {
@@ -81,6 +82,18 @@ export const projectData: ProjectDataType = {
         url: "https://blog.kakaocdn.net/dn/cd3UEK/btqDtBbmgKo/alFYbJ2W0eAEwx99KpkJsk/img.jpg",
       }
     ]
+  },
+  lyrics: {
+    data: [
+      {
+        url: "https://pbs.twimg.com/media/EckuYhbU8AIXzaB?format=jpg&name=large",
+      },
+      {
+        url: "https://rgo4.com/files/attach/images/2676751/130/308/018/f4d7b8baadf80abd70c805f29732f097.jpg",
+      },
+      {
+        url: "https://blog.kakaocdn.net/dn/cd3UEK/btqDtBbmgKo/alFYbJ2W0eAEwx99KpkJsk/img.jpg",
+      }
+    ]
   }
-
 };

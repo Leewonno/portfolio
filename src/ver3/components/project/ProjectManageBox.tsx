@@ -21,9 +21,9 @@ export default function ProjectManageBox() {
         <FontAwesomeIcon icon={faTag} />
         Demure
       </ProjectButton>
-      {/* <ProjectButton id={"lyrics"} name="project">
+      <ProjectButton id={"lyrics"} name="project">
         <FontAwesomeIcon icon={faMusic} />LYRICS
-      </ProjectButton> */}
+      </ProjectButton>
       <ProjectButton id={"novelcut"} name="project">
         <FontAwesomeIcon icon={faScissors} />
         노벨컷

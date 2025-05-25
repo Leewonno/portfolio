@@ -2,10 +2,9 @@
 
 import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import styled from "styled-components";
 import { CarouselImagePropsType, CarouselImageType, projectData, ProjectKeyType } from "../interface/project";
-import ProjectContext from "../store/project-context";
 
 const ComponentBox = styled.div`
   width: 100%;
@@ -97,7 +96,7 @@ export default function Carousel(props:CarouselType) {
     setImages(carouselImages);
     setUrl(carouselImages[0].url);
     setIndex(0);
-  }, [project])
+  }, [carouselImages])
 
   const onBack = () => {
     let changeIndex = index - 1;
