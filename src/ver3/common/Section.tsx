@@ -3,11 +3,12 @@ import { media } from "../lib/styles/media"
 import { ReactNode } from "react"
 
 const Component = styled.section`
-  width: 100%;
+  width: 1100px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   box-sizing: border-box;
   align-items: center;
   position: relative;
@@ -17,6 +18,7 @@ const Component = styled.section`
   background-position-x: center;
 
   ${media.phone`
+    width: 100%;
     padding: 20px;
   `}
 `
@@ -25,8 +27,8 @@ interface SectionType {
   children: ReactNode;
 }
 
-export default function Section(props:SectionType) {
-  const {children} = props;
+export default function Section(props: SectionType) {
+  const { children } = props;
   return (
     <Component>
       {children}

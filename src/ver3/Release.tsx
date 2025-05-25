@@ -38,6 +38,10 @@ const LinkBox = styled(motion.div)`
   `}
 `
 
+const LinkButtonBox = styled(motion.div)`
+  position: relative;
+`
+
 const LinkButton = styled(motion.a)`
   display: flex;
   align-items: center;
@@ -61,6 +65,26 @@ const LinkButton = styled(motion.a)`
     padding: 8px 12px;
     font-size: 14px;
   `}
+`
+
+const InfoBox = styled.div`
+  position: absolute;
+  display: none;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #333333c1;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #fff;
+  white-space: nowrap;
+  top: 165%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'S-CoreDream-3Light';
+
+  ${LinkButtonBox}:hover & {
+    display: flex;
+  }
 `
 
 const TextBox = styled(motion.div)`
@@ -118,26 +142,42 @@ export default function Release() {
         <Text variants={customChildVariants}>직접 개발하여 현재 배포 중인 <Bold>프로젝트</Bold>입니다.</Text>
       </TextBox>
       <LinkBox ref={ref} animate={animation} variants={rotateVariants}>
-        <LinkButton variants={rotateChildVariants} href="/" target={"_blank"}>
-          <FontAwesomeIcon icon={faAddressCard} />
-          포트폴리오
-        </LinkButton>
-        <LinkButton variants={rotateChildVariants} href="https://novelcut-1f6f2.web.app/" target={"_blank"}>
-          <FontAwesomeIcon icon={faScissors} />
-          노벨컷
-        </LinkButton>
-        <LinkButton variants={rotateChildVariants} href="https://nmixxfantube-96477.web.app/" target={"_blank"}>
-          <FontAwesomeIcon icon={faFile} />
-          LYRICS
-        </LinkButton>
-        <LinkButton variants={rotateChildVariants} href="https://poetic-druid-deac2a.netlify.app/" target={"_blank"}>
-          <FontAwesomeIcon icon={faPlane} />
-          레부(부산여행)
-        </LinkButton>
-        <LinkButton variants={rotateChildVariants} href="https://novelpedia.com/" target={"_blank"}>
-          <FontAwesomeIcon icon={faBookOpen} />
-          노벨피디아
-        </LinkButton>
+        <LinkButtonBox>
+          <LinkButton variants={rotateChildVariants} href="/" target={"_blank"}>
+            <FontAwesomeIcon icon={faAddressCard} />
+            포트폴리오
+          </LinkButton>
+          <InfoBox>포트폴리오 사이트</InfoBox>
+        </LinkButtonBox>
+        <LinkButtonBox>
+          <LinkButton variants={rotateChildVariants} href="https://novelcut-1f6f2.web.app/" target={"_blank"}>
+            <FontAwesomeIcon icon={faScissors} />
+            노벨컷
+          </LinkButton>
+          <InfoBox>새로운 방식의 소설 연재 사이트</InfoBox>
+        </LinkButtonBox>
+        <LinkButtonBox>
+          <LinkButton variants={rotateChildVariants} href="https://nmixxfantube-96477.web.app/" target={"_blank"}>
+            <FontAwesomeIcon icon={faFile} />
+            LYRICS
+          </LinkButton>
+          <InfoBox>동영상 자막 입력 도우미</InfoBox>
+        </LinkButtonBox>
+        <LinkButtonBox>
+          <LinkButton variants={rotateChildVariants} href="https://poetic-druid-deac2a.netlify.app/" target={"_blank"}>
+            <FontAwesomeIcon icon={faPlane} />
+            레부(부산여행)
+          </LinkButton>
+          <InfoBox>부산 여행 정보 사이트</InfoBox>
+        </LinkButtonBox>
+        <LinkButtonBox>
+          <LinkButton variants={rotateChildVariants} href="https://novelpedia.com/" target={"_blank"}>
+            <FontAwesomeIcon icon={faBookOpen} />
+            노벨피디아
+          </LinkButton>
+          <InfoBox>소설·만화 리뷰 위키</InfoBox>
+        </LinkButtonBox>
+
       </LinkBox>
       <ProjectButton href={projectPath} target={'_blank'}>
         프로젝트 상세

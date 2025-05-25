@@ -8,8 +8,6 @@ import { motion } from 'framer-motion';
 import { customChildVariants, customVariants } from "./lib/styles/animation"
 import useObserver from "./lib/hook/useObserver"
 import Bold from "./common/Bold";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDownLong } from "@fortawesome/free-solid-svg-icons";
 
 const Section = styled.section`
   width: 100%;
@@ -46,7 +44,8 @@ const IntroImage = styled.img`
 const AnimationText = styled.div`
   user-select: none;
   color: #fff;
-  font-family: 'S-CoreDream-7EXTRA_BOLD';
+  /* font-family: 'S-CoreDream-7EXTRA_BOLD'; */
+  font-family: 'S-CoreDream-3Light';
   display: none;
   width: 100%;
   height: 100%;
@@ -197,7 +196,10 @@ export default function Intro() {
       <AnimationBox ref={aniRef} onClick={() => handleDownClick()}>
         {/* <AnimationBox ref={aniRef} onClick={()=>handleOpenModal()}> */}
         {/* <AnimationText>▶︎</AnimationText> */}
-        <AnimationText><FontAwesomeIcon icon={faDownLong} /></AnimationText>
+        <AnimationText>
+          {/* <FontAwesomeIcon icon={faDownLong} /> */}
+          Click
+        </AnimationText>
         <IntroImage src={oo} alt="oo_logo" />
       </AnimationBox>
       {/* 소개문구 75% 위치에 고정 */}

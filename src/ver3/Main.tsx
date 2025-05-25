@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom"
 import Header from "./nav/Header"
 import Footer from "./nav/Footer"
+import { ProjectProvider } from "./store/project-context"
 
 export default function Main() {
   // Ver3
@@ -12,9 +13,11 @@ export default function Main() {
   // 6. Header, Footer Version 별로 분리
   return (
     <>
-      <Header />
-      <Outlet />
-      <Footer />
+      <ProjectProvider>
+        <Header />
+        <Outlet />
+        <Footer />
+      </ProjectProvider>
     </>
   )
 }
