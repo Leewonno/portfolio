@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import bg from "../img/nmixx.png"
-import seoulsoft from "../img/new/seoulsoft.png"
+// import seoulsoft from "../img/new/seoulsoft.png"
 import useObserver from "./lib/hook/useObserver"
 import { media } from "./lib/styles/media"
 import { motion } from "framer-motion"

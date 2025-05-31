@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import bg from "../img/nmixx.png"
+import bg from "../img/new/nmixx_concert.jpg";
 import lee from "../img/new/lee2.png"
 import back from "../img/new/back.jpg"
 import { motion } from "framer-motion"
@@ -21,6 +21,7 @@ const Section = styled.section`
   position: relative;
   /* background-color: #fff; */
   scroll-snap-align: start;
+  filter: brightness(0.8);
   background: url(${bg});
   background-size: cover;
   background-repeat: no-repeat;
@@ -112,18 +113,6 @@ const Image = styled.img`
   width: 80%;
   object-fit: cover;
   object-position: 0px 5px;
-`
-
-const MyBox = styled.div`
-  
-`
-
-const MyTitle = styled.div`
-  
-`
-
-const MyContent = styled.div`
-  
 `
 
 const RightBox = styled(motion.div)`
