@@ -32,6 +32,11 @@ const Image = styled.img`
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
+  transition: all 0.5s;
+  
+  ${ImageBox}:hover & {
+    transform: scale(1.1);
+  }  
 `
 
 const ManageBox = styled.div`
