@@ -23,12 +23,12 @@ export const customVariants = {
 };
 
 export const customChildVariants = {
-  hidden: { opacity: 0, y: 50 },
+  hidden: { opacity: 0, y: 40 },
   visible: { opacity: 1, y: 0, transition: { duration: 1, ease: "easeOut" } },
 };
 
 export const customChildDownVariants = {
-  hidden: { opacity: 0, y: -50 },
+  hidden: { opacity: 0, y: -40 },
   visible: { opacity: 1, y: 0, transition: { duration: 1, ease: "easeOut" } },
 };
 

@@ -1,5 +1,3 @@
-'use client'
-
 import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
@@ -21,12 +19,19 @@ const ViewBox = styled.div`
 
 const ImageBox = styled.div`
   width: 100%;
+  height: 100%;
   display: flex;
+`
+
+const ImageLink = styled.a`
+  cursor: zoom-in;
 `
 
 const Image = styled.img`
   width: 100%;
+  height: 100%;
   object-fit: cover;
+  border-radius: 10px;
 `
 
 const ManageBox = styled.div`
@@ -45,7 +50,7 @@ const ArrowButton = styled.div`
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
-  color: #fff;
+  color: #ededed;
 `
 
 const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
@@ -67,7 +72,7 @@ const IndicatorButton = styled.div`
   width: 10px;
   height: 10px;
   background-color: #c6c6c6;
-  box-shadow: 0px 0px 25px -5px #000;
+  box-shadow: 0px 0px 10px -2px #000;
   transition: all 0.5s;
   cursor: pointer;
 
@@ -125,7 +130,9 @@ export default function Carousel(props:CarouselType) {
     <ComponentBox>
       <ViewBox>
         <ImageBox>
+          <ImageLink href={url} target="_blank">
           <Image src={url} alt={`carousel_image_${index}`} />
+          </ImageLink>
         </ImageBox>
       </ViewBox>
       {

@@ -12,7 +12,7 @@ const Box = styled.div`
   gap: 5px;
   box-sizing: border-box;
   border-radius: 10px;
-  background-color: #fff;
+  background-color: #1f1f1f;
 `
 
 const LeftBox = styled.div`
@@ -20,7 +20,8 @@ const LeftBox = styled.div`
 `
 
 const RightBox = styled.div`
-  
+  color: #fff;
+  font-family: 'S-CoreDream-3Light';
 `
 
 export default function ProjectViewBox() {

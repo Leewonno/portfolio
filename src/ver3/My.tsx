@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import bg from "../img/new/nmixx_concert.jpg";
+import bg from "../img/nmixx.png";
 import lee from "../img/new/lee2.png"
 import back from "../img/new/back.jpg"
 import { motion } from "framer-motion"
@@ -21,7 +21,6 @@ const Section = styled.section`
   position: relative;
   /* background-color: #fff; */
   scroll-snap-align: start;
-  filter: brightness(0.8);
   background: url(${bg});
   background-size: cover;
   background-repeat: no-repeat;
@@ -37,15 +36,16 @@ const TopBox = styled(motion.div)`
 `
 
 const BottomBox = styled.div`
-  width: 1100px;
+  width: 1180px;
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
   gap: 20px;
   box-sizing: border-box;
 
   ${media.phone`
-    flex-direction: column;
-    align-items: center;
+
     width: 100%;
     gap: 20px;
   `}
@@ -76,14 +76,10 @@ const Title = styled.div`
   `}
 `
 
-const LeftBox = styled.div`
-  width: 300px;
+const CoreBox = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  background-color: #fff;
-  border-radius: 10px;
   box-sizing: border-box;
 
   ${media.phone`
@@ -96,11 +92,11 @@ const ImageBox = styled.div`
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  background-color: #f4f4f4;
+  /* background-color: #f4f4f4; */
   display: flex;
   justify-content: center;
-  overflow: hidden;
-  background: url(${back});
+  /* overflow: hidden; */
+  /* background: url(${back}); */
 
   ${media.phone`
     width: 100%;
@@ -116,7 +112,7 @@ const Image = styled.img`
 `
 
 const RightBox = styled(motion.div)`
-  width: 780px;
+  width: 1180px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -226,15 +222,11 @@ export default function My() {
       {/* 하단박스 */}
       <BottomBox>
         {/* 사진 or 자기소개 */}
-        <LeftBox>
+        {/* <CoreBox>
           <ImageBox>
-            <Image src={lee} />
-          </ImageBox>
-          {/* <MyBox>
-            <MyTitle>개발자가 된 이유</MyTitle>
-            <MyContent></MyContent>
-          </MyBox> */}
-        </LeftBox>
+              <Image src={lee} />
+            </ImageBox>
+        </CoreBox> */}
         {/* 나에 대한 정보 */}
         <RightBox>
           <ItemBox ref={ref} animate={animation} variants={rotateVariants}>
