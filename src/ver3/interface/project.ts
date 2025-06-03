@@ -31,6 +31,7 @@ export type ProjectKeyType = "demure" | "novelpedia" | "lebu" | "novelcut" | "ma
 
 export interface CarouselImageType {
   url: string, // 이미지 url
+  title: string,
 }
 
 export interface CarouselImagePropsType {
@@ -49,55 +50,55 @@ export interface ProjectDataType {
 export const projectData: ProjectDataType = {
   demure: {
     data: [
-      {url: demure1},
-      {url: demure2},
-      {url: demure3},
-      {url: demure4},
-      {url: demure5},
-      {url: demure6},
-      {url: demure7},
-      {url: demure8},
-      {url: demure9},
-      {url: demure10},
-      {url: demure11},
+      { url: demure1, title: '메인페이지(Main)' },
+      { url: demure2, title: '로그인(Login)' },
+      { url: demure3, title: '회원가입(SignUp)' },
+      { url: demure4, title: '검색(Search)' },
+      { url: demure5, title: '장바구니(Cart)' },
+      { url: demure6, title: '주문내역(Order)' },
+      { url: demure7, title: '배송정보(Post)' },
+      { url: demure8, title: '배송정보입력(Post)' },
+      { url: demure9, title: '이벤트(Event)' },
+      { url: demure10, title: '챗봇(ChatBot)' },
+      { url: demure11, title: '공지사항(Notice)' },
     ]
   },
   novelpedia: {
     data: [
-      {url: novelpedia1},
-      {url: novelpedia2},
-      {url: novelpedia3},
-      {url: novelpedia4},
-      {url: novelpedia5},
+      { url: novelpedia1, title:'메인페이지(Main)' },
+      { url: novelpedia2, title:'작품(Novel)' },
+      { url: novelpedia3, title:'작품편집(NovelEdit)' },
+      { url: novelpedia4, title:'역사(History)' },
+      { url: novelpedia5, title:'목록(List)' },
     ]
   },
   lebu: {
     data: [
-      {url: lebu1},
-      {url: lebu2},
-      {url: lebu3},
-      {url: lebu4},
+      { url: lebu1, title:'메인페이지(Main)' },
+      { url: lebu2, title:'메인페이지(Main)' },
+      { url: lebu3, title:'관광지(TouristAttraction)' },
+      { url: lebu4, title:'식당(Food)' },
 
     ]
   },
   novelcut: {
     data: [
-      {url: novelcut1},
-      {url: novelcut2},
-      {url: novelcut3},
-      {url: novelcut4},
-      {url: novelcut5},
+      { url: novelcut1, title:'메인페이지(Main)' },
+      { url: novelcut2, title:'작품정보(Novel)' },
+      { url: novelcut3, title:'작품보기(View)' },
+      { url: novelcut4, title:'작품생성(Create)' },
+      { url: novelcut5, title:'회차생성(Write)' },
     ]
   },
   mangoz: {
     data: [
-      {url: mangoz},
+      { url: mangoz, title:'메인페이지(Main)' },
     ]
   },
   lyrics: {
     data: [
-      {url: lyrics1},
-      {url: lyrics2},
+      { url: lyrics1, title:'메인페이지(Main)' },
+      { url: lyrics2, title:'자막변환(Transform)' },
     ]
   }
 };

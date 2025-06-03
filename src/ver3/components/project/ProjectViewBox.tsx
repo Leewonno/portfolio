@@ -24,6 +24,10 @@ const RightBox = styled.div`
   font-family: 'S-CoreDream-3Light';
 `
 
+const ProjectBox = styled.div`
+  width: 100%;
+`
+
 export default function ProjectViewBox() {
 
   const context = useContext(ProjectContext);
@@ -37,8 +41,16 @@ export default function ProjectViewBox() {
         <Carousel project={project} />
       </LeftBox>
       <RightBox>
-        ssss
+        {
+        project === 'demure' ?
+          <ProjectBox>
+            Demure
+          </ProjectBox>
+          :
+          <>22</>
+        }
       </RightBox>
     </Box>
   )
 }
+

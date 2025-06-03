@@ -65,7 +65,7 @@ const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
 const IndicatorBox = styled.div`
   position: absolute;
   left: 50%;
-  bottom: 10px;
+  bottom: 45px;
   display: flex;
   gap: 10px;
   transform: translateX(-50%);
@@ -86,25 +86,37 @@ const IndicatorButton = styled.div`
   }
 `
 
+const TextBox = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'S-CoreDream-7EXTRA_BOLD';
+  color: #fff;
+  margin-top: 15px;
+`
+
 interface CarouselType {
-  project:ProjectKeyType; 
+  project: ProjectKeyType;
 }
 
-export default function Carousel(props:CarouselType) {
-  const {project} = props;
+export default function Carousel(props: CarouselType) {
+  const { project } = props;
 
-  const carousel:CarouselImagePropsType = projectData[project]
-  const carouselImages:CarouselImageType[] = carousel.data
+  const carousel: CarouselImagePropsType = projectData[project]
+  const carouselImages: CarouselImageType[] = carousel.data
 
   // const [carousel, setCarousel] = useState<CarouselImagePropsType>(projectData[project]);
   const [images, setImages] = useState<CarouselImageType[]>(carouselImages);
 
   const [url, setUrl] = useState<string>(carouselImages[0].url);
+  const [title, setTitle] = useState<string>(carouselImages[0].title);
   const [index, setIndex] = useState<number>(0);
 
-  useEffect(()=>{
+  useEffect(() => {
     setImages(carouselImages);
     setUrl(carouselImages[0].url);
+    setTitle(carouselImages[0].title);
     setIndex(0);
   }, [carouselImages])
 
@@ -114,6 +126,7 @@ export default function Carousel(props:CarouselType) {
       changeIndex = images.length - 1;
     }
     setUrl(images[changeIndex].url)
+    setTitle(images[changeIndex].title)
     setIndex(changeIndex)
   }
 
@@ -123,11 +136,13 @@ export default function Carousel(props:CarouselType) {
       changeIndex = 0;
     }
     setUrl(images[changeIndex].url)
+    setTitle(images[changeIndex].title)
     setIndex(changeIndex)
   }
 
   const onIndicator = (idx: number) => {
     setUrl(images[idx].url)
+    setTitle(images[idx].title)
     setIndex(idx)
   }
 
@@ -136,7 +151,7 @@ export default function Carousel(props:CarouselType) {
       <ViewBox>
         <ImageBox>
           <ImageLink href={url} target="_blank">
-          <Image src={url} alt={`carousel_image_${index}`} />
+            <Image src={url} alt={`carousel_image_${index}`} />
           </ImageLink>
         </ImageBox>
       </ViewBox>
@@ -160,6 +175,9 @@ export default function Carousel(props:CarouselType) {
           :
           <></>
       }
+      <TextBox>
+        {title}
+      </TextBox>
     </ComponentBox>
   )
 }
