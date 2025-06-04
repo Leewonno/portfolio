@@ -4,6 +4,10 @@ import { useContext } from "react"
 import ProjectContext from "../../store/project-context"
 import DemureBox from "./views/DemureBox"
 import LyricsBox from "./views/LyricsBox"
+import NovelcutBox from "./views/NovelcutBox"
+import LebuBox from "./views/LebuBox"
+import MangozBox from "./views/MangozBox"
+import NovelpediaBox from "./views/NovelpediaBox"
 
 const Box = styled.div`
   width: 100%;
@@ -53,7 +57,19 @@ export default function ProjectViewBox() {
         project === 'lyrics' ?
           <LyricsBox />
           :
-          <>22</>
+        project === 'novelcut' ?
+          <NovelcutBox />
+          :
+        project === 'lebu' ?
+          <LebuBox />
+          :
+        project === 'mangoz' ?
+          <MangozBox />
+          :
+        project === 'novelpedia' ?
+          <NovelpediaBox />
+          :
+          <></>
         }
       </RightBox>
     </Box>

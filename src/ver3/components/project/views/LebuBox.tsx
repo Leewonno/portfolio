@@ -8,11 +8,11 @@ const Box = styled.div`
   flex-direction: column;
 `
 
-export default function DemureBox() {
+export default function LebuBox() {
 
   return (
     <Box>
-      <Title>가구 쇼핑몰, Demure</Title>
+      <Title>부산 관광 정보 사이트, LEBU</Title>
       <Division>팀 프로젝트</Division>
     </Box>
   )

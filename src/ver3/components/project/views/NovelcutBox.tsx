@@ -8,12 +8,12 @@ const Box = styled.div`
   flex-direction: column;
 `
 
-export default function DemureBox() {
+export default function NovelcutBox() {
 
   return (
     <Box>
-      <Title>가구 쇼핑몰, Demure</Title>
-      <Division>팀 프로젝트</Division>
+      <Title>웹소설 연재 사이트, NOVELCUT</Title>
+      <Division>개인 프로젝트</Division>
     </Box>
   )
 }

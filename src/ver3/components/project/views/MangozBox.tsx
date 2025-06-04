@@ -8,11 +8,11 @@ const Box = styled.div`
   flex-direction: column;
 `
 
-export default function DemureBox() {
+export default function MangozBox() {
 
   return (
     <Box>
-      <Title>가구 쇼핑몰, Demure</Title>
+      <Title>음악 스트리밍 사이트, MangoZ</Title>
       <Division>팀 프로젝트</Division>
     </Box>
   )
