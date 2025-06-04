@@ -35,7 +35,7 @@ const Image = styled.img`
   transition: all 0.5s;
   
   ${ImageBox}:hover & {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }  
 `
 

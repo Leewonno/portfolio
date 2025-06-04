@@ -2,6 +2,8 @@ import styled from "styled-components"
 import Carousel from "../../common/Carousel"
 import { useContext } from "react"
 import ProjectContext from "../../store/project-context"
+import DemureBox from "./views/DemureBox"
+import LyricsBox from "./views/LyricsBox"
 
 const Box = styled.div`
   width: 100%;
@@ -9,7 +11,7 @@ const Box = styled.div`
   display: flex;
   justify-content: space-between;
   overflow-x: hidden;
-  gap: 5px;
+  gap: 20px;
   box-sizing: border-box;
   border-radius: 10px;
   background-color: #1f1f1f;
@@ -20,12 +22,15 @@ const LeftBox = styled.div`
 `
 
 const RightBox = styled.div`
+  width: 580px;
   color: #fff;
   font-family: 'S-CoreDream-3Light';
 `
 
 const ProjectBox = styled.div`
   width: 100%;
+  display: flex;
+  flex-direction: column;
 `
 
 export default function ProjectViewBox() {
@@ -43,9 +48,10 @@ export default function ProjectViewBox() {
       <RightBox>
         {
         project === 'demure' ?
-          <ProjectBox>
-            Demure
-          </ProjectBox>
+          <DemureBox />
+          :
+        project === 'lyrics' ?
+          <LyricsBox />
           :
           <>22</>
         }
