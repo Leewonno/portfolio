@@ -52,7 +52,7 @@ const ArrowButton = styled.div`
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 50%;
+  top: calc(50% - 20px);
   transform: translateY(-50%);
   cursor: pointer;
   color: #ededed;
