@@ -8,15 +8,16 @@ import NovelcutBox from "./views/NovelcutBox"
 import LebuBox from "./views/LebuBox"
 import MangozBox from "./views/MangozBox"
 import NovelpediaBox from "./views/NovelpediaBox"
+import PortfolioBox from "./views/PortfolioBox"
 
 const Box = styled.div`
   width: 100%;
-  padding: 20px;
+  padding: 30px;
   display: flex;
   justify-content: space-between;
   overflow-x: hidden;
   gap: 20px;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   border-radius: 10px;
   background-color: #1f1f1f;
 `
@@ -68,6 +69,9 @@ export default function ProjectViewBox() {
           :
         project === 'novelpedia' ?
           <NovelpediaBox />
+          :
+        project === 'portfolio' ?
+          <PortfolioBox />
           :
           <></>
         }

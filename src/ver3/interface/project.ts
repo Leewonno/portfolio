@@ -26,8 +26,10 @@ import novelpedia4 from '../../img/new/novelpedia/novelpedia_history.png';
 import novelpedia5 from '../../img/new/novelpedia/novelpedia_list.png';
 import lyrics1 from '../../img/new/lyrics/lyrics_main.png';
 import lyrics2 from '../../img/new/lyrics/lyrics_tran.png';
+import portfolio1 from '../../img/new/portfolio/portfolio_main.png';
+import portfolio2 from '../../img/new/portfolio/portfolio_main2.png';
 
-export type ProjectKeyType = "demure" | "novelpedia" | "lebu" | "novelcut" | "mangoz" | "lyrics"
+export type ProjectKeyType = "demure" | "novelpedia" | "lebu" | "novelcut" | "mangoz" | "lyrics" | "portfolio"
 
 export interface CarouselImageType {
   url: string, // 이미지 url
@@ -45,9 +47,16 @@ export interface ProjectDataType {
   novelcut: CarouselImagePropsType;
   mangoz: CarouselImagePropsType;
   lyrics: CarouselImagePropsType;
+  portfolio: CarouselImagePropsType;
 };
 
 export const projectData: ProjectDataType = {
+  portfolio: {
+    data: [
+      { url: portfolio1, title: '메인페이지(Main)' },
+      { url: portfolio2, title: '메인페이지(Main)' },
+    ]
+  },
   demure: {
     data: [
       { url: demure1, title: '메인페이지(Main)' },
