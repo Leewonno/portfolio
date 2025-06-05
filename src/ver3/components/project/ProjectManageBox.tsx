@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import ProjectButton from "./ProjectButton"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faAddressCard, faBookOpen, faHeadphones, faLocationDot, faMusic, faScissors, faTag, faUser } from "@fortawesome/free-solid-svg-icons"
+import { faAddressCard, faBookOpen, faHeadphones, faLocationDot, faMusic, faScissors, faTag } from "@fortawesome/free-solid-svg-icons"
 
 const Box = styled.div`
   display: flex;
@@ -21,7 +21,7 @@ export default function ProjectManageBox() {
         <FontAwesomeIcon icon={faAddressCard} />
         포트폴리오
       </ProjectButton>
-      <ProjectButton id={"demure"} name="project" checked={true}>
+      <ProjectButton id={"demure"} name="project">
         <FontAwesomeIcon icon={faTag} />
         Demure
       </ProjectButton>

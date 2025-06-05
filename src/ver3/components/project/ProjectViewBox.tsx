@@ -32,12 +32,6 @@ const RightBox = styled.div`
   font-family: 'S-CoreDream-3Light';
 `
 
-const ProjectBox = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-`
-
 export default function ProjectViewBox() {
 
   const context = useContext(ProjectContext);

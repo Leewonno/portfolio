@@ -4,6 +4,7 @@ import styled from "styled-components"
 const Component = styled.span`
   font-family: 'S-CoreDream-3Light';
   font-size: 16px;
+  margin-bottom: 10px;
 `
 
 interface ComponentProps {
