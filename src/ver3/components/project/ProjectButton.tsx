@@ -5,6 +5,8 @@ import { ProjectKeyType } from "../../interface/project";
 
 const Component = styled.div`
   box-sizing: border-box;
+  white-space: nowrap;
+  cursor: inherit;
 `
 
 const RadioInput = styled.input`
@@ -25,10 +27,11 @@ const InputLabel = styled.label`
   padding: 10px 15px;
   background-color: #fff;
   border-radius: 20px;
-  cursor: pointer;
+  /* cursor: pointer; */
   user-select: none;
   font-family: 'S-CoreDream-3Light';
   font-weight: 600;
+  cursor: inherit;
 `
 
 interface ComponentType {

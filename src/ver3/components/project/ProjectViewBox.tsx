@@ -17,7 +17,7 @@ const Box = styled.div`
   justify-content: space-between;
   overflow-x: hidden;
   gap: 20px;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
   border-radius: 10px;
   background-color: #1f1f1f;
 `

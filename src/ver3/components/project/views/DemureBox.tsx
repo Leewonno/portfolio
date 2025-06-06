@@ -2,6 +2,7 @@ import styled from "styled-components"
 import Title from "../../../common/Title"
 import Division from "../../../common/Division"
 import SkillBox from "../../../common/SkillBox"
+import Content from "../../../common/Content"
 
 const Box = styled.div`
   width: 100%;
@@ -24,6 +25,9 @@ export default function DemureBox() {
         { logo: 'amazons3', content: 'AWS S3', color: '569A31', division: true },
         { logo: 'postgresql', content: 'PostgreSQL', color: '4169E1' },
       ]} />
+      <Content>
+        포트폴리오 사이트입니다.
+      </Content>
     </Box>
   )
 }

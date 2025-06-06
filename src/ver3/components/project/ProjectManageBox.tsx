@@ -2,19 +2,29 @@ import styled from "styled-components"
 import ProjectButton from "./ProjectButton"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faAddressCard, faBookOpen, faHeadphones, faLocationDot, faMusic, faScissors, faTag } from "@fortawesome/free-solid-svg-icons"
+import { useHorizontalScroll } from "../../lib/utils/useScroll"
+import scroll from "../../../img/new/sm_scroll.png"
 
 const Box = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   overflow-x: hidden;
-  gap: 5px;
+  gap: 8px;
   box-sizing: border-box;
-  margin-bottom: 20px;
+  padding: 20px;
+  /* margin-bottom: 20px; */
+  width: 700px;
+  cursor: url(${scroll}) 0 0, progress;
+
+  * {
+    cursor: inherit;
+  }
 `
 
 export default function ProjectManageBox() {
+  const scrollRef = useHorizontalScroll();
   return (
-    <Box>
+    <Box ref={scrollRef}>
       {/* 프로젝트 버튼 */}
       {/* 클릭된 버튼에 따른 프로젝트를 보여줌 */}
       <ProjectButton id={"portfolio"} name="project" checked={true}>

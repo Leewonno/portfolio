@@ -1,14 +1,23 @@
 import styled from "styled-components"
-import bg from "../img/nmixx.png";
-import lee from "../img/new/lee2.png"
-import back from "../img/new/back.jpg"
 import { motion } from "framer-motion"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faBoxArchive, faCalendar, faEnvelope, faGraduationCap, faPaperclip, faPaperPlane, faPlaneDeparture, faUser } from "@fortawesome/free-solid-svg-icons"
+import {
+  faBoxArchive,
+  faCalendar,
+  faEnvelope,
+  faGraduationCap, 
+  faPaperclip, 
+  faPaperPlane, 
+  faPlaneDeparture, 
+  faUser
+} from "@fortawesome/free-solid-svg-icons"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import useObserver from "./lib/hook/useObserver"
 import { customChildVariants, rotateChildVariants, rotateVariants } from "./lib/styles/animation"
 import { media } from "./lib/styles/media"
+import bg from "../img/nmixx.png";
+// import lee from "../img/new/lee2.png"
+// import back from "../img/new/back.jpg"
 
 const Section = styled.section`
   width: 100%;
@@ -22,6 +31,7 @@ const Section = styled.section`
   /* background-color: #fff; */
   scroll-snap-align: start;
   background: url(${bg});
+  /* background-image: url('/public/nmixx.png'); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
@@ -76,40 +86,40 @@ const Title = styled.div`
   `}
 `
 
-const CoreBox = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  box-sizing: border-box;
+// const CoreBox = styled.div`
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   box-sizing: border-box;
 
-  ${media.phone`
-    width: 100%;
-    padding: 20px;
-  `}
-`
+//   ${media.phone`
+//     width: 100%;
+//     padding: 20px;
+//   `}
+// `
 
-const ImageBox = styled.div`
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  /* background-color: #f4f4f4; */
-  display: flex;
-  justify-content: center;
-  /* overflow: hidden; */
-  /* background: url(${back}); */
+// const ImageBox = styled.div`
+//   width: 250px;
+//   height: 250px;
+//   border-radius: 50%;
+//   /* background-color: #f4f4f4; */
+//   display: flex;
+//   justify-content: center;
+//   /* overflow: hidden; */
+//   /* background: url(${back}); */
 
-  ${media.phone`
-    width: 100%;
-    height: auto;
-    aspect-ratio: 1 / 1;
-  `}
-`
+//   ${media.phone`
+//     width: 100%;
+//     height: auto;
+//     aspect-ratio: 1 / 1;
+//   `}
+// `
 
-const Image = styled.img`
-  width: 80%;
-  object-fit: cover;
-  object-position: 0px 5px;
-`
+// const Image = styled.img`
+//   width: 80%;
+//   object-fit: cover;
+//   object-position: 0px 5px;
+// `
 
 const RightBox = styled(motion.div)`
   width: 1180px;
@@ -233,49 +243,49 @@ export default function My() {
             {/* 이름 */}
             <Item variants={rotateChildVariants}>
               <LeftItem>
-                <StyledFontAwesomeIcon icon={faUser}/>
+                <StyledFontAwesomeIcon icon={faUser} />
               </LeftItem>
               <RightItem>
                 <ItemTitle>이름</ItemTitle>
-                <ItemContent>이원노</ItemContent>  
+                <ItemContent>이원노</ItemContent>
               </RightItem>
             </Item>
             {/* 생년월일 */}
             <Item variants={rotateChildVariants}>
               <LeftItem>
-                <StyledFontAwesomeIcon icon={faCalendar}/>
+                <StyledFontAwesomeIcon icon={faCalendar} />
               </LeftItem>
               <RightItem>
                 <ItemTitle>생년월일</ItemTitle>
-                <ItemContent>1999.08.03</ItemContent>  
+                <ItemContent>1999.08.03</ItemContent>
               </RightItem>
             </Item>
             {/* 최종학력 */}
             <Item variants={rotateChildVariants}>
               <LeftItem>
-                <StyledFontAwesomeIcon icon={faGraduationCap}/>
+                <StyledFontAwesomeIcon icon={faGraduationCap} />
               </LeftItem>
               <RightItem>
                 <ItemTitle>최종학력</ItemTitle>
-                <ItemContent>남서울대학교</ItemContent>  
-                <ItemContent>(컴퓨터소프트웨어학과)</ItemContent>  
+                <ItemContent>남서울대학교</ItemContent>
+                <ItemContent>(컴퓨터소프트웨어학과)</ItemContent>
               </RightItem>
             </Item>
             {/* 참여활동 */}
             <Item variants={rotateChildVariants}>
               <LeftItem>
-                <StyledFontAwesomeIcon icon={faPlaneDeparture}/>
+                <StyledFontAwesomeIcon icon={faPlaneDeparture} />
               </LeftItem>
               <RightItem>
                 <ItemTitle>참여활동</ItemTitle>
-                <ItemContent>포스코 X 코딩온 웹 풀스택 부트캠프 9기</ItemContent>  
-                <ItemContent>(2023.07~2023.12)</ItemContent>  
+                <ItemContent>포스코 X 코딩온 웹 풀스택 부트캠프 9기</ItemContent>
+                <ItemContent>(2023.07~2023.12)</ItemContent>
               </RightItem>
             </Item>
             {/* 아카이빙 */}
             <Item variants={rotateChildVariants}>
               <LeftItem>
-                <StyledFontAwesomeIcon icon={faBoxArchive}/>
+                <StyledFontAwesomeIcon icon={faBoxArchive} />
               </LeftItem>
               <RightItem>
                 <ItemTitle>아카이빙</ItemTitle>
@@ -283,22 +293,22 @@ export default function My() {
                   <Link href="https://github.com/Leewonno" target="_blank" rel="noreferrer">
                     <StyledFontAwesomeIcon icon={faGithub} style={{ fontSize: "25px", color: "black" }} /> Github
                   </Link>
-                </ItemContent>  
+                </ItemContent>
               </RightItem>
             </Item>
             {/* 이메일 */}
             <Item variants={rotateChildVariants}>
               <LeftItem>
-                <StyledFontAwesomeIcon icon={faEnvelope}/>
+                <StyledFontAwesomeIcon icon={faEnvelope} />
               </LeftItem>
               <RightItem>
                 <ItemTitle>이메일</ItemTitle>
                 <ItemContent>
                   <Link href="mailto:dldnjssh123@naver.com">
-                    <StyledFontAwesomeIcon icon={faPaperPlane} style={{ fontSize: "20px", color: "black" }} /> 
+                    <StyledFontAwesomeIcon icon={faPaperPlane} style={{ fontSize: "20px", color: "black" }} />
                     dldnjssh123@naver.com
                   </Link>
-                </ItemContent>  
+                </ItemContent>
               </RightItem>
             </Item>
           </ItemBox>

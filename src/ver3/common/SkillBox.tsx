@@ -4,6 +4,7 @@ const Component = styled.div`
   display: flex;
   justify-content: flex-start;
   gap: 8px;
+  margin-bottom: 15px;
 `
 
 const Skill = styled.div`

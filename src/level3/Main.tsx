@@ -4,12 +4,14 @@ import MainIntroduce from "../level2/MainIntroduce";
 import MainMy from "../level2/MainMy";
 import MainProject from "../level2/MainProject";
 import MainSkill from "../level2/MainSkill";
+import Header from "./HeaderVersion1";
 
 export default function MainVer1() {
 
 
   return (
     <main className={main.main}>
+      <Header></Header>
       <MainIntroduce></MainIntroduce>
       <MainMy></MainMy>
       <MainSkill></MainSkill>
