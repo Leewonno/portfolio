@@ -2,6 +2,7 @@ import styled from "styled-components"
 import Title from "../../../common/Title"
 import Division from "../../../common/Division"
 import SkillBox from "../../../common/SkillBox"
+import lambda from "../../../../img/new/aws-lambda.svg"
 
 const Box = styled.div`
   width: 100%;
@@ -19,7 +20,7 @@ export default function NovelpediaBox() {
         { logo: 'Jquery', content: '제이쿼리(JQuery)', color: '0769AD', },
         { logo: 'JavaScript', content: '자바스크립트(JavaScript)', color: 'F7DF1E', division: true },
         { logo: 'python', content: 'Python', color: '3776AB' },
-        { logo: 'awslambda', content: 'AWS Lambda', color: 'FF9900', division: true },
+        { logo: 'awslambda', content: 'AWS Lambda', color: 'FF9900', division: true, img: lambda },
         { logo: 'firebase', content: 'Firebase Firestore', color: 'FFCA28' },
       ]} />
     </Box>

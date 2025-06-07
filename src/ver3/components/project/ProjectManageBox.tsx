@@ -12,13 +12,16 @@ const Box = styled.div`
   gap: 8px;
   box-sizing: border-box;
   padding: 20px;
-  /* margin-bottom: 20px; */
   width: 700px;
-  cursor: url(${scroll}) 0 0, progress;
+  cursor: url(${scroll}) 5 5, progress;
 
   * {
     cursor: inherit;
   }
+
+  /* &:active{
+    cursor: pointer;
+  } */
 `
 
 export default function ProjectManageBox() {

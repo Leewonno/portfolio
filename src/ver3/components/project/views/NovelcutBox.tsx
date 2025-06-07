@@ -22,7 +22,7 @@ export default function NovelcutBox() {
         { logo: 'nodedotjs', content: 'Node.js', color: '339933' },
         { logo: 'firebase', content: 'Firebase(재배포)', color: 'FFCA28', division: true },
         { logo: 'Mysql', content: 'MySQL', color: '4479A1' },
-        { logo: 'firebase', content: 'Firebase Firebase(재배포)', color: 'FFCA28' },
+        { logo: 'firebase', content: 'Firebase FireStore(재배포)', color: 'FFCA28' },
       ]} />
     </Box>
   )

@@ -2,6 +2,9 @@ import styled from "styled-components"
 import Title from "../../../common/Title"
 import Division from "../../../common/Division"
 import SkillBox from "../../../common/SkillBox"
+import ec2 from "../../../../img/new/aws-ec2.svg"
+import s3 from "../../../../img/new/aws-s3.svg"
+import rds from "../../../../img/new/aws-rds.svg"
 
 const Box = styled.div`
   width: 100%;
@@ -19,9 +22,9 @@ export default function MangozBox() {
         { logo: 'Jquery', content: '제이쿼리(JQuery)', color: '0769AD', },
         { logo: 'JavaScript', content: '자바스크립트(JavaScript)', color: 'F7DF1E', division: true },
         { logo: 'nodedotjs', content: 'Node.js', color: '339933' },
-        { logo: 'amazonec2', content: 'AWS EC2', color: 'FF9900' },
-        { logo: 'amazonrds', content: 'AWS RDS', color: '527FFF' },
-        { logo: 'amazons3', content: 'AWS S3', color: '569A31', division: true },
+        { logo: 'amazonec2', content: 'AWS EC2', color: 'FF9900', img: ec2 },
+        { logo: 'amazonrds', content: 'AWS RDS', color: '527FFF', img: rds },
+        { logo: 'amazons3', content: 'AWS S3', color: '569A31', division: true, img: s3 },
         { logo: 'Mysql', content: 'MySQL', color: '4479A1' },
       ]} />
     </Box>

@@ -52,6 +52,7 @@ interface SkillTypes {
   content: string;
   color: string;
   division?: boolean;
+  img?: string;
 }
 
 interface ComponentProps {
@@ -65,7 +66,13 @@ export default function SkillBox({ skill }: ComponentProps) {
         skill.map((v, i) => {
           return (
             <Skill key={i}>
-              <SkillImage src={`https://img.shields.io/badge/-${v.color}?style=flat&logo=${v.logo}&logoColor=white`} alt={`${v.logo}`} />
+              {
+                v.img ?
+                <SkillImage src={v.img} alt={`${v.logo}`} />
+                :
+                <SkillImage src={`https://img.shields.io/badge/-${v.color}?style=flat&logo=${v.logo}&logoColor=white`} alt={`${v.logo}`} />
+              }
+              
               {v.division ?
                 <Division />
                 :
