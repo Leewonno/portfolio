@@ -1,14 +1,13 @@
 import styled from "styled-components"
 import bg from "../img/nmixx.png"
 // import seoulsoft from "../img/new/seoulsoft.png"
-import useObserver from "./lib/hook/useObserver"
 import { media } from "./lib/styles/media"
 import { motion } from "framer-motion"
 import { customChildVariants, customVariants } from "./lib/styles/animation"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faFolderOpen, faHammer, faPeopleGroup } from "@fortawesome/free-solid-svg-icons"
-import SemiBold from "./common/SemiBold"
 import Bold from "./common/Bold"
+import useOnceObserver from "./lib/hook/useOnceObserver"
 
 const Section = styled.section`
   width: 100%;
@@ -197,7 +196,7 @@ const Dot = styled.span`
 
 // 경력
 export default function Career() {
-  const { ref, animation } = useObserver();
+  const { ref, animation } = useOnceObserver();
   return (
     <Section>
       {/* 상단박스 */}

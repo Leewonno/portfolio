@@ -1,12 +1,12 @@
 import styled from "styled-components"
 import bg from "../img/nmixx.png"
-import useObserver from "./lib/hook/useObserver"
 import { media } from "./lib/styles/media"
 import { motion } from "framer-motion"
 import { customChildVariants, customVariants } from "./lib/styles/animation"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBell, faMicrophone } from "@fortawesome/free-solid-svg-icons"
 import SemiBold from "./common/SemiBold"
+import useOnceObserver from "./lib/hook/useOnceObserver"
 
 const Section = styled.section`
   width: 100%;
@@ -100,7 +100,7 @@ const CustomSemiBold = styled.span`
 // 자기소개서
 export default function Personal() {
 
-  const { ref, animation } = useObserver();
+  const { ref, animation } = useOnceObserver();
 
   return (
     <Section>
