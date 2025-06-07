@@ -5,6 +5,7 @@ import Release from "./Release"
 import My from "./My"
 import Personal from "./Personal"
 import Career from "./Career"
+import End from "./End"
 
 const Container = styled.div`
   display: flex;
@@ -36,8 +37,8 @@ export default function Home() {
       <Career />
       {/* 자기소개 */}
       <Personal />
-      {/* 기술스택 */}
-      {/* 프로젝트 */}
+      {/* 마지막 -> 인사 + 방문자수 차트 */}
+      <End />
       {/* 고정 배경 이미지 */}
       <FixedBackground src={nmixx} alt="섹션1_배경" />
     </Container>
