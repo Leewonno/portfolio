@@ -5,7 +5,7 @@ import { media } from "./lib/styles/media"
 import { motion } from "framer-motion"
 import { customChildVariants, customVariants } from "./lib/styles/animation"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faFolderOpen, faHammer, faPeopleGroup } from "@fortawesome/free-solid-svg-icons"
+import { faFolderOpen, faHammer, faKeyboard, faPeopleGroup } from "@fortawesome/free-solid-svg-icons"
 import Bold from "./common/Bold"
 import useOnceObserver from "./lib/hook/useOnceObserver"
 
@@ -216,12 +216,8 @@ export default function Career() {
           </ItemTitleBox>
           <ItemDepartmentBox>
             <Department><FontAwesomeIcon icon={faPeopleGroup} style={{marginRight:'5px'}} />모빌리티 개발팀</Department>
-            <Department><FontAwesomeIcon icon={faHammer} style={{marginRight:'5px'}} />풀스택 개발</Department> 
+            <Department><FontAwesomeIcon icon={faKeyboard} style={{marginRight:'5px'}} />풀스택 개발</Department> 
           </ItemDepartmentBox>
-          <ItemContent>
-            <Dot>•</Dot>운수사 <Bold>ERP 서비스</Bold> 개발 <br />
-            <Dot>•</Dot><Bold>Django</Bold> 기반 <Bold>MVT 패턴</Bold>을 활용한 웹 서비스 개발 <br />
-          </ItemContent>
           <ItemSkillContainer>
             <ItemSkillBox>
               <ItemSkill src="https://img.shields.io/badge/Django-092E20?style=flat&logo=django&logoColor=white" alt="Django" />
@@ -240,6 +236,12 @@ export default function Career() {
               <ItemSkillInfoBox>EC2, RDS, S3</ItemSkillInfoBox>
             </ItemSkillBox>
           </ItemSkillContainer>
+          <ItemContent>
+            <Dot>•</Dot>운수사 <Bold>ERP</Bold> 서비스 개발 <br />
+            <Dot>•</Dot><Bold>Django</Bold> 기반 <Bold>MVT 패턴</Bold>을 활용한 웹 서비스 개발 <br />
+            <Dot>•</Dot><Bold>JQuery</Bold> 라이브러리를 이용한 프론트엔드 기능 구현 <br />
+            <Dot>•</Dot><Bold>Amazone Web Service</Bold> 를 이용한 서비스 배포 및 인프라 관리 <br />
+          </ItemContent>
         </Item>
       </BottomBox>
     </Section>
