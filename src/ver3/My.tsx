@@ -5,10 +5,9 @@ import {
   faBoxArchive,
   faCalendar,
   faEnvelope,
-  faGraduationCap, 
-  faPaperclip, 
-  faPaperPlane, 
-  faPlaneDeparture, 
+  faGraduationCap,
+  faPaperclip,
+  faPlaneDeparture,
   faUser
 } from "@fortawesome/free-solid-svg-icons"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
@@ -16,6 +15,8 @@ import useObserver from "./lib/hook/useObserver"
 import { customChildVariants, rotateChildVariants, rotateVariants } from "./lib/styles/animation"
 import { media } from "./lib/styles/media"
 import bg from "../img/nmixx.png";
+import { faCopy, faPaperPlane, faSquareCheck } from "@fortawesome/free-regular-svg-icons"
+import { useState } from "react"
 // import lee from "../img/new/lee2.png"
 // import back from "../img/new/back.jpg"
 
@@ -169,6 +170,8 @@ const RightItem = styled.div`
 const ItemTitle = styled.div`
   font-family: 'S-CoreDream-7EXTRA_BOLD';
   font-size: 20px;
+  display: flex;
+  gap: 5px;
 
   ${media.phone`
     font-size: 18px;
@@ -179,10 +182,18 @@ const ItemContent = styled.div`
   margin-top: 5px;
   font-size: 14px;
   font-family: 'S-CoreDream-3Light';
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 
   ${media.phone`
     font-size: 13px;
   `}
+`
+
+const LinkBox = styled.div`
+  display: flex;
+  gap: 5px;
 `
 
 const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
@@ -203,6 +214,8 @@ const Link = styled.a`
   background-color: #e9e9e9;
   border-radius: 25px;
   transition: all 0.3s;
+  width: fit-content;
+  cursor: pointer;
 
   &:hover{
     background-color: #d9d9d9;
@@ -216,6 +229,13 @@ const Link = styled.a`
 export default function My() {
 
   const { ref, animation } = useObserver();
+
+  const [copy, setCopy] = useState<boolean>(false);
+
+  const handleEmailClick = () => {
+    navigator.clipboard.writeText("dldnjssh123@naver.com");
+    setCopy(true);
+  }
 
   return (
     // 가장 왼쪽에 사진 or 자기소개
@@ -302,12 +322,23 @@ export default function My() {
                 <StyledFontAwesomeIcon icon={faEnvelope} />
               </LeftItem>
               <RightItem>
-                <ItemTitle>이메일</ItemTitle>
+                <ItemTitle>
+                  이메일
+                </ItemTitle>
                 <ItemContent>
-                  <Link href="mailto:dldnjssh123@naver.com">
-                    <StyledFontAwesomeIcon icon={faPaperPlane} style={{ fontSize: "20px", color: "black" }} />
-                    dldnjssh123@naver.com
-                  </Link>
+                  dldnjssh123@naver.com
+                  <LinkBox>
+                    <Link href="mailto:dldnjssh123@naver.com">
+                      <StyledFontAwesomeIcon icon={faPaperPlane} style={{ fontSize: "16px", color: "black" }} /> 전송
+                    </Link>
+                    <Link onClick={() => handleEmailClick()}>
+                      {copy ?
+                        <StyledFontAwesomeIcon icon={faSquareCheck} style={{ fontSize: "16px", color: "black" }} />
+                        :
+                        <StyledFontAwesomeIcon icon={faCopy} style={{ fontSize: "16px", color: "black" }} />
+                      } 복사
+                    </Link>
+                  </LinkBox>
                 </ItemContent>
               </RightItem>
             </Item>

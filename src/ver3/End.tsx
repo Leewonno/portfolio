@@ -12,6 +12,7 @@ import { useEffect, useState } from "react";
 import { getDocuments } from "./lib/utils/getDocument";
 import { CustomSeries } from "./interface/chart";
 import { getChartData } from "./lib/utils/getChartData";
+import { createDocument } from "./lib/utils/postDocument";
 
 const Section = styled.section`
   width: 100%;
@@ -124,7 +125,17 @@ export default function End() {
         setData(getChartData(res, keys));
       }
     }
+    const postData = async () => {
+      const today = getDate(0);
+      const storage = localStorage.getItem(today);
+      // 오늘 방문 이력 없음
+      if (!storage) {
+        await createDocument(today, { count: 1, date: today })
+        localStorage.setItem(today, '1');
+      }
+    }
     getData();
+    postData();
   }, [])
 
   return (

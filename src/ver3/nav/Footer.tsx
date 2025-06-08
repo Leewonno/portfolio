@@ -1,4 +1,4 @@
-import { faSquareArrowUpRight } from "@fortawesome/free-solid-svg-icons"
+import { faEnvelope, faSquareArrowUpRight, faSquarePhone } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import styled from "styled-components"
 
@@ -62,8 +62,8 @@ export default function Footer() {
       </MyBox>
       <ContactBox>
         <Title>연락처</Title>
-        <Content>010-5253-4143</Content>
-        <Content>dldnjssh123@naver.com</Content>
+        <Content><FontAwesomeIcon icon={faSquarePhone} /> 010-5253-4143</Content>
+        <Content><FontAwesomeIcon icon={faEnvelope} /> dldnjssh123@naver.com</Content>
       </ContactBox>
       <VerBox>
         <Title>이전 버전</Title>
