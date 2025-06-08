@@ -1,14 +1,6 @@
 import { PointTooltipProps, ResponsiveLine } from '@nivo/line'
 import styled from 'styled-components';
-
-type CustomSeries = {
-  id: string;
-  data: { x: string; y: number }[];
-};
-
-interface ChartTypes {
-  data: CustomSeries[],
-}
+import { ChartTypes, CustomSeries } from '../../interface/chart';
 
 const ToolTip = styled.div`
   background: #1f1f1f;

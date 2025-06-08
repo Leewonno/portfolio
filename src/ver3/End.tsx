@@ -6,6 +6,12 @@ import useObserver from "./lib/hook/useObserver";
 import { customChildVariants, customVariants } from "./lib/styles/animation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleExclamation, faCircleQuestion } from "@fortawesome/free-solid-svg-icons";
+import { getDate } from "./lib/utils/getDate";
+import { getChartKey } from "./lib/utils/getChartKey";
+import { useEffect, useState } from "react";
+import { getDocuments } from "./lib/utils/getDocument";
+import { CustomSeries } from "./interface/chart";
+import { getChartData } from "./lib/utils/getChartData";
 
 const Section = styled.section`
   width: 100%;
@@ -95,36 +101,31 @@ const CharTitleToolTip = styled.div`
   }
 `
 
-const data = [
-  {
-    "id": "방문자",
-    "data": [
-      {
-        "x": "2025-05-01",
-        "y": 100
-      },
-      {
-        "x": "2025-05-02",
-        "y": 19
-      },
-      {
-        "x": "2025-05-03",
-        "y": 25
-      },
-      {
-        "x": "2025-05-04",
-        "y": 25
-      },
-      {
-        "x": "2025-05-05",
-        "y": 25
-      },
-    ]
-  },
-]
+const defaultData: CustomSeries[] = [{
+  "id": "방문자",
+  "data": [
+    {
+      "x": "2000-00-00",
+      "y": 0
+    },
+  ]
+}]
+
 
 export default function End() {
   const { ref, animation } = useObserver();
+  const [data, setData] = useState<CustomSeries[]>(defaultData)
+
+  useEffect(() => {
+    const getData = async () => {
+      const keys = getChartKey();
+      const res = await getDocuments(keys[0], keys[keys.length - 1]);
+      if (res) {
+        setData(getChartData(res, keys));
+      }
+    }
+    getData();
+  }, [])
 
   return (
     // 왼쪽 (인삿말) / 오른쪽 방문자수 차트
