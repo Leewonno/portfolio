@@ -45,3 +45,16 @@ export const rotateChildVariants = {
   hidden: { transform: "rotateX(0)" },
   visible: { transform: "rotateX(360deg)", transition: { duration: 1, ease: "easeOut" } },
 };
+
+export const customShortVariants = {
+  visible: {
+    transition: {
+      staggerChildren: 0.2, // 자식들 간 애니메이션 시간 간격
+    },
+  },
+};
+
+export const customShortChildVariants = {
+  hidden: { opacity: 0, y: 40 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "linear" } },
+};

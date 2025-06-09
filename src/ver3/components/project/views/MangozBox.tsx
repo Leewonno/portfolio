@@ -5,6 +5,9 @@ import SkillBox from "../../../common/SkillBox"
 import ec2 from "../../../../img/new/aws-ec2.svg"
 import s3 from "../../../../img/new/aws-s3.svg"
 import rds from "../../../../img/new/aws-rds.svg"
+import Content from "../../../common/Content"
+import Accordion from "../../../common/Accordion"
+import ListItem from "../../../common/ListItem"
 
 const Box = styled.div`
   width: 100%;
@@ -27,6 +30,24 @@ export default function MangozBox() {
         { logo: 'amazons3', content: 'AWS S3', color: '569A31', division: true, img: s3 },
         { logo: 'Mysql', content: 'MySQL', color: '4479A1' },
       ]} />
+      <Content>
+        <Accordion title="개요" open={true}>
+          음악 스트리밍 사이트입니다.
+        </Accordion>
+        <Accordion title="주요 기능" open={true}>
+          <ListItem>음악 스트리밍</ListItem>
+          <ListItem>플레이리스트 생성 및 공유</ListItem>
+          <ListItem>Socket.io를 이용한 아티스트톡(A-Talk)</ListItem>
+        </Accordion>
+        <Accordion title="역할" open={true}>
+          <ListItem>JQuery를 이용한 SPA 구조화</ListItem>
+          <ListItem>Multer를 이용한 AWS S3 이미지 업로드</ListItem>
+          <ListItem>드로그 앤 드랍으로 플레이리스트 곡 순서 변경</ListItem>
+          <ListItem>Node.js를 이용한 음악 스트리밍</ListItem>
+          <ListItem>Socket.io를 이용한 채팅방 구현</ListItem>
+          <ListItem>AWS를 통한 배포</ListItem>
+        </Accordion>
+      </Content>
     </Box>
   )
 }

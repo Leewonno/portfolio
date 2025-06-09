@@ -6,6 +6,8 @@ import Content from "../../../common/Content"
 import ec2 from "../../../../img/new/aws-ec2.svg"
 import s3 from "../../../../img/new/aws-s3.svg"
 import rds from "../../../../img/new/aws-rds.svg"
+import Accordion from "../../../common/Accordion"
+import ListItem from "../../../common/ListItem"
 
 const Box = styled.div`
   width: 100%;
@@ -29,7 +31,25 @@ export default function DemureBox() {
         { logo: 'postgresql', content: 'PostgreSQL', color: '4169E1' },
       ]} />
       <Content>
-        포트폴리오 사이트입니다.
+        <Accordion title="개요" open={true}>
+          이케아(IKEA) 데이터를 활용한 가구 쇼핑몰 입니다.
+        </Accordion>
+        <Accordion title="주요 기능" open={true}>
+          <ListItem>장바구니 담기 및 배송지 관리</ListItem>
+          <ListItem>쿠폰 발급 및 사용</ListItem>
+          <ListItem>상품 검색 및 색상 검색</ListItem>
+          <ListItem>이메일 인증을 통한 회원가입</ListItem>
+          <ListItem>카카오 소셜 로그인</ListItem>
+        </Accordion>
+        <Accordion title="역할" open={true}>
+          <ListItem>프로젝트 전체 기획 및 리딩</ListItem>
+          <ListItem>NodeMailer를 이용한 이메일 인증</ListItem>
+          <ListItem>JWT를 이용한 토큰 발급 및 인증</ListItem>
+          <ListItem>Redux-Toolkit을 이용한 전역 상태 관리</ListItem>
+          <ListItem>카카오 소셜 로그인</ListItem>
+          <ListItem>AWS를 이용한 배포</ListItem>
+          <ListItem>쿠폰 발급 및 사용 처리</ListItem>
+        </Accordion>
       </Content>
     </Box>
   )

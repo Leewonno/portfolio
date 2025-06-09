@@ -3,7 +3,7 @@ import styled from "styled-components"
 const Component = styled.div`
   display: flex;
   justify-content: flex-start;
-  gap: 8px;
+  gap: 6px;
   margin-bottom: 15px;
 `
 
@@ -11,12 +11,12 @@ const Skill = styled.div`
   position: relative;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
 `
 
 const SkillImage = styled.img`
-  width: 38px;
-  height: 38px;
+  width: 33px;
+  height: 33px;
   object-fit: cover;
   border-radius: 5px;
 `
@@ -38,7 +38,7 @@ const ContentBox = styled.div`
   border-radius: 5px;
   color: #fff;
   white-space: nowrap;
-  top: 150%;
+  top: 160%;
   left: 50%;
   transform: translate(-50%, -50%);
 
@@ -68,11 +68,11 @@ export default function SkillBox({ skill }: ComponentProps) {
             <Skill key={i}>
               {
                 v.img ?
-                <SkillImage src={v.img} alt={`${v.logo}`} />
-                :
-                <SkillImage src={`https://img.shields.io/badge/-${v.color}?style=flat&logo=${v.logo}&logoColor=white`} alt={`${v.logo}`} />
+                  <SkillImage src={v.img} alt={`${v.logo}`} />
+                  :
+                  <SkillImage src={`https://img.shields.io/badge/-${v.color}?style=flat&logo=${v.logo}&logoColor=white`} alt={`${v.logo}`} />
               }
-              
+
               {v.division ?
                 <Division />
                 :

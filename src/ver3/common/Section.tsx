@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import { media } from "../lib/styles/media"
-import { ReactNode } from "react"
+import React, { ReactNode } from "react"
 
 const Component = styled.section`
   width: 1100px;
@@ -25,12 +25,13 @@ const Component = styled.section`
 
 interface SectionType {
   children: ReactNode;
+  style?: React.CSSProperties;
 }
 
 export default function Section(props: SectionType) {
-  const { children } = props;
+  const { children, style } = props;
   return (
-    <Component>
+    <Component style={style}>
       {children}
     </Component>
   )

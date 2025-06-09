@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faBoxArchive,
   faCalendar,
+  faCheck,
   faEnvelope,
   faGraduationCap,
   faPaperclip,
@@ -12,7 +13,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import useObserver from "./lib/hook/useObserver"
-import { customChildVariants, rotateChildVariants, rotateVariants } from "./lib/styles/animation"
+import { customChildVariants, customShortChildVariants, customShortVariants, customVariants, rotateChildVariants, rotateVariants } from "./lib/styles/animation"
 import { media } from "./lib/styles/media"
 import bg from "../img/nmixx.png";
 import { faCopy, faPaperPlane, faSquareCheck } from "@fortawesome/free-regular-svg-icons"
@@ -156,6 +157,10 @@ const Item = styled(motion.div)`
   ${media.phone`
     width: 100%;
   `}
+
+  &:hover {
+    transform: scale(1.05);
+  }
 `
 
 const LeftItem = styled.div`
@@ -259,9 +264,9 @@ export default function My() {
         </CoreBox> */}
         {/* 나에 대한 정보 */}
         <RightBox>
-          <ItemBox ref={ref} animate={animation} variants={rotateVariants}>
+          <ItemBox ref={ref} animate={animation} variants={customShortVariants}>
             {/* 이름 */}
-            <Item variants={rotateChildVariants}>
+            <Item variants={customShortChildVariants} whileHover={{ scale: 1.05 }} transition={{duration: 0.1}}>
               <LeftItem>
                 <StyledFontAwesomeIcon icon={faUser} />
               </LeftItem>
@@ -271,7 +276,7 @@ export default function My() {
               </RightItem>
             </Item>
             {/* 생년월일 */}
-            <Item variants={rotateChildVariants}>
+            <Item variants={customShortChildVariants} whileHover={{ scale: 1.05 }} transition={{duration: 0.1}}>
               <LeftItem>
                 <StyledFontAwesomeIcon icon={faCalendar} />
               </LeftItem>
@@ -281,7 +286,7 @@ export default function My() {
               </RightItem>
             </Item>
             {/* 최종학력 */}
-            <Item variants={rotateChildVariants}>
+            <Item variants={customShortChildVariants} whileHover={{ scale: 1.05 }} transition={{duration: 0.1}}>
               <LeftItem>
                 <StyledFontAwesomeIcon icon={faGraduationCap} />
               </LeftItem>
@@ -292,7 +297,7 @@ export default function My() {
               </RightItem>
             </Item>
             {/* 참여활동 */}
-            <Item variants={rotateChildVariants}>
+            <Item variants={customShortChildVariants} whileHover={{ scale: 1.05 }} transition={{duration: 0.1}}>
               <LeftItem>
                 <StyledFontAwesomeIcon icon={faPlaneDeparture} />
               </LeftItem>
@@ -303,7 +308,7 @@ export default function My() {
               </RightItem>
             </Item>
             {/* 아카이빙 */}
-            <Item variants={rotateChildVariants}>
+            <Item variants={customShortChildVariants} whileHover={{ scale: 1.05 }} transition={{duration: 0.1}}>
               <LeftItem>
                 <StyledFontAwesomeIcon icon={faBoxArchive} />
               </LeftItem>
@@ -317,7 +322,7 @@ export default function My() {
               </RightItem>
             </Item>
             {/* 이메일 */}
-            <Item variants={rotateChildVariants}>
+            <Item variants={customShortChildVariants} whileHover={{ scale: 1.05 }} transition={{duration: 0.1}}>
               <LeftItem>
                 <StyledFontAwesomeIcon icon={faEnvelope} />
               </LeftItem>
@@ -333,7 +338,7 @@ export default function My() {
                     </Link>
                     <Link onClick={() => handleEmailClick()}>
                       {copy ?
-                        <StyledFontAwesomeIcon icon={faSquareCheck} style={{ fontSize: "16px", color: "black" }} />
+                        <StyledFontAwesomeIcon icon={faCheck} style={{ fontSize: "16px", color: "black" }} />
                         :
                         <StyledFontAwesomeIcon icon={faCopy} style={{ fontSize: "16px", color: "black" }} />
                       } 복사

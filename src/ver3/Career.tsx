@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import bg from "../img/nmixx.png"
+import aws from "../img/new/aws.svg"
 // import seoulsoft from "../img/new/seoulsoft.png"
 import { media } from "./lib/styles/media"
 import { motion } from "framer-motion"
@@ -179,10 +180,23 @@ const ItemSkillInfoBox = styled.div`
 `
 
 const ItemSkill = styled.img`
-  height: 25px;
+  height: 26px;
 
   ${media.phone`
     height: 22px;
+  `}
+`
+
+const ItemSkillImage = styled.img`
+  background-color: #232f3e;
+  height: 26px;
+  width: 30px;
+  object-fit: cover;
+  border-radius: 3px;
+
+  ${media.phone`
+    height: 22px;
+    width: 26px;
   `}
 `
 
@@ -220,20 +234,20 @@ export default function Career() {
           </ItemDepartmentBox>
           <ItemSkillContainer>
             <ItemSkillBox>
-              <ItemSkill src="https://img.shields.io/badge/Django-092E20?style=flat&logo=django&logoColor=white" alt="Django" />
-              <ItemSkillInfoBox>Python기반 웹 프레임워크</ItemSkillInfoBox>
+              <ItemSkill src="https://img.shields.io/badge/-092E20?style=flat&logo=django&logoColor=white" alt="Django" />
+              <ItemSkillInfoBox>Django</ItemSkillInfoBox>
             </ItemSkillBox>
             <ItemSkillBox>
-              <ItemSkill src="https://img.shields.io/badge/JQuery-0769AD?style=flat&logo=jquery&logoColor=white" alt="jquery" />
-              <ItemSkillInfoBox>JavaScript 라이브러리</ItemSkillInfoBox>
+              <ItemSkill src="https://img.shields.io/badge/-0769AD?style=flat&logo=jquery&logoColor=white" alt="jquery" />
+              <ItemSkillInfoBox>JQuery</ItemSkillInfoBox>
             </ItemSkillBox>
             <ItemSkillBox>
-              <ItemSkill src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white" alt="mysql" />
-              <ItemSkillInfoBox>RDBMS</ItemSkillInfoBox>
+              <ItemSkill src="https://img.shields.io/badge/-4479A1?style=flat&logo=mysql&logoColor=white" alt="mysql" />
+              <ItemSkillInfoBox>MySQL</ItemSkillInfoBox>
             </ItemSkillBox>
             <ItemSkillBox>
-              <ItemSkill src="https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonwebservices&logoColor=white" alt="aws" />
-              <ItemSkillInfoBox>EC2, RDS, S3</ItemSkillInfoBox>
+              <ItemSkillImage src={aws} alt="aws" />
+              <ItemSkillInfoBox>AWS EC2, RDS, S3</ItemSkillInfoBox>
             </ItemSkillBox>
           </ItemSkillContainer>
           <ItemContent>

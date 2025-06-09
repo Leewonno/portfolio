@@ -2,6 +2,9 @@ import styled from "styled-components"
 import Title from "../../../common/Title"
 import Division from "../../../common/Division"
 import SkillBox from "../../../common/SkillBox"
+import Content from "../../../common/Content"
+import Accordion from "../../../common/Accordion"
+import ListItem from "../../../common/ListItem"
 
 const Box = styled.div`
   width: 100%;
@@ -24,6 +27,20 @@ export default function NovelcutBox() {
         { logo: 'Mysql', content: 'MySQL', color: '4479A1' },
         { logo: 'firebase', content: 'Firebase FireStore(재배포)', color: 'FFCA28' },
       ]} />
+      <Content>
+        <Accordion title="개요" open={true}>
+          컷툰처럼 새로운 보기 방식을 적용한 웹소설 연재 사이트입니다.
+        </Accordion>
+        <Accordion title="주요 기능" open={true}>
+          <ListItem>소설 생성 및 회차 연재</ListItem>
+        </Accordion>
+        <Accordion title="역할" open={true}>
+          <ListItem>프로젝트 전체 기획 및 개발</ListItem>
+          <ListItem>useContext Hook을 이용한 전역 상태를 관리</ListItem>
+          <ListItem>JWT, Bcrypt를 이용한 회원가입 및 인증</ListItem>
+          <ListItem>CLOUDTYPE을 이용한 배포</ListItem>
+        </Accordion>
+      </Content>
     </Box>
   )
 }

@@ -12,7 +12,7 @@ import PortfolioBox from "./views/PortfolioBox"
 
 const Box = styled.div`
   width: 100%;
-  padding: 30px;
+  padding: 20px;
   display: flex;
   justify-content: space-between;
   overflow-x: hidden;
