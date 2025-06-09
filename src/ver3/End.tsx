@@ -169,8 +169,8 @@ export default function End() {
       <LeftBox>
         <TextBox ref={ref} animate={animation} variants={customVariants}>
           THANK YOU
-          <SubTextBox variants={customChildVariants}>끝까지 봐주셔서 감사합니다</SubTextBox>
-          <SubTextBox variants={customChildVariants}>함께할 날을 기다리고 있습니다</SubTextBox>
+          <SubTextBox variants={customChildVariants}>끝까지 봐주셔서 감사합니다.</SubTextBox>
+          <SubTextBox variants={customChildVariants}>함께할 날을 기다리고 있습니다.</SubTextBox>
         </TextBox>
       </LeftBox>
       <RightBox>
