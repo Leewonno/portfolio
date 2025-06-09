@@ -23,7 +23,7 @@ export default function PortfolioBox() {
         { logo: 'styledcomponents', content: 'Styled-components', color: 'DB7093', },
         { logo: 'TypeScript', content: '타입스크립트(TypeScript)', color: '3178C6', division: true },
         { logo: 'firebase', content: 'Firebase Hosting', color: 'FFCA28', division: true },
-        { logo: 'firebase', content: 'Firebase Cloude Firestore', color: 'FFCA28' },
+        { logo: 'firebase', content: 'Firebase Cloud Firestore', color: 'FFCA28' },
       ]} />
       <Content>
         <Accordion title="개요" open={true}>
@@ -35,7 +35,7 @@ export default function PortfolioBox() {
         </Accordion>
         <Accordion title="역할" open={true}>
           <ListItem>프로젝트 전체 기획 및 개발</ListItem>
-          <ListItem>Firebase Cloude FireStore를 이용한 방문자수 기록</ListItem>
+          <ListItem>Firebase Cloud FireStore를 이용한 방문자수 기록</ListItem>
           <ListItem>nivo 라이브러리를 이용한 방문자수 그래프 생성</ListItem>
           <ListItem>React-Modal 라이브러리를 이용한 모달창 생성</ListItem>
           <ListItem>Firebase를 이용한 배포</ListItem>

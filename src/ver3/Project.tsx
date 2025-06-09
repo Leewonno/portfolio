@@ -25,7 +25,7 @@ const FixedBackground = styled.img`
 export default function Project() {
   return (
     <Container>
-      <Section>
+      <Section style={{marginTop: '100px', justifyContent: 'flex-start'}}>
         <ProjectManageBox />
         <ProjectViewBox />
       </Section>

@@ -23,6 +23,7 @@ const Section = styled.section`
 
   ${media.phone`
     padding: 20px;
+    gap: 15px;
   `}
 `
 
@@ -81,6 +82,7 @@ const InfoBox = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: 'S-CoreDream-3Light';
+  z-index: 1;
 
   ${LinkButtonBox}:hover & {
     display: flex;
@@ -98,7 +100,7 @@ const Text = styled(motion.div)`
   color: #fff;
 
   ${media.phone`
-    font-size: 18px;
+    font-size: 16px;
   `}
 `
 
@@ -117,6 +119,10 @@ const ProjectButton = styled(motion.a)`
   &:hover {
     background-color: #d9d9d9;
   }
+
+  ${media.phone`
+    font-size: 14px
+  `}
 `
 
 const IconBox = styled(motion.div)`

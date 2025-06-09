@@ -22,6 +22,14 @@ const Box = styled.div`
 
   ${media.phone`
     width: 90%;
+    overflow-x: auto;
+
+    /* 스크롤바 없애기 */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
   `}
 `
 

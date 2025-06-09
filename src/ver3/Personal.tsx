@@ -86,6 +86,10 @@ const ItemTitle = styled.div`
 const ItemContent = styled.div`
   font-family: 'S-CoreDream-3Light';
   line-height: 1.6;
+
+  ${media.phone`
+    font-size: 14px;
+  `}
 `
 
 const CustomSemiBold = styled.span`

@@ -139,7 +139,7 @@ const ItemContent = styled.div`
   font-family: 'S-CoreDream-3Light';
 
   ${media.phone`
-    font-size: 14px;
+    font-size: 13px;
   `}
 `
 
