@@ -2,6 +2,7 @@ import { ReactNode, useContext } from "react";
 import styled from "styled-components"
 import ProjectContext from "../../store/project-context";
 import { ProjectKeyType } from "../../interface/project";
+import { media } from "../../lib/styles/media";
 
 const Component = styled.div`
   box-sizing: border-box;
@@ -27,11 +28,14 @@ const InputLabel = styled.label`
   padding: 10px 15px;
   background-color: #fff;
   border-radius: 20px;
-  /* cursor: pointer; */
   user-select: none;
   font-family: 'S-CoreDream-3Light';
   font-weight: 600;
   cursor: inherit;
+
+  ${media.phone`
+    font-size: 14px;
+  `}
 `
 
 interface ComponentType {

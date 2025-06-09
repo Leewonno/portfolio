@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { media } from "../lib/styles/media"
 
 const Component = styled.div`
   display: flex;

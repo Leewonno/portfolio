@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faAddressCard, faBookOpen, faHeadphones, faLocationDot, faMusic, faScissors, faTag } from "@fortawesome/free-solid-svg-icons"
 import { useHorizontalScroll } from "../../lib/utils/useScroll"
 import scroll from "../../../img/new/sm_scroll.png"
+import { media } from "../../lib/styles/media"
 
 const Box = styled.div`
   display: flex;
@@ -19,9 +20,9 @@ const Box = styled.div`
     cursor: inherit;
   }
 
-  /* &:active{
-    cursor: pointer;
-  } */
+  ${media.phone`
+    width: 90%;
+  `}
 `
 
 export default function ProjectManageBox() {

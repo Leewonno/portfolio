@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
 import styled from "styled-components";
 import { CarouselImagePropsType, CarouselImageType, projectData, ProjectKeyType } from "../interface/project";
+import { media } from "../lib/styles/media";
 
 const ComponentBox = styled.div`
   width: 100%;
@@ -15,6 +16,10 @@ const ViewBox = styled.div`
   overflow-x: hidden;
   overflow-y: hidden;
   border-radius: 10px;
+
+  ${media.phone`
+    height: 45vw;
+  `}
 `
 
 const ImageBox = styled.div`

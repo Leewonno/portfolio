@@ -9,6 +9,7 @@ import LebuBox from "./views/LebuBox"
 import MangozBox from "./views/MangozBox"
 import NovelpediaBox from "./views/NovelpediaBox"
 import PortfolioBox from "./views/PortfolioBox"
+import { media } from "../../lib/styles/media"
 
 const Box = styled.div`
   width: 100%;
@@ -20,16 +21,28 @@ const Box = styled.div`
   box-sizing: border-box;
   border-radius: 10px;
   background-color: #1f1f1f;
+
+  ${media.phone`
+    flex-direction: column;
+  `}
 `
 
 const LeftBox = styled.div`
   width: 500px;
+
+  ${media.phone`
+    width: 100%;
+  `}
 `
 
 const RightBox = styled.div`
   width: 580px;
   color: #fff;
   font-family: 'S-CoreDream-3Light';
+
+  ${media.phone`
+    width: 100%;
+  `}
 `
 
 export default function ProjectViewBox() {
