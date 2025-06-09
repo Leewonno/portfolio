@@ -27,6 +27,9 @@ const Section = styled.section`
 
   ${media.phone`
     padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
   `}
 `
 
@@ -35,6 +38,10 @@ const LeftBox = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  ${media.phone`
+    width: 100%;
+  `}
 `
 
 const TextBox = styled(motion.div)`
@@ -44,6 +51,10 @@ const TextBox = styled(motion.div)`
   position: relative;
   text-align: center;
   text-shadow: 0 0 6px #000000a8;
+
+  ${media.phone`
+    font-size: 40px;
+  `}
 `
 
 const SubTextBox = styled(motion.div)`
@@ -51,6 +62,10 @@ const SubTextBox = styled(motion.div)`
   text-shadow: 0 0 6px #000000a8;
   /* font-family: 'S-CoreDream-7EXTRA_BOLD'; */
   font-family: 'S-CoreDream-3Light';
+
+  ${media.phone`
+    font-size: 18px;
+  `}
 `
 
 const RightBox = styled.div`
@@ -58,11 +73,21 @@ const RightBox = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  ${media.phone`
+    width: 100%;
+  `}
 `
 
 const ChartBox = styled.div`
   width: 500px;
   height: 300px;
+  font-family: 'S-CoreDream-3Light';
+  font-weight: 600;
+
+  ${media.phone`
+    width: 100%;
+  `}
 `
 
 const ChartTitle = styled.div`
