@@ -8,6 +8,11 @@ import s3 from "../../../../img/new/aws-s3.svg"
 import rds from "../../../../img/new/aws-rds.svg"
 import Accordion from "../../../common/Accordion"
 import ListItem from "../../../common/ListItem"
+import ProjectLink from "../../../common/ProjectLink"
+import ProjectLinkBox from "../../../common/ProjectLinkBox"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faGithub } from "@fortawesome/free-brands-svg-icons"
+import { faHouse } from "@fortawesome/free-solid-svg-icons"
 
 const Box = styled.div`
   width: 100%;
@@ -50,6 +55,14 @@ export default function DemureBox() {
           <ListItem>AWS를 이용한 배포</ListItem>
           <ListItem>쿠폰 발급 및 사용 처리</ListItem>
         </Accordion>
+        <ProjectLinkBox>
+          {/* <ProjectLink href="https://github.com/KDT9Demure" title="Home">
+            <FontAwesomeIcon icon={faHouse} />
+          </ProjectLink> */}
+          <ProjectLink href="https://github.com/KDT9Demure" title="Github">
+            <FontAwesomeIcon icon={faGithub} />
+          </ProjectLink>
+        </ProjectLinkBox>
       </Content>
     </Box>
   )

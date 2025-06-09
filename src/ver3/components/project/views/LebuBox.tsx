@@ -5,6 +5,11 @@ import SkillBox from "../../../common/SkillBox"
 import Content from "../../../common/Content"
 import Accordion from "../../../common/Accordion"
 import ListItem from "../../../common/ListItem"
+import { faHouse } from "@fortawesome/free-solid-svg-icons"
+import { faGithub } from "@fortawesome/free-brands-svg-icons"
+import ProjectLinkBox from "../../../common/ProjectLinkBox"
+import ProjectLink from "../../../common/ProjectLink"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const Box = styled.div`
   width: 100%;
@@ -38,6 +43,14 @@ export default function LebuBox() {
           <ListItem>Netlify를 이용한 배포</ListItem>
         </Accordion>
       </Content>
+      <ProjectLinkBox>
+        <ProjectLink href="https://poetic-druid-deac2a.netlify.app/" title="Home">
+          <FontAwesomeIcon icon={faHouse} />
+        </ProjectLink>
+        <ProjectLink href="https://github.com/Leewonno/project1" title="Github">
+          <FontAwesomeIcon icon={faGithub} />
+        </ProjectLink>
+      </ProjectLinkBox>
     </Box>
   )
 }

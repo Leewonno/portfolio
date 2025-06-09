@@ -5,6 +5,11 @@ import SkillBox from "../../../common/SkillBox"
 import Content from "../../../common/Content"
 import Accordion from "../../../common/Accordion"
 import ListItem from "../../../common/ListItem"
+import ProjectLinkBox from "../../../common/ProjectLinkBox"
+import ProjectLink from "../../../common/ProjectLink"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faHouse } from "@fortawesome/free-solid-svg-icons"
+import { faGithub } from "@fortawesome/free-brands-svg-icons"
 
 const Box = styled.div`
   width: 100%;
@@ -37,6 +42,14 @@ export default function LyricsBox() {
           <ListItem>Firebase를 이용한 배포</ListItem>
         </Accordion>
       </Content>
+      <ProjectLinkBox>
+        <ProjectLink href="https://nmixxfantube-96477.web.app/" title="Home">
+          <FontAwesomeIcon icon={faHouse} />
+        </ProjectLink>
+        <ProjectLink href="https://github.com/Leewonno/lyrics" title="Github">
+          <FontAwesomeIcon icon={faGithub} />
+        </ProjectLink>
+      </ProjectLinkBox>
     </Box>
   )
 }

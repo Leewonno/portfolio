@@ -5,7 +5,7 @@ import styled from "styled-components"
 
 const Component = styled.div`
   width: 100%;
-  padding: 0px 0px 10px 0px;
+  padding: 0px 0px 15px 0px;
   box-sizing: border-box;
 `
 
@@ -27,7 +27,7 @@ const ButtonBox = styled.div`
 
 const ContentBox = styled.div`
   width: 100%;
-  padding: 10px 0px;
+  padding-top: 10px;
 `
 
 const Content = styled.div`
