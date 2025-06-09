@@ -216,7 +216,7 @@ export default function Intro() {
       <TextBox ref={ref} animate={animation} variants={customVariants}>
         <Title variants={customChildVariants}>안녕하세요</Title>
         <Text variants={customChildVariants}>걸그룹 엔믹스를 좋아하는 <CustomBr />  Full-Stack 개발자 <Bold>이원노</Bold>입니다</Text>
-        <Text variants={customChildVariants}>엔믹스처럼 열정과 노력, 끈기를 바탕으로 <CustomBr /> 꼼꼼하고 실력있는 개발자가 되겠습니다</Text>
+        <Text variants={customChildVariants}>엔믹스처럼 열정, 노력, 끈기를 바탕으로 <CustomBr /> 꼼꼼하고 실력있는 개발자가 되겠습니다</Text>
       </TextBox>
       <Modal isOpen={isOpen} ariaHideApp={false} style={customStyles} onRequestClose={() => setIsOpen(false)}>
         <Iframe width="100%" height="100%" src="https://www.youtube.com/embed/MMtRxcy8PX0?list=RDGMEM0s70dY0AfCwh3LqQ-Bv1xg&cc_load_policy=1" title="NMIXX “Soñar (Breaker)” M/V" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen />
