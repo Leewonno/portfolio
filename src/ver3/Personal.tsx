@@ -112,7 +112,7 @@ export default function Personal() {
       <TopBox ref={ref} animate={animation} variants={customChildVariants}>
         <TitleBox>
           <Title title="NSWER 1기, NSWER 2기, NSWER 3기">
-            <FontAwesomeIcon icon={faMicrophone} /> 자기소개서
+            <FontAwesomeIcon icon={faMicrophone} /> INTERVIEW
           </Title>
         </TitleBox>
       </TopBox>
@@ -164,11 +164,6 @@ export default function Personal() {
             알고리즘 문제를 자바스크립트로 해결하며 언어에 대한 이해도를 높이고 있습니다. <br />
             <br />
             특히 저는 <CustomSemiBold>React</CustomSemiBold>에 집중하고 있습니다. <br />
-            웹 생태계에는 Svelte, Vue.js, Angular 등 다양한 프레임워크와 라이브러리가 지속적으로 등장하고 있지만, <br />
-            아직 React를 대체해야 할 만큼의 필요성을 느끼지 못했습니다. <br />
-            물론 여러 프레임워크를 함께 학습하면 선택의 폭은 넓어질 수 있지만, <br />
-            하나에 집중했을 때 얻는 깊이 있는 성장과 퍼포먼스에는 미치지 못한다고 생각합니다. <br />
-            <br />
             이에 『모던 자바스크립트 Deep Dive』와 『모던 리액트 Deep Dive』 과 같은 서적을 통해, <br />
             <CustomSemiBold>자바스크립트의 기본 개념과 동작 원리</CustomSemiBold>를 깊이 있게 이해하고, <CustomSemiBold>React의 구조와 작동 방식</CustomSemiBold>에 대해서도 학습하고 있습니다. <br />
             더불어 React와 Next.js를 활용한 프로젝트를 통해 실전 경험을 쌓아가고 있습니다. <br />

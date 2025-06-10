@@ -214,7 +214,7 @@ export default function Header() {
               <Link onClick={()=>handleLinkClick(3)} style={scroll ? headerFontColorNone : headerFontColor}>ABOUT ME</Link>
               <Link onClick={()=>handleLinkClick(4)} style={scroll ? headerFontColorNone : headerFontColor}>CAREER</Link>
               {/* <Link onClick={()=>handleLinkClick(2)} style={scroll ? headerFontColorNone : headerFontColor}>SKILLS</Link> */}
-              <Link onClick={()=>handleLinkClick(5)} style={scroll ? headerFontColorNone : headerFontColor}>자기소개서</Link>
+              <Link onClick={()=>handleLinkClick(5)} style={scroll ? headerFontColorNone : headerFontColor}>INTERVIEW</Link>
             </> : <></>
           }
           <Link href={"/project"} target="_blank" style={scroll ? headerFontColorNone : headerFontColor}>
@@ -227,7 +227,7 @@ export default function Header() {
             <Link onClick={()=>handleLinkClick(3)} style={scroll ? headerFontColorNone : headerFontColor}>ABOUT ME</Link>
             <Link onClick={()=>handleLinkClick(4)} style={scroll ? headerFontColorNone : headerFontColor}>CAREER</Link>
             {/* <Link onClick={()=>handleLinkClick(2)} style={scroll ? headerFontColorNone : headerFontColor}>SKILLS</Link> */}
-            <Link onClick={()=>handleLinkClick(5)} style={scroll ? headerFontColorNone : headerFontColor}>자기소개서</Link>
+            <Link onClick={()=>handleLinkClick(5)} style={scroll ? headerFontColorNone : headerFontColor}>INTERVIEW</Link>
           </> : <></>  
           }
           <Link href={"/project"} target="_blank" style={scroll ? headerFontColorNone : headerFontColor}>
