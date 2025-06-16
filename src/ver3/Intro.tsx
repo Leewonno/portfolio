@@ -157,7 +157,7 @@ export default function Intro() {
 
       // 현재 스크롤 위치 - section 위치 = section 위치 부터 스크롤한 거리
       const distanceScrolled = scrollY - sectionTop;
-      const scrollableHeight = sectionHeight - window.innerHeight;
+      const scrollableHeight = Math.max(sectionHeight - window.innerHeight, 1);
 
       // 0 ~ 1 로 고정
       const scrollRatio = Math.min(Math.max(distanceScrolled / scrollableHeight, 0), 1);
@@ -181,8 +181,8 @@ export default function Intro() {
     if (!ani) return
     const animate = () => {
       // 점진적으로 목표값으로 이동
-      currentScale.current = lerp(currentScale.current, targetScale.current, 0.1)
-      currentTop.current = lerp(currentTop.current, targetTop.current, 0.1)
+      currentScale.current = lerp(currentScale.current, targetScale.current, 0.05)
+      currentTop.current = lerp(currentTop.current, targetTop.current, 0.05)
 
       ani.style.transform = `scale(${currentScale.current})`
       ani.style.top = `${currentTop.current}px`
