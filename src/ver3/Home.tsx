@@ -36,7 +36,7 @@ export default function Home() {
       {/* 경력 */}
       <Career />
       {/* 자기소개 */}
-      <Personal />
+      {/* <Personal /> */}
       {/* 마지막 -> 인사 + 방문자수 차트 */}
       <End />
       {/* 고정 배경 이미지 */}

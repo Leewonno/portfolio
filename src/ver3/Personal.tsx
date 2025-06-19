@@ -151,7 +151,7 @@ export default function Personal() {
             부트캠프를 통해 웹 개발자로서 나아갈 방향을 구체적으로 설정할 수 있었고, 한 걸음 성장하는 계기가 되었습니다. <br />
           </ItemContent>
         </ItemBox>
-        <ItemBox variants={customChildVariants}>
+        {/* <ItemBox variants={customChildVariants}>
           <ItemTitle>
             <FontAwesomeIcon icon={faBell} /> 프론트엔드 개발자가 되기 위해
           </ItemTitle>
@@ -169,7 +169,7 @@ export default function Personal() {
             더불어 React와 Next.js를 활용한 프로젝트를 통해 실전 경험을 쌓아가고 있습니다. <br />
             자바스크립트에 대한 이해와 React 개발 경험을 바탕으로, 맡은 바에서 최고의 성과를 내는 프론트엔드 개발자가 되겠습니다. <br />
           </ItemContent>
-        </ItemBox>
+        </ItemBox> */}
       </ListBox>
     </Section>
   )

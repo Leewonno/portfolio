@@ -121,7 +121,7 @@ const ProjectButton = styled(motion.a)`
   }
 
   ${media.phone`
-    font-size: 14px
+    font-size: 14px;
   `}
 `
 
@@ -162,13 +162,13 @@ export default function Release() {
           </LinkButton>
           <InfoBox>새로운 방식의 소설 연재 사이트</InfoBox>
         </LinkButtonBox>
-        <LinkButtonBox>
+        {/* <LinkButtonBox>
           <LinkButton variants={rotateChildVariants} href="https://nmixxfantube-96477.web.app/" target={"_blank"}>
             <FontAwesomeIcon icon={faFile} />
             LYRICS
           </LinkButton>
           <InfoBox>동영상 자막 입력 도우미</InfoBox>
-        </LinkButtonBox>
+        </LinkButtonBox> */}
         <LinkButtonBox>
           <LinkButton variants={rotateChildVariants} href="https://poetic-druid-deac2a.netlify.app/" target={"_blank"}>
             <FontAwesomeIcon icon={faPlane} />
