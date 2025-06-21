@@ -21,6 +21,7 @@ const Box = styled.div`
   box-sizing: border-box;
   border-radius: 10px;
   background-color: #1f1f1f;
+  overflow: visible;
 
   ${media.phone`
     flex-direction: column;

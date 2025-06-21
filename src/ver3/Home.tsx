@@ -32,10 +32,10 @@ export default function Home() {
       <Intro />
       {/* 배포된 프로젝트 */}
       <Release />
-      {/* 기술 */}
-      <Skill />
       {/* 나에 대해서 */}
       <My />
+      {/* 기술 */}
+      <Skill />
       {/* 경력 */}
       <Career />
       {/* 자기소개 */}
