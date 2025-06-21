@@ -202,8 +202,8 @@ const BlinkText = styled.div`
 `
 
 export default function Skill() {
-  const targetPosition = useRef({ x: -9999, y: -9999 });
-  const [position, setPosition] = useState({ x: -9999, y: -9999 });
+  const targetPosition = useRef({ x: -500, y: -500 });
+  const [position, setPosition] = useState({ x: -500, y: -500 });
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
