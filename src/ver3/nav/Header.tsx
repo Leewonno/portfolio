@@ -211,8 +211,9 @@ export default function Header() {
         <LinkBox>
           {is_home ?
             <>
-              <Link onClick={()=>handleLinkClick(3)} style={scroll ? headerFontColorNone : headerFontColor}>ABOUT ME</Link>
-              <Link onClick={()=>handleLinkClick(4)} style={scroll ? headerFontColorNone : headerFontColor}>CAREER</Link>
+              <Link onClick={()=>handleLinkClick(3)} style={scroll ? headerFontColorNone : headerFontColor}>SKILLS</Link>
+              <Link onClick={()=>handleLinkClick(4)} style={scroll ? headerFontColorNone : headerFontColor}>ABOUT ME</Link>
+              <Link onClick={()=>handleLinkClick(5)} style={scroll ? headerFontColorNone : headerFontColor}>CAREER</Link>
               {/* <Link onClick={()=>handleLinkClick(2)} style={scroll ? headerFontColorNone : headerFontColor}>SKILLS</Link> */}
               {/* <Link onClick={()=>handleLinkClick(5)} style={scroll ? headerFontColorNone : headerFontColor}>INTERVIEW</Link> */}
             </> : <></>
@@ -224,8 +225,9 @@ export default function Header() {
         <MBox style={menuStyle}>
           {is_home ? 
           <>
-            <Link onClick={()=>handleLinkClick(3)} style={scroll ? headerFontColorNone : headerFontColor}>ABOUT ME</Link>
-            <Link onClick={()=>handleLinkClick(4)} style={scroll ? headerFontColorNone : headerFontColor}>CAREER</Link>
+            <Link onClick={()=>handleLinkClick(3)} style={scroll ? headerFontColorNone : headerFontColor}>SKILLS</Link>
+            <Link onClick={()=>handleLinkClick(4)} style={scroll ? headerFontColorNone : headerFontColor}>ABOUT ME</Link>
+            <Link onClick={()=>handleLinkClick(5)} style={scroll ? headerFontColorNone : headerFontColor}>CAREER</Link>
             {/* <Link onClick={()=>handleLinkClick(2)} style={scroll ? headerFontColorNone : headerFontColor}>SKILLS</Link> */}
             {/* <Link onClick={()=>handleLinkClick(5)} style={scroll ? headerFontColorNone : headerFontColor}>INTERVIEW</Link> */}
           </> : <></>  
