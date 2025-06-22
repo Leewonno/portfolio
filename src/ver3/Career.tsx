@@ -288,7 +288,8 @@ export default function Career() {
             {/* <ItemDate>2024.04 ~ (재직중)</ItemDate> */}
           </ItemTitleBox>
           <ItemContent>
-            <ItemList>제 57회 SQLD 자격증(SQL Developer)</ItemList>
+            <ItemList>제 57회 SQLD 자격증 (SQL Developer)</ItemList>
+            <ItemList>KSTQB CTBL (Certified Tester Basic Level)</ItemList>
           </ItemContent>
         </Item>
       </BottomBox>
