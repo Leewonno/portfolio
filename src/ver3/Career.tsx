@@ -290,6 +290,8 @@ export default function Career() {
           <ItemContent>
             <ItemList>제 57회 SQLD 자격증 (SQL Developer)</ItemList>
             <ItemList>KSTQB CTBL (Certified Tester Basic Level)</ItemList>
+            <ItemList>DSAC 3급(프로그래머)</ItemList>
+            <ItemList>ITQ 인터넷 A등급</ItemList>
           </ItemContent>
         </Item>
       </BottomBox>
