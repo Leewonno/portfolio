@@ -65,10 +65,11 @@ const BottomBox = styled(motion.div)`
   flex-direction: column;
   align-items: center;
   width: 1100px;
-  gap: 50px;
+  gap: 30px;
 
   ${media.phone`
     width: 100%;
+    gap: 20px;
   `}
 `
 
