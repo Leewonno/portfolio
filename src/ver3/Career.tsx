@@ -56,7 +56,7 @@ const Title = styled.div`
   cursor: pointer;
 
   ${media.phone`
-    font-size: 25px;
+    font-size: 23px;
   `}
 `
 
@@ -65,6 +65,7 @@ const BottomBox = styled(motion.div)`
   flex-direction: column;
   align-items: center;
   width: 1100px;
+  gap: 50px;
 
   ${media.phone`
     width: 100%;
@@ -91,6 +92,10 @@ const ItemTitleBox = styled.div`
   display: flex;
   align-items: flex-end;
   gap: 10px;
+
+  ${media.phone`
+    gap: 5px;
+  `}
 `
 
 const ItemTitle = styled.div`
@@ -107,7 +112,7 @@ const ItemDate = styled.div`
   font-family: 'S-CoreDream-3Light';
   
   ${media.phone`
-    font-size: 14px;
+    font-size: 12px;
   `}
 `
 
@@ -119,27 +124,37 @@ const ItemDepartmentBox = styled.div`
 
   ${media.phone`
     font-size: 14px;
+    flex-direction: column;
+    align-items: flex-start;
   `}
 `
 
 const Department = styled.div`
   border-radius: 5px;
-  background-color: #f2f2f2;
   padding: 3px 6px;
+  background-color: #f1f1f1;
   user-select: none;
   font-family: 'S-CoreDream-3Light';
+  display: flex;
+  align-items: center;
 `
 
-const ItemContent = styled.div`
+const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
+  /* padding: 3px 6px; */
+  /* border-radius: 3px; */
+`
+
+const ItemContent = styled.ul`
   font-size: 15px;
-  background-color: #f2f2f2;
+  background-color: #f1f1f1;
   padding: 5px 10px;
   border-radius: 5px;
   line-height: 1.6;
   font-family: 'S-CoreDream-3Light';
+  margin: 0;
 
   ${media.phone`
-    font-size: 13px;
+    font-size: 14px;
   `}
 `
 
@@ -200,11 +215,13 @@ const ItemSkillImage = styled.img`
   `}
 `
 
-const Dot = styled.span`
-  margin-right: 15px;
+const ItemList = styled.li`
+  padding-left: 5px;
+  margin-left: 20px;
 
   ${media.phone`
-    margin-right: 5px;
+    padding-left: 5px;
+    margin-left: 15px;
   `}
 `
 
@@ -217,7 +234,7 @@ export default function Career() {
       <TopBox ref={ref} animate={animation} variants={customChildVariants}>
         <TitleBox>
           <Title title="서울소프트">
-            <FontAwesomeIcon icon={faFolderOpen} /> CAREER
+            <FontAwesomeIcon icon={faFolderOpen} /> CAREER & CERTIFICATE
           </Title>
         </TitleBox>
       </TopBox>
@@ -229,8 +246,13 @@ export default function Career() {
             <ItemDate>2024.04 ~ (재직중)</ItemDate>
           </ItemTitleBox>
           <ItemDepartmentBox>
-            <Department><FontAwesomeIcon icon={faPeopleGroup} style={{marginRight:'5px'}} />모빌리티 개발팀</Department>
-            <Department><FontAwesomeIcon icon={faKeyboard} style={{marginRight:'5px'}} />풀스택 개발</Department> 
+            <Department>
+              <StyledFontAwesomeIcon icon={faPeopleGroup} style={{ marginRight: '5px' }} />
+              모빌리티 개발팀
+            </Department>
+            <Department>
+              <StyledFontAwesomeIcon icon={faKeyboard} style={{ marginRight: '5px' }} />풀스택 개발
+            </Department>
           </ItemDepartmentBox>
           <ItemSkillContainer>
             <ItemSkillBox>
@@ -251,10 +273,22 @@ export default function Career() {
             </ItemSkillBox>
           </ItemSkillContainer>
           <ItemContent>
-            <Dot>•</Dot>운수사 <Bold>ERP</Bold> 서비스 개발 <br />
-            <Dot>•</Dot><Bold>Django</Bold> 기반 <Bold>MVT 패턴</Bold>을 활용한 웹 서비스 개발 <br />
-            <Dot>•</Dot><Bold>JQuery</Bold> 라이브러리를 이용한 프론트엔드 기능 구현 <br />
-            <Dot>•</Dot><Bold>Amazone Web Service</Bold> 를 이용한 서비스 배포 및 인프라 관리 <br />
+            <ItemList>운수사 <Bold>ERP</Bold> 서비스 개발 <br /></ItemList>
+            <ItemList><Bold>Django</Bold> 기반 <Bold>MVT 패턴</Bold>을 활용한 웹 서비스 개발 <br /></ItemList>
+            <ItemList><Bold>JQuery</Bold> 라이브러리를 이용한 프론트엔드 기능 구현 <br /></ItemList>
+            <ItemList><Bold>Amazone Web Service</Bold> 를 이용한 서비스 배포 및 인프라 관리 <br /></ItemList>
+          </ItemContent>
+        </Item>
+
+        {/* 자격증 */}
+        <Item variants={customChildVariants}>
+          {/* <ItemLogo src={seoulsoft} /> */}
+          <ItemTitleBox>
+            <ItemTitle>자격증(CERTIFICATE)</ItemTitle>
+            {/* <ItemDate>2024.04 ~ (재직중)</ItemDate> */}
+          </ItemTitleBox>
+          <ItemContent>
+            <ItemList>제 57회 SQLD 자격증(SQL Developer)</ItemList>
           </ItemContent>
         </Item>
       </BottomBox>

@@ -42,7 +42,7 @@ const Section = styled.section`
   justify-content: center;
 
   ${media.phone`
-    padding: 40px 20px;
+    padding: 50px 20px;
     gap: 15px;
     flex-direction: column;
   `}
@@ -139,7 +139,7 @@ const ZoomLayer = styled.div.attrs<{ x: number; y: number }>((props) => ({
 
   ${media.phone`
     width: 100%;
-    padding: 40px 20px;
+    padding: 50px 20px;
     box-sizing: border-box;
   `}
 `
@@ -173,7 +173,7 @@ const FixedBackground = styled.img`
 const BlinkText = styled.div`
   display: none;
   position: absolute;
-  top: 10px;
+  top: 20px;
   font-family: 'S-CoreDream-3Light';
   font-weight: 600;
   font-size: 24px;
