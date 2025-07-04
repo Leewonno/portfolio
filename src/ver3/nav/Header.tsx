@@ -32,6 +32,11 @@ const LogoBox = styled.div`
   margin-left: 20px;
   font-family: 'S-CoreDream-7EXTRA_BOLD';
   cursor: pointer;
+
+  ${media.phone`
+    margin-top: 5px;
+    font-size: 22px;
+  `}
 `
 
 const Logo = styled.a`
@@ -189,7 +194,7 @@ export default function Header() {
     };
   }, [width]);
 
-  const handleLinkClick = (section:number) => {
+  const handleLinkClick = (section: number) => {
     window.scrollTo({
       top: window.innerHeight * section,
     });
@@ -211,9 +216,9 @@ export default function Header() {
         <LinkBox>
           {is_home ?
             <>
-              <Link onClick={()=>handleLinkClick(3)} style={scroll ? headerFontColorNone : headerFontColor}>ABOUT ME</Link>
-              <Link onClick={()=>handleLinkClick(4)} style={scroll ? headerFontColorNone : headerFontColor}>SKILLS</Link>
-              <Link onClick={()=>handleLinkClick(5)} style={scroll ? headerFontColorNone : headerFontColor}>CAREER</Link>
+              <Link onClick={() => handleLinkClick(3)} style={scroll ? headerFontColorNone : headerFontColor}>ABOUT ME</Link>
+              <Link onClick={() => handleLinkClick(4)} style={scroll ? headerFontColorNone : headerFontColor}>SKILLS</Link>
+              <Link onClick={() => handleLinkClick(5)} style={scroll ? headerFontColorNone : headerFontColor}>CAREER</Link>
               {/* <Link onClick={()=>handleLinkClick(2)} style={scroll ? headerFontColorNone : headerFontColor}>SKILLS</Link> */}
               {/* <Link onClick={()=>handleLinkClick(5)} style={scroll ? headerFontColorNone : headerFontColor}>INTERVIEW</Link> */}
             </> : <></>
@@ -223,14 +228,14 @@ export default function Header() {
           </Link>
         </LinkBox>
         <MBox style={menuStyle}>
-          {is_home ? 
-          <>
-            <Link onClick={()=>handleLinkClick(3)} style={scroll ? headerFontColorNone : headerFontColor}>ABOUT ME</Link>
-            <Link onClick={()=>handleLinkClick(4)} style={scroll ? headerFontColorNone : headerFontColor}>SKILLS</Link>
-            <Link onClick={()=>handleLinkClick(5)} style={scroll ? headerFontColorNone : headerFontColor}>CAREER</Link>
-            {/* <Link onClick={()=>handleLinkClick(2)} style={scroll ? headerFontColorNone : headerFontColor}>SKILLS</Link> */}
-            {/* <Link onClick={()=>handleLinkClick(5)} style={scroll ? headerFontColorNone : headerFontColor}>INTERVIEW</Link> */}
-          </> : <></>  
+          {is_home ?
+            <>
+              <Link onClick={() => handleLinkClick(3)} style={scroll ? headerFontColorNone : headerFontColor}>ABOUT ME</Link>
+              <Link onClick={() => handleLinkClick(4)} style={scroll ? headerFontColorNone : headerFontColor}>SKILLS</Link>
+              <Link onClick={() => handleLinkClick(5)} style={scroll ? headerFontColorNone : headerFontColor}>CAREER</Link>
+              {/* <Link onClick={()=>handleLinkClick(2)} style={scroll ? headerFontColorNone : headerFontColor}>SKILLS</Link> */}
+              {/* <Link onClick={()=>handleLinkClick(5)} style={scroll ? headerFontColorNone : headerFontColor}>INTERVIEW</Link> */}
+            </> : <></>
           }
           <Link href={"/project"} target="_blank" style={scroll ? headerFontColorNone : headerFontColor}>
             PROJECTS <FontAwesomeIcon icon={faSquareArrowUpRight} />
