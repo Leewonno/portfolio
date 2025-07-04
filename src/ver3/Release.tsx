@@ -122,6 +122,7 @@ const ProjectButton = styled(motion.a)`
 
   ${media.phone`
     font-size: 14px;
+    padding: 3px 10px;
   `}
 `
 

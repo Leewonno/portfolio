@@ -173,7 +173,7 @@ const FixedBackground = styled.img`
 const BlinkText = styled.div`
   display: none;
   position: absolute;
-  top: 20px;
+  top: 50px;
   font-family: 'S-CoreDream-3Light';
   font-weight: 600;
   font-size: 24px;
