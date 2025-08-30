@@ -19,7 +19,7 @@ const ProjectContext = createContext<ProjectContextType>({
 });
 
 export function ProjectProvider({ children }: ProjectProviderProps) {
-  const [project, setProject] = useState<ProjectKeyType>("portfolio");
+  const [project, setProject] = useState<ProjectKeyType>("nmixxfans");
 
   return <ProjectContext.Provider value={{
     project, setProject,
