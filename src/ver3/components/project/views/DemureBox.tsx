@@ -12,7 +12,6 @@ import ProjectLink from "../../../common/ProjectLink"
 import ProjectLinkBox from "../../../common/ProjectLinkBox"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
-import { faHouse } from "@fortawesome/free-solid-svg-icons"
 
 const Box = styled.div`
   width: 100%;

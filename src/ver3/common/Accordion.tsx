@@ -32,6 +32,7 @@ const ContentBox = styled.div`
 
 const Content = styled.div`
   font-family: 'S-CoreDream-3Light';
+  line-height: 1.5;
 `
 
 interface ComponentProps {

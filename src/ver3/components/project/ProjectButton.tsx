@@ -24,7 +24,7 @@ const InputLabel = styled.label`
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 3px;
+  gap: 5px;
   padding: 10px 15px;
   background-color: #fff;
   border-radius: 20px;

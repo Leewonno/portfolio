@@ -28,8 +28,12 @@ import lyrics1 from '../../img/new/lyrics/lyrics_main.png';
 import lyrics2 from '../../img/new/lyrics/lyrics_tran.png';
 import portfolio1 from '../../img/new/portfolio/portfolio_main.png';
 import portfolio2 from '../../img/new/portfolio/portfolio_main2.png';
+import nmixxfans from '../../img/new/nmixxfans/nmixxfans_home.png';
+import nmixxfans2 from '../../img/new/nmixxfans/nmixxfans_board.png';
+import nmixxfans3 from '../../img/new/nmixxfans/nmixxfans_write.png';
+import nmixxfans4 from '../../img/new/nmixxfans/nmixxfans_login.png';
 
-export type ProjectKeyType = "demure" | "novelpedia" | "lebu" | "novelcut" | "mangoz" | "lyrics" | "portfolio"
+export type ProjectKeyType = "demure" | "novelpedia" | "lebu" | "novelcut" | "mangoz" | "lyrics" | "portfolio" | "nmixxfans"
 
 export interface CarouselImageType {
   url: string, // 이미지 url
@@ -48,9 +52,18 @@ export interface ProjectDataType {
   mangoz: CarouselImagePropsType;
   lyrics: CarouselImagePropsType;
   portfolio: CarouselImagePropsType;
+  nmixxfans: CarouselImagePropsType;
 };
 
 export const projectData: ProjectDataType = {
+  nmixxfans: {
+    data: [
+      { url: nmixxfans, title: '메인스크린(Main)' },
+      { url: nmixxfans2, title: '게시판(Board)' },
+      { url: nmixxfans3, title: '글쓰기/이미지업로드(Create/Upload)' },
+      { url: nmixxfans4, title: '로그인/회원가입(Login/SignUp)' },
+    ]
+  },
   portfolio: {
     data: [
       { url: portfolio1, title: '메인페이지(Main)' },
@@ -74,40 +87,40 @@ export const projectData: ProjectDataType = {
   },
   novelpedia: {
     data: [
-      { url: novelpedia1, title:'메인페이지(Main)' },
-      { url: novelpedia2, title:'작품(Novel)' },
-      { url: novelpedia3, title:'작품편집(NovelEdit)' },
-      { url: novelpedia4, title:'역사(History)' },
-      { url: novelpedia5, title:'목록(List)' },
+      { url: novelpedia1, title: '메인페이지(Main)' },
+      { url: novelpedia2, title: '작품(Novel)' },
+      { url: novelpedia3, title: '작품편집(NovelEdit)' },
+      { url: novelpedia4, title: '역사(History)' },
+      { url: novelpedia5, title: '목록(List)' },
     ]
   },
   lebu: {
     data: [
-      { url: lebu1, title:'메인페이지(Main)' },
-      { url: lebu2, title:'메인페이지(Main)' },
-      { url: lebu3, title:'관광지(TouristAttraction)' },
-      { url: lebu4, title:'식당(Food)' },
+      { url: lebu1, title: '메인페이지(Main)' },
+      { url: lebu2, title: '메인페이지(Main)' },
+      { url: lebu3, title: '관광지(TouristAttraction)' },
+      { url: lebu4, title: '식당(Food)' },
 
     ]
   },
   novelcut: {
     data: [
-      { url: novelcut1, title:'메인페이지(Main)' },
-      { url: novelcut2, title:'작품정보(Novel)' },
-      { url: novelcut3, title:'작품보기(View)' },
-      { url: novelcut4, title:'작품생성(Create)' },
-      { url: novelcut5, title:'회차생성(Write)' },
+      { url: novelcut1, title: '메인페이지(Main)' },
+      { url: novelcut2, title: '작품정보(Novel)' },
+      { url: novelcut3, title: '작품보기(View)' },
+      { url: novelcut4, title: '작품생성(Create)' },
+      { url: novelcut5, title: '회차생성(Write)' },
     ]
   },
   mangoz: {
     data: [
-      { url: mangoz, title:'메인페이지(Main)' },
+      { url: mangoz, title: '메인페이지(Main)' },
     ]
   },
   lyrics: {
     data: [
-      { url: lyrics1, title:'메인페이지(Main)' },
-      { url: lyrics2, title:'자막변환(Transform)' },
+      { url: lyrics1, title: '메인페이지(Main)' },
+      { url: lyrics2, title: '자막변환(Transform)' },
     ]
   }
 };
