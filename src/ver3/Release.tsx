@@ -186,12 +186,12 @@ export default function Release() {
         </LinkButtonBox>
 
       </LinkBox>
-      <ProjectButton href={projectPath} target={'_blank'}>
+      {/* <ProjectButton href={projectPath} target={'_blank'}>
         프로젝트 상세
         <IconBox>
           <FontAwesomeIcon icon={faSquareArrowUpRight} />
         </IconBox>
-      </ProjectButton>
+      </ProjectButton> */}
     </Section>
   )
 }

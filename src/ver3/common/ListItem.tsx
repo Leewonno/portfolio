@@ -5,6 +5,7 @@ const Component = styled.li`
   list-style: circle;
   line-height: 1.6;
   font-size: 15px;
+  margin-left: 15px;
 `
 
 interface ComponentProps {

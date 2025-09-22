@@ -216,30 +216,32 @@ export default function Header() {
         <LinkBox>
           {is_home ?
             <>
-              <Link onClick={() => handleLinkClick(3)} style={scroll ? headerFontColorNone : headerFontColor}>ABOUT ME</Link>
-              <Link onClick={() => handleLinkClick(4)} style={scroll ? headerFontColorNone : headerFontColor}>SKILLS</Link>
+              <Link onClick={()=>handleLinkClick(3)} style={scroll ? headerFontColorNone : headerFontColor}>PROJECTS</Link>
+              <Link onClick={() => handleLinkClick(4)} style={scroll ? headerFontColorNone : headerFontColor}>ABOUT ME</Link>
               <Link onClick={() => handleLinkClick(5)} style={scroll ? headerFontColorNone : headerFontColor}>CAREER</Link>
+              <Link onClick={() => handleLinkClick(6)} style={scroll ? headerFontColorNone : headerFontColor}>SKILLS</Link>
               {/* <Link onClick={()=>handleLinkClick(2)} style={scroll ? headerFontColorNone : headerFontColor}>SKILLS</Link> */}
               {/* <Link onClick={()=>handleLinkClick(5)} style={scroll ? headerFontColorNone : headerFontColor}>INTERVIEW</Link> */}
             </> : <></>
           }
-          <Link href={"/project"} target="_blank" style={scroll ? headerFontColorNone : headerFontColor}>
+          {/* <Link href={"/project"} target="_blank" style={scroll ? headerFontColorNone : headerFontColor}>
             PROJECTS <FontAwesomeIcon icon={faSquareArrowUpRight} />
-          </Link>
+          </Link> */}
         </LinkBox>
         <MBox style={menuStyle}>
           {is_home ?
             <>
-              <Link onClick={() => handleLinkClick(3)} style={scroll ? headerFontColorNone : headerFontColor}>ABOUT ME</Link>
-              <Link onClick={() => handleLinkClick(4)} style={scroll ? headerFontColorNone : headerFontColor}>SKILLS</Link>
+              <Link onClick={() => handleLinkClick(3)} style={scroll ? headerFontColorNone : headerFontColor}>PROJECTS</Link>
+              <Link onClick={() => handleLinkClick(4)} style={scroll ? headerFontColorNone : headerFontColor}>ABOUT ME</Link>
               <Link onClick={() => handleLinkClick(5)} style={scroll ? headerFontColorNone : headerFontColor}>CAREER</Link>
+              <Link onClick={() => handleLinkClick(6)} style={scroll ? headerFontColorNone : headerFontColor}>SKILLS</Link>
               {/* <Link onClick={()=>handleLinkClick(2)} style={scroll ? headerFontColorNone : headerFontColor}>SKILLS</Link> */}
               {/* <Link onClick={()=>handleLinkClick(5)} style={scroll ? headerFontColorNone : headerFontColor}>INTERVIEW</Link> */}
             </> : <></>
           }
-          <Link href={"/project"} target="_blank" style={scroll ? headerFontColorNone : headerFontColor}>
+          {/* <Link href={"/project"} target="_blank" style={scroll ? headerFontColorNone : headerFontColor}>
             PROJECTS <FontAwesomeIcon icon={faSquareArrowUpRight} />
-          </Link>
+          </Link> */}
         </MBox>
         <StyledFontAwesomeIcon icon={faBars} onClick={handleMenuBtn} />
       </Box>

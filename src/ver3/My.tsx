@@ -303,7 +303,7 @@ export default function My() {
               </LeftItem>
               <RightItem>
                 <ItemTitle>참여활동</ItemTitle>
-                <ItemContent>포스코 X 코딩온 웹 풀스택 부트캠프 9기</ItemContent>
+                <ItemContent>포스코 X 코딩온 웹 풀스택 부트캠프</ItemContent>
                 <ItemContent>(2023.07~2023.12)</ItemContent>
               </RightItem>
             </Item>

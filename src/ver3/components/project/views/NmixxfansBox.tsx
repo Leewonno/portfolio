@@ -8,7 +8,7 @@ import ListItem from "../../../common/ListItem"
 import ProjectLinkBox from "../../../common/ProjectLinkBox"
 import ProjectLink from "../../../common/ProjectLink"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faGithub } from "@fortawesome/free-brands-svg-icons"
+import { faGithub, faYoutube } from "@fortawesome/free-brands-svg-icons"
 import s3 from "../../../../img/new/aws-s3.svg"
 
 const Box = styled.div`
@@ -55,6 +55,9 @@ export default function NmixxfansBox() {
         </ProjectLink>
         <ProjectLink href="https://github.com/Leewonno/NMIXX-FANS-APP" title="Github(APP)">
           <FontAwesomeIcon icon={faGithub} />
+        </ProjectLink>
+        <ProjectLink href="https://www.youtube.com/playlist?list=PLxbRBTyPvzi-30qypQgCwtfdSN0dXImkd" title="Youtube">
+          <FontAwesomeIcon icon={faYoutube} />
         </ProjectLink>
       </ProjectLinkBox>
     </Box>

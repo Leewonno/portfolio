@@ -7,6 +7,7 @@ import Personal from "./Personal"
 import Career from "./Career"
 import End from "./End"
 import Skill from "./Skill"
+import Project from "./Project"
 
 const Container = styled.div`
   display: flex;
@@ -32,12 +33,14 @@ export default function Home() {
       <Intro />
       {/* 배포된 프로젝트 */}
       <Release />
+      {/* 프로젝트 */}
+      <Project />
       {/* 나에 대해서 */}
       <My />
-      {/* 기술 */}
-      <Skill />
       {/* 경력 */}
       <Career />
+      {/* 기술 */}
+      <Skill />
       {/* 자기소개 */}
       {/* <Personal /> */}
       {/* 마지막 -> 인사 + 방문자수 차트 */}
