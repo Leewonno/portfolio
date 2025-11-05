@@ -1,3 +1,5 @@
+![image](https://portfolio-67029.web.app/static/media/portfolio_main2.a756ea89665cb25049ee.png)
+
 # 포트폴리오 프로젝트
 
 ## 🌟 프로젝트 소개
