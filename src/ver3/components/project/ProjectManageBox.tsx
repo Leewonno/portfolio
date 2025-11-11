@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import ProjectButton from "./ProjectButton"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faAddressCard, faBookOpen, faHeadphones, faLocationDot, faMusic, faScissors, faTag, faComments } from "@fortawesome/free-solid-svg-icons"
+import { faAddressCard, faBookOpen, faHeadphones, faLocationDot, faMusic, faScissors, faTag, faComments, faBlog } from "@fortawesome/free-solid-svg-icons"
 import { useHorizontalScroll } from "../../lib/utils/useScroll"
 import scroll from "../../../img/new/sm_scroll.png"
 import { media } from "../../lib/styles/media"
@@ -39,7 +39,11 @@ export default function ProjectManageBox() {
     <Box ref={scrollRef}>
       {/* 프로젝트 버튼 */}
       {/* 클릭된 버튼에 따른 프로젝트를 보여줌 */}
-      <ProjectButton id={"nmixxfans"} name="project" checked={true}>
+      <ProjectButton id={"mylog"} name="project" checked={true}>
+        <FontAwesomeIcon icon={faBlog} />
+        MyLog
+      </ProjectButton>
+      <ProjectButton id={"nmixxfans"} name="project">
         <FontAwesomeIcon icon={faComments} />
         NMIXX FANS
       </ProjectButton>

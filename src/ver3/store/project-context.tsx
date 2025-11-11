@@ -14,12 +14,12 @@ interface ProjectProviderProps {
 }
 
 const ProjectContext = createContext<ProjectContextType>({
-  project: "portfolio",
+  project: "mylog",
   setProject: () => { },
 });
 
 export function ProjectProvider({ children }: ProjectProviderProps) {
-  const [project, setProject] = useState<ProjectKeyType>("nmixxfans");
+  const [project, setProject] = useState<ProjectKeyType>("mylog");
 
   return <ProjectContext.Provider value={{
     project, setProject,

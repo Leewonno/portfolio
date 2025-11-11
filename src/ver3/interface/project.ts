@@ -32,8 +32,13 @@ import nmixxfans from '../../img/new/nmixxfans/nmixxfans_home.png';
 import nmixxfans2 from '../../img/new/nmixxfans/nmixxfans_board.png';
 import nmixxfans3 from '../../img/new/nmixxfans/nmixxfans_write.png';
 import nmixxfans4 from '../../img/new/nmixxfans/nmixxfans_login.png';
+import mylog from '../../img/new/mylog/mylog_home.png';
+import mylog2 from '../../img/new/mylog/mylog_read.png';
+import mylog3 from '../../img/new/mylog/mylog_create.png';
+import mylog4 from '../../img/new/mylog/mylog_edit.png';
+import mylog5 from '../../img/new/mylog/mylog_mypage.png';
 
-export type ProjectKeyType = "demure" | "novelpedia" | "lebu" | "novelcut" | "mangoz" | "lyrics" | "portfolio" | "nmixxfans"
+export type ProjectKeyType = "demure" | "novelpedia" | "lebu" | "novelcut" | "mangoz" | "lyrics" | "portfolio" | "nmixxfans" | "mylog"
 
 export interface CarouselImageType {
   url: string, // 이미지 url
@@ -53,9 +58,19 @@ export interface ProjectDataType {
   lyrics: CarouselImagePropsType;
   portfolio: CarouselImagePropsType;
   nmixxfans: CarouselImagePropsType;
+  mylog: CarouselImagePropsType;
 };
 
 export const projectData: ProjectDataType = {
+  mylog: {
+    data: [
+      { url: mylog, title: '메인페이지(Main)' },
+      { url: mylog2, title: '글 읽기(Read)' },
+      { url: mylog3, title: '글 쓰기(Create)' },
+      { url: mylog4, title: '글 수정(Update/Delete)' },
+      { url: mylog5, title: '마이페이지(My)' },
+    ]
+  },
   nmixxfans: {
     data: [
       { url: nmixxfans, title: '메인스크린(Main)' },

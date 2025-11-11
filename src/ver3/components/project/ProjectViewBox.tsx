@@ -11,6 +11,7 @@ import NovelpediaBox from "./views/NovelpediaBox"
 import PortfolioBox from "./views/PortfolioBox"
 import { media } from "../../lib/styles/media"
 import NmixxfansBox from "./views/NmixxfansBox"
+import MyLogBox from "./views/MyLogBox"
 
 const Box = styled.div`
   width: 100%;
@@ -84,6 +85,9 @@ export default function ProjectViewBox() {
           :
         project === 'nmixxfans' ?
           <NmixxfansBox />
+          :
+        project === 'mylog' ?
+          <MyLogBox />
           :
           <></>
         }
