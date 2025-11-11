@@ -18,6 +18,7 @@ export default function MainIntroduce(){
         else{
             setStyleThema({});
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     },[context.light]);
 
     const thema={

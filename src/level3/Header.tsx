@@ -1,4 +1,3 @@
-// import LightNav from '../level3/LightNav';
 import header from "../css/header.module.css";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -12,7 +11,7 @@ export default function Header() {
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll); //clean up
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
@@ -82,22 +81,19 @@ export default function Header() {
     <header className={header.header} style={scroll ? headerBackgoundColorNone : headerBackgoundColor}>
       <div className={header.headerBox}>
         <div className={header.name}>
-          <div><a href="#intro" style={scroll ? headerFontColorNone : headerFontColor}>LIKE NMIXX</a></div>
+          <div><a href="/" style={scroll ? headerFontColorNone : headerFontColor}>LIKE NMIXX</a></div>
         </div>
         <div className={header.aBox}>
-          {/* <a href="#home" className={header.a}>HOME</a> */}
-          <a href="#my" className={header.a} style={scroll ? headerFontColorNone : headerFontColor}>About Me</a>
-          <a href="#skill" className={header.a} style={scroll ? headerFontColorNone : headerFontColor}>Skills</a>
-          <a href="#project" className={header.a} style={scroll ? headerFontColorNone : headerFontColor}>Project</a>
+          <a href="#my" className={header.a} style={scroll ? headerFontColorNone : headerFontColor}>ABOUT ME</a>
+          <a href="#skill" className={header.a} style={scroll ? headerFontColorNone : headerFontColor}>SKILLS</a>
+          <a href="#project" className={header.a} style={scroll ? headerFontColorNone : headerFontColor}>PROJECTS</a>
         </div>
         <div className={header.maBox} style={menuStyle}>
-          {/* <a href="#home" className={header.a}>HOME</a> */}
           <a href="#my" className={header.a} style={scroll ? headerFontColorNone : headerFontColor}>About Me</a>
           <a href="#skill" className={header.a} style={scroll ? headerFontColorNone : headerFontColor}>Skills</a>
           <a href="#project" className={header.a} style={scroll ? headerFontColorNone : headerFontColor}>Project</a>
         </div>
         <FontAwesomeIcon icon={faBars} className={header.icon} onClick={handleMenuBtn}/>
-        {/* <LightNav /> */}
       </div>
     </header>
   )

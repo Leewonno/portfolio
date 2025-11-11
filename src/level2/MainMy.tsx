@@ -32,6 +32,7 @@ export default function MainMy(){
             setStyleThema2({});
             setStyleThema3({});
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     },[context.light]);
 
     const thema={
@@ -67,6 +68,7 @@ export default function MainMy(){
             }
             window.removeEventListener("resize", handleResize);
         };
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [width]);
 
     return(
@@ -98,7 +100,7 @@ export default function MainMy(){
                             </div>
                             <div className={main.infoName} style={styleThema2}>Github</div>
                             <div className={main.infoItemBox}>
-                                <div><a href="https://github.com/Leewonno" target="_blank"><FontAwesomeIcon icon={faGithub} style={{fontSize:"30px", marginTop:"15px", color:"white"}} /></a></div>
+                                <div><a href="https://github.com/Leewonno" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub} style={{fontSize:"30px", marginTop:"15px", color:"white"}} /></a></div>
                             </div>
                         </div>
                     </div>

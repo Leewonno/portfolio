@@ -57,6 +57,7 @@
     text-decoration: none;
     margin-left: 15px;
     transition: all 0.3s;
+    font-weight: 600;
 }
 
 .a:hover{

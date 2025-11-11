@@ -105,34 +105,4 @@
     .box{
         right: 20px;
     }
-    
-    .line{
-
-    }
-    
-    .dot{
-
-    }
-    
-    .dotBuble{
-
-    }
-    
-    .hint{
-        
-    }
-    
-
-
-    .box:hover{
-    }
-    
-    .box:hover .hint{
-    }
-    
-    .box:active{
-    }
-    
-    .box:active .hint{
-    }
 }

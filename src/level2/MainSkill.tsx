@@ -14,6 +14,7 @@ export default function MainSkill(){
         else{
             setStyleThema({});
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     },[context.light]);
 
     const thema={
@@ -25,16 +26,6 @@ export default function MainSkill(){
             <section id="skill" className={main.skill}>
                 <div className={main.skillTitle} style={styleThema}>SKILL</div>
                 <div className={main.skillBox} style={styleThema}>
-                    {/* <div className={main.skillItem}>
-                        <div className={main.skillItemBox}>
-                            <div className={main.skillImgBox}>
-                                <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=HTML5&logoColor=white" alt="HTML" style={{width:"100px"}} />
-                            </div>
-                            <div className={main.skillPercentBox}>
-                                <div className={main.skillPercent} style={{width:"90%"}}></div>
-                            </div>
-                        </div>
-                    </div> */}
                     <div className={main.skillCategory}>
                         <div className={main.skillCategoryTitle}>Frontend</div>
                         <div className={main.skillImgBox}>
