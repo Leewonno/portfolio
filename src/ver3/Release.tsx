@@ -1,12 +1,11 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { motion } from "framer-motion"
 import styled from "styled-components"
-import { faScissors, faAddressCard, faBookOpen, faPlane, faFile, faSquareArrowUpRight } from "@fortawesome/free-solid-svg-icons";
+import { faScissors, faAddressCard, faBookOpen, faPlane, faBlog } from "@fortawesome/free-solid-svg-icons";
 import { customChildVariants, customVariants, rotateChildVariants, rotateVariants } from "./lib/styles/animation";
 import useObserver from "./lib/hook/useObserver";
 import Bold from "./common/Bold";
 import { media } from "./lib/styles/media";
-import { useLocation } from "react-router-dom";
 
 const Section = styled.section`
   width: 100%;
@@ -104,44 +103,44 @@ const Text = styled(motion.div)`
   `}
 `
 
-const ProjectButton = styled(motion.a)`
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  padding: 5px 15px;
-  color: #000;
-  text-decoration: none;
-  background-color: #e9e9e9;
-  border-radius: 25px;
-  font-weight: 600;
-  transition: all 0.3s;
+// const ProjectButton = styled(motion.a)`
+//   display: flex;
+//   align-items: center;
+//   gap: 5px;
+//   padding: 5px 15px;
+//   color: #000;
+//   text-decoration: none;
+//   background-color: #e9e9e9;
+//   border-radius: 25px;
+//   font-weight: 600;
+//   transition: all 0.3s;
 
-  &:hover {
-    background-color: #d9d9d9;
-  }
+//   &:hover {
+//     background-color: #d9d9d9;
+//   }
 
-  ${media.phone`
-    font-size: 14px;
-    padding: 3px 10px;
-  `}
-`
+//   ${media.phone`
+//     font-size: 14px;
+//     padding: 3px 10px;
+//   `}
+// `
 
-const IconBox = styled(motion.div)`
-  display: flex;
-  border-radius: 50%;
-  background-color: #f2f2f2;
-  padding: 6px;
-  transition: all 0.3s;
-`
+// const IconBox = styled(motion.div)`
+//   display: flex;
+//   border-radius: 50%;
+//   background-color: #f2f2f2;
+//   padding: 6px;
+//   transition: all 0.3s;
+// `
 
 export default function Release() {
   const { ref, animation } = useObserver();
 
   // 포폴 사이트 리팩토링 가능성 있으므로
   // 이전 기능 유지 위해
-  const location = useLocation();
-  const currentPath = location.pathname; // 현재 경로
-  const projectPath = `${currentPath.replace(/\/$/, '')}/project`; // 중복 슬래시 방지
+  // const location = useLocation();
+  // const currentPath = location.pathname; // 현재 경로
+  // const projectPath = `${currentPath.replace(/\/$/, '')}/project`; // 중복 슬래시 방지
 
   return (
     <Section>
@@ -155,6 +154,13 @@ export default function Release() {
             포트폴리오
           </LinkButton>
           <InfoBox>포트폴리오 사이트</InfoBox>
+        </LinkButtonBox>
+        <LinkButtonBox>
+          <LinkButton variants={rotateChildVariants} href="https://mylog-leewonno.vercel.app/" target={"_blank"}>
+            <FontAwesomeIcon icon={faBlog} />
+            MyLog
+          </LinkButton>
+          <InfoBox>DB 없이 운영하는 나만의 블로그</InfoBox>
         </LinkButtonBox>
         <LinkButtonBox>
           <LinkButton variants={rotateChildVariants} href="https://novelcut-1f6f2.web.app/" target={"_blank"}>
