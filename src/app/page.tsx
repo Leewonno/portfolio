@@ -1,24 +1,11 @@
-import { ScrollDirectionProvider } from "@/context/ScrollDirectionContext";
-import {
-  HomeIntro,
-  HomeNavigation,
-  HomePortfolio,
-  HomeResume,
-} from "@/features";
+import { HomeHero } from "@/features";
 
-export default async function Home({
-  searchParams,
-}: {
-  searchParams: Promise<{ q?: string }>;
-}) {
-  const { q } = await searchParams;
-
+export default async function Home() {
   return (
-    <ScrollDirectionProvider>
-      <HomeIntro />
-      <HomePortfolio q={q} />
-      <HomeResume />
-      <HomeNavigation />
-    </ScrollDirectionProvider>
+    <div className="w-full min-h-screen flex flex-col items-center p-20">
+      <div className="w-175">
+        <HomeHero />
+      </div>
+    </div>
   );
 }

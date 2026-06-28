@@ -81,6 +81,7 @@ export function Footer() {
           { label: "v1", href: "https://portfolio-67029.web.app/ver1" },
           { label: "v2", href: "https://portfolio-67029.web.app/ver2" },
           { label: "v3", href: "https://portfolio-67029.web.app/" },
+          { label: "v4", href: "/ver4" },
         ].map(({ label, href }) => (
           <Link
             key={label}
