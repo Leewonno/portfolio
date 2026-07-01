@@ -11,4 +11,5 @@ export { Footer } from "./nav/Footer";
 export { Header } from "./nav/Header";
 
 // Ver5
-export { HomeHero } from "./ver5/components/HomeHero";
+export { Hero } from "./ver5/components/Hero";
+export { CaseStudy } from "./ver5/components/CaseStudy";
