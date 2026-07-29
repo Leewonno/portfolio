@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { VersionSelect } from "./footer/VersionSelect";
 
 export function Footer() {
   return (
@@ -73,27 +73,7 @@ export function Footer() {
       </div>
 
       {/* 이전 버전 */}
-      <div className="flex items-center gap-3">
-        <span className="uppercase px-2.5 py-1 rounded-md border border-[rgba(255,255,255,0.12)] text-white/50">
-          이전 포트폴리오
-        </span>
-        {[
-          { label: "v1", href: "https://portfolio-67029.web.app/ver1" },
-          { label: "v2", href: "https://portfolio-67029.web.app/ver2" },
-          { label: "v3", href: "https://portfolio-67029.web.app/" },
-          { label: "v4", href: "/ver4" },
-        ].map(({ label, href }) => (
-          <Link
-            key={label}
-            href={href}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-2.5 py-1 rounded-md border border-[rgba(255,255,255,0.12)] hover:border-[rgba(255,255,255,0.3)] hover:text-white transition-colors"
-          >
-            {label}
-          </Link>
-        ))}
-      </div>
+      <VersionSelect />
     </footer>
   );
 }

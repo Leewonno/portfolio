@@ -7,7 +7,7 @@ export function Title({
 }) {
   return (
     <h2
-      className={`text-normal font-semibold text-gray-600 uppercase mb-2 ${className}`}
+      className={`text-base font-semibold text-gray-600 uppercase mb-2 ${className}`}
     >
       {children}
     </h2>
