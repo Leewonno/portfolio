@@ -33,7 +33,7 @@ export function Modal({
           {/* 헤더 */}
           <div className="flex items-start justify-between gap-4">
             <div className="flex items-center gap-2">
-              <Dialog.Title className="text-2xl font-semibold text-gray-800">
+              <Dialog.Title className="text-xl sm:text-2xl font-semibold text-gray-800">
                 {title}
               </Dialog.Title>
               {link && (

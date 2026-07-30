@@ -4,7 +4,7 @@ export function Hero() {
   return (
     <div className="hero-root w-full flex flex-col gap-6 relative">
       <div className="overflow-hidden">
-        <h1 className="hero-line-inner opacity-0 text-2xl font-medium text-gray-800 tracking-tight">
+        <h1 className="hero-line-inner opacity-0 text-xl sm:text-2xl font-medium text-gray-800 tracking-tight">
           이원노
         </h1>
       </div>
@@ -21,8 +21,8 @@ export function Hero() {
           <span>사용자가 헤매지 않고 이해하기 쉬운 흐름을 만듭니다.</span>
         </p>
       </div>
-      <div className="hero-box rounded-xl opacity-0 bg-blue-100/60 h-15 w-15 absolute right-0 top-0"></div>
-      <div className="hero-box rounded-xl opacity-0 bg-blue-100/60 h-15 w-15 absolute right-0 top-5"></div>
+      <div className="hero-box rounded-md sm:rounded-xl opacity-0 bg-blue-100/60 h-10 w-10 sm:h-15 sm:w-15 absolute right-0 top-0"></div>
+      <div className="hero-box rounded-md sm:rounded-xl opacity-0 bg-blue-100/60 h-10 w-10 sm:h-15 sm:w-15 absolute right-0 top-5"></div>
     </div>
   );
 }
