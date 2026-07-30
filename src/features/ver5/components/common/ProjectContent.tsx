@@ -68,7 +68,7 @@ export function ProjectContent({ project }: ProjectContentProps) {
           <span className="text-xs text-gray-400 tracking-widest uppercase">
             Works
           </span>
-          <ul className="flex flex-col gap-1.5 pl-5 list-disc list-outside marker:text-gray-300">
+          <ul className="flex flex-col gap-0.5 sm:gap-1.5 pl-5 list-disc list-outside marker:text-gray-300">
             {highWorks.map((work) => (
               <li key={work.content} className="text-sm text-gray-600">
                 {work.content}
@@ -77,9 +77,9 @@ export function ProjectContent({ project }: ProjectContentProps) {
 
             {otherWorks.length > 0 && (
               <>
-                <li className="text-sm text-gray-400">Other</li>
+                <li className="text-sm text-gray-600">Other</li>
                 {otherWorks.map((work) => (
-                  <li key={work.content} className="ml-4 text-sm text-gray-400">
+                  <li key={work.content} className="ml-4 text-sm text-gray-600">
                     {work.content}
                   </li>
                 ))}
@@ -95,11 +95,11 @@ export function ProjectContent({ project }: ProjectContentProps) {
           <span className="text-xs text-gray-400 tracking-widest uppercase">
             Tech Stack
           </span>
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-1 sm:gap-2">
             {project.techStack.map((tech) => (
               <span
                 key={tech}
-                className="px-3 py-1 text-xs rounded-full bg-gray-100 border border-gray-200 text-gray-600"
+                className="px-3 py-1 text-xs rounded-full bg-gray-50 border border-gray-200 text-gray-600"
               >
                 {tech}
               </span>

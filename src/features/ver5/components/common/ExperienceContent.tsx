@@ -13,7 +13,7 @@ export function ExperienceContent({ experience }: ExperienceContentProps) {
       </p>
 
       {/* 메타 정보 */}
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-1.5 sm:gap-2">
         <div className="flex gap-2 text-sm">
           <span className="text-gray-400 w-14 shrink-0">역할</span>
           <span className="text-gray-700">{experience.role}</span>
@@ -26,11 +26,11 @@ export function ExperienceContent({ experience }: ExperienceContentProps) {
 
       {/* 담당 업무 */}
       {experience.works.length > 0 && (
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-1.5 sm:gap-2">
           <span className="text-xs text-gray-400 tracking-widest uppercase">
             Works
           </span>
-          <ul className="flex flex-col gap-2 pl-5 list-disc list-outside marker:text-gray-300">
+          <ul className="flex flex-col gap-1.5 sm:gap-2 pl-5 list-disc list-outside marker:text-gray-300">
             {experience.works.map((work) => (
               <li key={work} className="text-sm text-gray-600">
                 <span>{work}</span>

@@ -12,7 +12,7 @@ export const PROJECTS: Project[] = [
       { importance: "other", content: "레거시 DBF → MySQL 마이그레이션" },
       {
         importance: "other",
-        content: "공통 인쇄 레이아웃 설계 및 tablib 기반 엑셀 다운로드 구현",
+        content: "공통 인쇄 레이아웃 설계 및 tablib 기반 엑셀 템플릿 구현",
       },
       {
         importance: "other",
@@ -77,7 +77,7 @@ export const PROJECTS: Project[] = [
       { importance: "other", content: "마크다운 파서 및 에디터 구현" },
       {
         importance: "other",
-        content: "Supabase Realtime Broadcast 기반 실시간 채팅 기능 구현",
+        content: "Supabase Realtime Broadcast 기반 실시간 채팅 구현",
       },
     ],
     caseStudies: [
@@ -131,25 +131,25 @@ export const PROJECTS: Project[] = [
         importance: "high",
         content: "크롬 내장 온디바이스 AI(Gemini Nano) 기반 질문 요약 구현",
       },
-      {
-        importance: "other",
-        content:
-          "어댑터 패턴으로 6개 AI 서비스의 입력창 삽입·메시지 영역 판별 로직 분리",
-      },
-      {
-        importance: "other",
-        content:
-          "Shadow DOM 렌더링과 CSP 우회 런타임 폰트 로딩으로 호스트 페이지와 스타일 격리",
-      },
-      {
-        importance: "other",
-        content:
-          "Zod 스키마 검증 기반 로컬 스토리지 영속화 및 데이터 마이그레이션",
-      },
-      {
-        importance: "other",
-        content: "브라우저 언어 감지 기반 한국어·영어 i18n 및 호스트 테마 연동",
-      },
+      // {
+      //   importance: "other",
+      //   content:
+      //     "어댑터 패턴으로 6개 AI 서비스의 입력창 삽입·메시지 영역 판별 로직 분리",
+      // },
+      // {
+      //   importance: "other",
+      //   content:
+      //     "Shadow DOM 렌더링과 CSP 우회 런타임 폰트 로딩으로 호스트 페이지와 스타일 격리",
+      // },
+      // {
+      //   importance: "other",
+      //   content:
+      //     "Zod 스키마 검증 기반 로컬 스토리지 영속화 및 데이터 마이그레이션",
+      // },
+      // {
+      //   importance: "other",
+      //   content: "브라우저 언어 감지 기반 한국어·영어 i18n 및 호스트 테마 연동",
+      // },
     ],
     caseStudies: [
       {
@@ -202,7 +202,6 @@ export const EXPERIENCES: Experience[] = [
     period: "2025.12 ~ 2026.03",
     summary: "VanillaJS · Wijmo 기반 ERP 서비스 클라이언트 개발",
     works: [
-      "VanillaJS · Wijmo 기반 ERP 서비스 클라이언트 개발",
       "동적 로딩 구조 개선을 통한 서비스 성능 개선",
       "공통 유틸 개발을 통한 입력 로직 표준화",
     ],
@@ -213,9 +212,9 @@ export const EXPERIENCES: Experience[] = [
     period: "2024.04 ~ 2025.11",
     summary: "Django 기반 ERP 서비스 서버·클라이언트 개발",
     works: [
-      "Django 기반 ERP 서비스 서버·클라이언트 풀스택 개발",
       "대용량 테이블 렌더링 및 바코드 입력 UX 개선",
-      "레거시 DBF → MySQL 마이그레이션 및 AWS 배포 환경 구축",
+      "레거시 DBF → MySQL 마이그레이션",
+      "AWS 배포 환경 구축",
     ],
   },
 ];
