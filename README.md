@@ -1,48 +1,50 @@
-# 포트폴리오
+<!-- # 포트폴리오 -->
 
-![image](https://github.com/user-attachments/assets/f04a0fb0-c932-40e8-9a19-b13cd58889fc)
+<!-- ![image](https://github.com/user-attachments/assets/f04a0fb0-c932-40e8-9a19-b13cd58889fc) -->
 
-## 💾 프로젝트 개요
+<!-- ## 개요 -->
 
-Next.js 기반의 포트폴리오 사이트입니다. 인터랙티브한 UI와 애니메이션을 통해 저를 소개합니다.
-
-<br />
+<!-- <br />
 
 ## ⚡️ 주요 기능
 
 - 텍스트 클릭 시 테마가 전환되는 인터랙티브 인트로 화면
-- 경력, 학력, 기술 스택, 프로젝트를 담은 포트폴리오 카드
+- 경력, 학력, 기술 스택, 프로젝트를 담은 포트폴리오 카드 -->
 
-<br />
+<!-- <br />
 
-## ⚙️ 사용 기술
+## 기술 -->
+
+<div align="center">
+
+Next.js 기반 포트폴리오 사이트입니다.
+
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Radix UI](https://img.shields.io/badge/Radix_UI-161618?style=for-the-badge&logo=radixui&logoColor=white)
+![GSAP](https://img.shields.io/badge/GSAP-88CE02?style=for-the-badge&logo=greensock&logoColor=white)
+![Biome](https://img.shields.io/badge/Biome-60A5FA?style=for-the-badge&logo=biome&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+
+</div>
+
+<!-- <br />
 
 - **Next.js 16** : App Router 기반 SSR 및 페이지 구성
 - **React 19** : UI 컴포넌트 구성
 - **TypeScript** : 타입 안정성 확보
 - **Tailwind CSS v4** : 유틸리티 기반 스타일링
 - **Radix UI (Dialog)** : 접근성을 고려한 모달 구현
+- **GSAP** : 스크롤 및 인터랙션 애니메이션
 - **Biome** : 린팅 및 포맷팅
+- **Vercel** : 배포 및 호스팅
 
 <br />
 
-## 🗂️ 프로젝트 구조
-
-```
-src/
- ├── app/             # Next.js App Router 진입점 및 페이지
- ├── assets/          # 폰트, 이미지, SVG 등 정적 리소스
- ├── context/         # 전역 Context (ScrollDirectionContext)
- ├── features/        # 기능 단위 컴포넌트
- │   ├── home/        # 홈 페이지 관련 컴포넌트
- │   │   └── components/
- │   │       └── portfolio/   # 포트폴리오 섹션 서브 컴포넌트
- │   └── nav/         # 공통 Footer
- └── hooks/           # 커스텀 훅 (useScrollDirection)
-```
-
 <br />
 
-## 🌐 배포
+## 배포
 
-Vercel을 통해 배포되었습니다.
+Vercel을 통해 배포되었습니다. -->
