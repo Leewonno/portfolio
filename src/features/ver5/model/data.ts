@@ -111,10 +111,10 @@ export const PROJECTS: Project[] = [
     ],
   },
   {
-    name: "질문서랍 (Question Drawer)",
+    name: "질문서랍",
     subtitle: "2026 · 개인프로젝트",
     description:
-      "AI 답변을 읽다가 생긴 궁금증을 드래그해 사이드 서랍에 담아두고, 클릭 한 번으로 후속 질문을 대화 입력창에 채워주는 크롬 확장 프로그램입니다. Claude · ChatGPT · Gemini · Grok · Kimi · DeepSeek 6개 서비스를 지원하며 크롬 웹 스토어에 배포했습니다.",
+      "AI 답변을 읽다가 생긴 궁금증을 놓치지 않기 위해 만든 크롬 확장 프로그램입니다. Claude · ChatGPT · Gemini · Grok · Kimi · DeepSeek 6개 서비스를 지원하며 크롬 웹 스토어에 배포했습니다.",
     techStack: ["WXT", "React", "TypeScript", "Tailwind", "Zod", "Vitest"],
     link: "https://chromewebstore.google.com/detail/question-drawer/mipekafnkjahilpfjkfhmmjjbhkofnlj",
     github: "https://github.com/Leewonno/QuestionDrawer",
@@ -188,12 +188,12 @@ export const EXPERIENCES: Experience[] = [
     company: "틸론",
     role: "Frontend Engineer",
     period: "2026.06 ~",
-    summary: "Vue.js 기반 클라이언트 개발",
+    summary: "React, Vue.js 기반 클라이언트 개발",
     works: [
-      "React, Vue.js, Electron 기반 서비스 클라이언트 개발",
-      "jupyterlab 커스텀 개발",
-      "TheOtherTown 유지 보수 및 신규 기능 개발",
-      "TheOtherSpace 유지 보수 및 신규 기능 개발",
+      "React, Vue.js 기반 클라이언트 개발",
+      // "jupyterlab 커스텀 개발",
+      // "TheOtherTown 유지 보수 및 신규 기능 개발",
+      // "TheOtherSpace 유지 보수 및 신규 기능 개발",
     ],
   },
   {

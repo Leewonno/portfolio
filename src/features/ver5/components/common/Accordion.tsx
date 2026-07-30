@@ -37,7 +37,7 @@ export function Accordion({ items }: AccordionProps) {
               type="button"
               onClick={() => toggle(item.id)}
               aria-expanded={isOpen}
-              className="group w-full flex items-center justify-between gap-3 py-3.5 text-left cursor-pointer"
+              className="group w-full flex items-center justify-between gap-3 py-3 text-left cursor-pointer"
             >
               <span className="text-sm font-medium text-gray-800 group-hover:text-blue-500 transition-colors">
                 {item.trigger}
