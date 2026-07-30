@@ -10,7 +10,7 @@ export function End() {
           <p>복잡한 업무를 이해하기 쉬운 화면으로,</p>
           <p>흐름이 끊기지 않는 웹을 개발합니다.</p>
         </div> */}
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-2">
           <h1 className="text-xl sm:text-2xl font-semibold text-gray-600 tracking-tight">
             읽어주셔서 감사합니다.
           </h1>
