@@ -4,7 +4,7 @@ export function Hero() {
   return (
     <div className="hero-root w-full flex flex-col gap-6 relative">
       <div className="overflow-hidden">
-        <h1 className="hero-line-inner opacity-0 text-xl sm:text-2xl font-medium text-gray-800 tracking-tight">
+        <h1 className="hero-line-inner opacity-0 text-2xl font-medium text-gray-800 tracking-tight">
           이원노
         </h1>
       </div>
@@ -16,7 +16,7 @@ export function Hero() {
       <div className="overflow-hidden">
         <p className="hero-line-inner opacity-0 flex flex-col text-sm text-gray-600">
           <span>
-            2년간 ERP 서비스를 개발하며 복잡한 업무를 화면에 풀어왔습니다.
+            다양한 서비스를 개발하며 복잡한 업무를 화면에 풀어왔습니다.
           </span>
           <span>사용자가 헤매지 않고 이해하기 쉬운 흐름을 만듭니다.</span>
         </p>

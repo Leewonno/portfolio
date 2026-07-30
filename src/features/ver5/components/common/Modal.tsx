@@ -28,7 +28,7 @@ export function Modal({
         <Dialog.Overlay className="fixed inset-0 z-50 bg-black/40 data-[state=open]:animate-[fade-in_0.2s_ease-out] data-[state=closed]:animate-[fade-out_0.15s_ease-in]" />
         <Dialog.Content
           aria-describedby={undefined}
-          className="fixed z-50 top-1/2 left-1/2 w-130 max-w-[90vw] max-h-[82vh] overflow-y-auto thin-scrollbar p-8 rounded-2xl bg-white shadow-[0px_24px_64px_rgba(0,0,0,0.12)] data-[state=open]:animate-[modal-in_0.25s_ease-out_forwards] data-[state=closed]:animate-[modal-out_0.2s_ease-in_forwards] flex flex-col gap-6 outline-none will-change-[translate,opacity,scale]"
+          className="fixed z-50 top-1/2 left-1/2 w-130 max-w-[90vw] max-h-[82vh] overflow-y-auto thin-scrollbar p-6 sm:p-8 rounded-2xl bg-white shadow-[0px_24px_64px_rgba(0,0,0,0.12)] data-[state=open]:animate-[modal-in_0.25s_ease-out_forwards] data-[state=closed]:animate-[modal-out_0.2s_ease-in_forwards] flex flex-col gap-6 outline-none will-change-[translate,opacity,scale]"
         >
           {/* 헤더 */}
           <div className="flex items-start justify-between gap-4">
