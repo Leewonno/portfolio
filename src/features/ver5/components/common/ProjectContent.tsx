@@ -64,11 +64,11 @@ export function ProjectContent({ project }: ProjectContentProps) {
 
       {/* 작업 내용 */}
       {project.works.length > 0 && (
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-2">
           <span className="text-xs text-gray-400 tracking-widest uppercase">
             Works
           </span>
-          <ul className="flex flex-col gap-2 pl-5 list-disc list-outside marker:text-gray-300">
+          <ul className="flex flex-col gap-1.5 pl-5 list-disc list-outside marker:text-gray-300">
             {highWorks.map((work) => (
               <li key={work.content} className="text-sm text-gray-600">
                 {work.content}
@@ -77,7 +77,7 @@ export function ProjectContent({ project }: ProjectContentProps) {
 
             {otherWorks.length > 0 && (
               <>
-                <li className="text-sm text-gray-400 uppercase">Other</li>
+                <li className="text-sm text-gray-400">Other</li>
                 {otherWorks.map((work) => (
                   <li key={work.content} className="ml-4 text-sm text-gray-400">
                     {work.content}
@@ -91,7 +91,7 @@ export function ProjectContent({ project }: ProjectContentProps) {
 
       {/* 기술 스택 */}
       {project.techStack.length > 0 && (
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-2">
           <span className="text-xs text-gray-400 tracking-widest uppercase">
             Tech Stack
           </span>
@@ -110,7 +110,7 @@ export function ProjectContent({ project }: ProjectContentProps) {
 
       {/* Case Study 아코디언 */}
       {accordionItems.length > 0 && (
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-2">
           <span className="text-xs text-gray-400 tracking-widest uppercase">
             Case Study
           </span>

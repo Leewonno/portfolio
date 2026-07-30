@@ -14,11 +14,11 @@ export function ExperienceContent({ experience }: ExperienceContentProps) {
 
       {/* 메타 정보 */}
       <div className="flex flex-col gap-2">
-        <div className="flex gap-3 text-sm">
+        <div className="flex gap-2 text-sm">
           <span className="text-gray-400 w-14 shrink-0">역할</span>
           <span className="text-gray-700">{experience.role}</span>
         </div>
-        <div className="flex gap-3 text-sm">
+        <div className="flex gap-2 text-sm">
           <span className="text-gray-400 w-14 shrink-0">기간</span>
           <span className="text-gray-700">{experience.period}</span>
         </div>
@@ -26,7 +26,7 @@ export function ExperienceContent({ experience }: ExperienceContentProps) {
 
       {/* 담당 업무 */}
       {experience.works.length > 0 && (
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-2">
           <span className="text-xs text-gray-400 tracking-widest uppercase">
             Works
           </span>
