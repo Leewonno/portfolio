@@ -11,9 +11,9 @@ export function End() {
           <p>흐름이 끊기지 않는 웹을 개발합니다.</p>
         </div> */}
         <div className="flex flex-col gap-2">
-          <h1 className="text-xl sm:text-xl font-medium text-gray-600 tracking-tight">
+          <h2 className="text-xl sm:text-xl font-medium text-gray-600 tracking-tight">
             읽어주셔서 감사합니다.
-          </h1>
+          </h2>
           <p className="text-sm text-gray-600">
             더 나누고 싶은 이야기가 있다면 연락 부탁드립니다.
           </p>
