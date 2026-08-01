@@ -29,3 +29,11 @@ export interface WorkItem {
   importance: "high" | "other";
   content: string;
 }
+
+export interface Education {
+  school: string;
+  degree: string;
+  period: string;
+  description?: string;
+  courses?: string[];
+}

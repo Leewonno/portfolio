@@ -5,7 +5,7 @@ import Link from "next/link";
 export function End() {
   return (
     <div className="overflow-hidden">
-      <div className="section-reveal w-full relative opacity-0 flex flex-col gap-30">
+      <div className="section-reveal w-full relative opacity-0 flex flex-col gap-25 sm:gap-35">
         {/* <div>
           <p>복잡한 업무를 이해하기 쉬운 화면으로,</p>
           <p>흐름이 끊기지 않는 웹을 개발합니다.</p>
