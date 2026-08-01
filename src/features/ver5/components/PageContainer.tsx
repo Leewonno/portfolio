@@ -6,7 +6,6 @@ import { Hero } from "./Hero";
 import { Projects } from "./Projects";
 import { useGasp } from "../hooks/useGasp";
 import { Educations } from "./Educations";
-import { Skills } from "./Skills";
 
 export function PageContainer() {
   const containerRef = useGasp();
