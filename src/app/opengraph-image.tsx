@@ -2,7 +2,7 @@ import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { ImageResponse } from "next/og";
 
-export const alt = "이원노 | 프론트엔드 개발자";
+export const alt = "이원노 | 프론트엔드 엔지니어";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
