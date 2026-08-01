@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { Footer } from "@/features";
-
-const siteUrl = "https://leewonno.vercel.app";
+import { siteUrl } from "@/shared";
 
 const title = "WONNO LEE";
 const description =

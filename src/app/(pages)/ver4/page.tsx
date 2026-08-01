@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { ScrollDirectionProvider } from "@/context/ScrollDirectionContext";
 import {
   HomeIntro,
@@ -5,6 +6,21 @@ import {
   HomePortfolio,
   HomeResume,
 } from "@/features";
+
+export const metadata: Metadata = {
+  title: "ver4",
+  alternates: {
+    canonical: "/ver4",
+  },
+  robots: {
+    index: false,
+    follow: true,
+    googleBot: {
+      index: false,
+      follow: true,
+    },
+  },
+};
 
 export default async function Ver4({
   searchParams,
