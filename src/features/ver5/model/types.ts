@@ -30,6 +30,13 @@ export interface WorkItem {
   content: string;
 }
 
+export type SkillCategory = "Frontend" | "Language" | "Backend" | "Etc";
+
+export interface SkillGroup {
+  category: SkillCategory;
+  items: string[];
+}
+
 export interface Education {
   school: string;
   degree: string;

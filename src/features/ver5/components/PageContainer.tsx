@@ -19,7 +19,7 @@ export function PageContainer() {
       <Hero />
       <Projects />
       <Experiences />
-      <Skills />
+      {/* <Skills /> */}
       <Educations />
       <End />
     </div>
