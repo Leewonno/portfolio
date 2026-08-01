@@ -5,7 +5,7 @@ import { Footer } from "@/features";
 
 const siteUrl = "https://leewonno.vercel.app";
 
-const title = "이원노 | 프론트엔드 개발자";
+const title = "WONNO LEE";
 const description =
   "흐름이 끊기지 않는 웹을 개발합니다. 복잡한 업무를 사용자가 헤매지 않는 화면으로 풀어내는 프론트엔드 개발자 이원노의 포트폴리오입니다.";
 const shortDescription = "흐름이 끊기지 않는 웹을 개발합니다.";
