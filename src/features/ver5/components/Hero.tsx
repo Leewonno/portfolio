@@ -21,8 +21,8 @@ export function Hero() {
           <span>사용자가 헤매지 않고 이해하기 쉬운 흐름을 만듭니다.</span>
         </p>
       </div>
-      <div className="hero-box rounded-md sm:rounded-xl opacity-0 bg-blue-100/60 h-10 w-10 sm:h-15 sm:w-15 absolute right-0 top-0"></div>
-      <div className="hero-box rounded-md sm:rounded-xl opacity-0 bg-blue-100/60 h-10 w-10 sm:h-15 sm:w-15 absolute right-0 top-5"></div>
+      <div className="hero-box rounded-md sm:rounded-xl opacity-0 bg-blue-100/60 h-9 w-9 sm:h-15 sm:w-15 absolute right-0 top-0 sm:top-0"></div>
+      <div className="hero-box rounded-md sm:rounded-xl opacity-0 bg-blue-100/60 h-9 w-9 sm:h-15 sm:w-15 absolute right-0 top-4 sm:top-5"></div>
     </div>
   );
 }

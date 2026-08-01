@@ -29,3 +29,18 @@ export interface WorkItem {
   importance: "high" | "other";
   content: string;
 }
+
+export type SkillCategory = "Frontend" | "Language" | "Backend" | "Etc";
+
+export interface SkillGroup {
+  category: SkillCategory;
+  items: string[];
+}
+
+export interface Education {
+  school: string;
+  degree: string;
+  period: string;
+  description?: string;
+  courses?: string[];
+}

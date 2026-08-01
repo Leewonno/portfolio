@@ -5,6 +5,8 @@ import { End } from "./End";
 import { Hero } from "./Hero";
 import { Projects } from "./Projects";
 import { useGasp } from "../hooks/useGasp";
+import { Educations } from "./Educations";
+import { Skills } from "./Skills";
 
 export function PageContainer() {
   const containerRef = useGasp();
@@ -12,11 +14,13 @@ export function PageContainer() {
   return (
     <div
       ref={containerRef}
-      className="w-full sm:w-170 flex flex-col gap-20 sm:gap-30"
+      className="w-full sm:w-170 flex flex-col gap-25 sm:gap-35"
     >
       <Hero />
       <Projects />
       <Experiences />
+      {/* <Skills /> */}
+      <Educations />
       <End />
     </div>
   );

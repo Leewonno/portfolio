@@ -1,4 +1,4 @@
-import type { Experience, Project } from "./types";
+import type { Experience, Project, Education, SkillGroup } from "./types";
 
 export const PROJECTS: Project[] = [
   {
@@ -216,5 +216,37 @@ export const EXPERIENCES: Experience[] = [
       "레거시 DBF → MySQL 마이그레이션",
       "AWS 배포 환경 구축",
     ],
+  },
+];
+
+export const SKILLS: SkillGroup[] = [
+  {
+    category: "Frontend",
+    items: ["React", "Next.js", "Vue.js", "TanStack Query", "Zustand"],
+  },
+  {
+    category: "Language",
+    items: ["TypeScript", "JavaScript", "Python", "SQL"],
+  },
+  {
+    category: "Backend",
+    items: ["Django", "Node.js", "Supabase", "MySQL", "PostgreSQL"],
+  },
+  {
+    category: "Etc",
+    items: ["Git", "AWS", "Vercel", "Firebase", "Vitest"],
+  },
+];
+
+export const EDUCATIONS: Education[] = [
+  {
+    school: "남서울대학교",
+    degree: "컴퓨터소프트웨어학과",
+    period: "2018.03 ~ 2024.02",
+  },
+  {
+    school: "서산서일고등학교",
+    degree: "이과",
+    period: "2015.03 ~ 2018.02",
   },
 ];
