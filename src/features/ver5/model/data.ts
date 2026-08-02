@@ -188,12 +188,11 @@ export const EXPERIENCES: Experience[] = [
     company: "틸론",
     role: "Frontend Engineer",
     period: "2026.06 ~",
-    summary: "React, Vue.js 기반 클라이언트 개발",
+    summary: "React, Vue.js, Electron 기반 데스크톱/웹 클라이언트 개발",
     works: [
-      "React, Vue.js 기반 클라이언트 개발",
-      // "jupyterlab 커스텀 개발",
-      // "TheOtherTown 유지 보수 및 신규 기능 개발",
-      // "TheOtherSpace 유지 보수 및 신규 기능 개발",
+      "JupyterLab Extension 기반 UI 전면 리디자인 및 커스터마이징",
+      "다국어(i18n) 번역 기능 설계 및 개발",
+      "공통 API 인터셉터 구조 개선을 통한 네트워크 처리 로직 표준화 및 유지보수성 향상",
     ],
   },
   {
@@ -202,8 +201,8 @@ export const EXPERIENCES: Experience[] = [
     period: "2025.12 ~ 2026.03",
     summary: "VanillaJS · Wijmo 기반 ERP 서비스 클라이언트 개발",
     works: [
-      "동적 로딩 구조 개선을 통한 서비스 성능 개선",
-      "공통 유틸 개발을 통한 입력 로직 표준화",
+      "복잡한 단일 HTML 분리 후 fetch 기반 Lazy Loading 도입 -> 초기 렌더링 부담 감소",
+      "검색 폼 엔터 입력 공통 유틸 구현 -> 키보드 입력 UX 표준화 및 유지보수성 향상",
     ],
   },
   {
@@ -215,6 +214,7 @@ export const EXPERIENCES: Experience[] = [
       "대용량 테이블 렌더링 및 바코드 입력 UX 개선",
       "레거시 DBF → MySQL 마이그레이션",
       "AWS 배포 환경 구축",
+      "핵심 비즈니스 로직 개발",
     ],
   },
 ];
