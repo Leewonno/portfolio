@@ -8,7 +8,6 @@ import {
 } from "@/features";
 
 export const metadata: Metadata = {
-  title: "ver4",
   alternates: {
     canonical: "/ver4",
   },
