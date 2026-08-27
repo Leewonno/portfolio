@@ -26,7 +26,7 @@ export interface Experience {
 }
 
 export interface WorkItem {
-  importance: "high" | "other";
+  importance?: "high" | "other";
   content: string;
 }
 

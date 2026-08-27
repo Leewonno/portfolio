@@ -43,17 +43,20 @@ function CaseStudyDetail({ study }: { study: CaseStudy }) {
   );
 }
 
+function ListItemTitle({ children }: { children: React.ReactNode }) {
+  return (
+    <span className="text-xs text-gray-400 tracking-widest uppercase mb-2 mt-2">
+      {children}
+    </span>
+  );
+}
+
 export function ProjectContent({ project }: ProjectContentProps) {
   const accordionItems: AccordionItem[] = project.caseStudies.map((study) => ({
     id: study.title,
     trigger: study.title,
     content: <CaseStudyDetail study={study} />,
   }));
-
-  const highWorks = project.works.filter((work) => work.importance === "high");
-  const otherWorks = project.works.filter(
-    (work) => work.importance === "other",
-  );
 
   return (
     <>
@@ -65,26 +68,13 @@ export function ProjectContent({ project }: ProjectContentProps) {
       {/* 작업 내용 */}
       {project.works.length > 0 && (
         <div className="flex flex-col gap-2">
-          <span className="text-xs text-gray-400 tracking-widest uppercase">
-            Works
-          </span>
+          <ListItemTitle>Works</ListItemTitle>
           <ul className="flex flex-col gap-0.5 sm:gap-1.5 pl-5 list-disc list-outside marker:text-gray-300">
-            {highWorks.map((work) => (
+            {project.works.map((work) => (
               <li key={work.content} className="text-sm text-gray-600">
                 {work.content}
               </li>
             ))}
-
-            {otherWorks.length > 0 && (
-              <>
-                <li className="text-sm text-gray-600">Other</li>
-                {otherWorks.map((work) => (
-                  <li key={work.content} className="ml-4 text-sm text-gray-600">
-                    {work.content}
-                  </li>
-                ))}
-              </>
-            )}
           </ul>
         </div>
       )}
@@ -92,9 +82,7 @@ export function ProjectContent({ project }: ProjectContentProps) {
       {/* 기술 스택 */}
       {project.techStack.length > 0 && (
         <div className="flex flex-col gap-2">
-          <span className="text-xs text-gray-400 tracking-widest uppercase">
-            Tech Stack
-          </span>
+          <ListItemTitle>Tech Stack</ListItemTitle>
           <div className="flex flex-wrap gap-1 sm:gap-2">
             {project.techStack.map((tech) => (
               <span
@@ -111,9 +99,7 @@ export function ProjectContent({ project }: ProjectContentProps) {
       {/* Case Study 아코디언 */}
       {accordionItems.length > 0 && (
         <div className="flex flex-col gap-2">
-          <span className="text-xs text-gray-400 tracking-widest uppercase">
-            Case Study
-          </span>
+          <ListItemTitle>Case Study</ListItemTitle>
           <Accordion items={accordionItems} />
         </div>
       )}

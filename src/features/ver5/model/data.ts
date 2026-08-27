@@ -7,9 +7,13 @@ export const PROJECTS: Project[] = [
     description: "서울 시내버스 업체 범일운수의 ERP 개발 프로젝트입니다.",
     techStack: ["Django", "jQuery", "AWS", "Firebase", "Bootstrap"],
     works: [
-      { importance: "high", content: "대용량 테이블 렌더링 성능 개선" },
-      { importance: "high", content: "바코드 입력 UX 개선" },
-      { importance: "other", content: "레거시 DBF → MySQL 마이그레이션" },
+      // { importance: "high", content: "대용량 테이블 렌더링 성능 개선" },
+      // { importance: "high", content: "바코드 입력 UX 개선" },
+      // { importance: "other", content: "레거시 DBF → MySQL 마이그레이션" },
+      {
+        importance: "other",
+        content: "Django 서버 사이드 렌더링 구조 기반 개발",
+      },
       {
         importance: "other",
         content: "공통 인쇄 레이아웃 설계 및 tablib 기반 엑셀 템플릿 구현",
@@ -62,18 +66,6 @@ export const PROJECTS: Project[] = [
     link: "https://novawiki.vercel.app",
     github: "https://github.com/Leewonno/novawiki",
     works: [
-      {
-        importance: "high",
-        content: "클라이언트 캐시의 정합성 확보를 위한 데이터 페칭 전략 개선",
-      },
-      {
-        importance: "high",
-        content: "데이터 무결성 확보를 위한 Supabase RPC 도입",
-      },
-      {
-        importance: "high",
-        content: "타이핑 중 부분 입력 매칭을 위한 한글 자모 분해 검색 구현",
-      },
       { importance: "other", content: "마크다운 파서 및 에디터 구현" },
       {
         importance: "other",
