@@ -7,7 +7,7 @@ export { PortfolioModal } from "./ver4/components/portfolio/PortfolioModal";
 export type { ProjectDetail } from "./ver4/model/types";
 
 // Nav
-export { Footer } from "./nav/Footer";
+export { FooterVer4 } from "./nav/FooterVer4";
 export { Header } from "./nav/Header";
 
 // Ver5

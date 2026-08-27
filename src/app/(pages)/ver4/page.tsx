@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { ScrollDirectionProvider } from "@/context/ScrollDirectionContext";
 import {
+  FooterVer4,
   HomeIntro,
   HomeNavigation,
   HomePortfolio,
@@ -34,6 +35,7 @@ export default async function Ver4({
       <HomePortfolio q={q} />
       <HomeResume />
       <HomeNavigation />
+      <FooterVer4 />
     </ScrollDirectionProvider>
   );
 }
