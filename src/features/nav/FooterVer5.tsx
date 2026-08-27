@@ -3,13 +3,35 @@ import Image from "next/image";
 
 export function FooterVer5() {
   return (
-    <footer className="relative w-full pt-12 pb-16 flex flex-col items-start gap-3 text-gray-400 text-sm border-t border-gray-400 border-dashed mt-20">
+    <footer className="relative w-full pt-12 pb-16 flex flex-col items-start gap-3 text-gray-400 text-sm border-t border-gray-400 border-dashed mt-30">
       {/* 맥도날드 */}
-      <div className="absolute right-0 -top-7">
-        <Image alt="맥도날드" src={mcdonalds} width={40} />
+      <div className="absolute right-0 -top-6 sm:-top-7 w-8 sm:w-10">
+        <Image alt="맥도날드" src={mcdonalds} />
       </div>
       {/* 연락처 */}
       <div className="flex items-center gap-2">
+        <a
+          href="mailto:dldnjssh123@naver.com"
+          className="hover:text-gray-700 transition-colors"
+          aria-label="이메일 보내기"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            aria-hidden="true"
+          >
+            <rect width="20" height="16" x="2" y="4" rx="2" />
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+          </svg>
+          <span className="sr-only">이메일 보내기</span>
+        </a>
         <a
           href="https://github.com/leewonno"
           target="_blank"
