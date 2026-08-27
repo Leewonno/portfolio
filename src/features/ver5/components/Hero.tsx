@@ -14,7 +14,7 @@ export function Hero() {
         </h2>
       </div>
       <div className="overflow-hidden">
-        <p className="hero-line-inner opacity-0 flex flex-col text-sm text-gray-600">
+        <p className="hero-line-inner opacity-0 flex flex-col text-gray-600 text-sm">
           <span>
             다양한 서비스를 개발하며 복잡한 업무를 화면에 풀어왔습니다.
           </span>

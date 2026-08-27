@@ -81,7 +81,6 @@ export function VersionSelect() {
         </button>
 
         <ul
-          role="listbox"
           aria-label="이전 포트폴리오 버전"
           className={`absolute bottom-full left-0 mb-2 min-w-full rounded-md border border-[rgba(255,255,255,0.12)] bg-[#0a0a14] py-1 shadow-lg transition-all duration-200 ${
             isOpen

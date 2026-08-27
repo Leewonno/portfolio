@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { GoogleAnalytics } from "@next/third-parties/google";
-import { Footer } from "@/features";
 import { siteUrl } from "@/shared";
 
 const title = "WONNO LEE";
@@ -41,10 +40,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body>
-        {children}
-        <Footer />
-      </body>
+      <body>{children}</body>
       {process.env.NODE_ENV === "production" && (
         <GoogleAnalytics gaId="G-0QJXQ9B0H9" />
       )}
