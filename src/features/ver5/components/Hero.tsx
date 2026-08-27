@@ -15,10 +15,8 @@ export function Hero() {
       </div>
       <div className="overflow-hidden">
         <p className="hero-line-inner opacity-0 flex flex-col text-gray-600 text-sm">
-          <span>
-            다양한 서비스를 개발하며 복잡한 업무를 화면에 풀어왔습니다.
-          </span>
-          <span>사용자가 헤매지 않고 이해하기 쉬운 흐름을 만듭니다.</span>
+          <span>ERP를 개발하며 복잡한 업무를 화면에 풀어왔습니다.</span>
+          <span>사용자가 이해하기 쉬운 흐름을 만듭니다.</span>
         </p>
       </div>
       <div className="hero-box rounded-md sm:rounded-xl opacity-0 bg-blue-100/60 h-9 w-9 sm:h-15 sm:w-15 absolute right-0 top-0 sm:top-0"></div>

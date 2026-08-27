@@ -5,9 +5,9 @@ export function FooterVer5() {
   return (
     <footer className="relative w-full pt-6 pb-8 sm:pt-12 sm:pb-16 flex flex-col items-start gap-3 text-gray-400 text-sm border-t border-gray-400 border-dashed mt-30">
       {/* 맥도날드 */}
-      <div className="absolute right-0 -top-6 sm:-top-7 w-8 sm:w-10">
+      {/* <div className="absolute right-0 -top-6 sm:-top-7 w-8 sm:w-10">
         <Image alt="맥도날드" src={mcdonalds} />
-      </div>
+      </div> */}
       {/* 연락처 */}
       <div className="flex items-center gap-2">
         <a
@@ -73,7 +73,7 @@ export function FooterVer5() {
       </div>
 
       {/* 저작권 + 제작 스택 */}
-      <div className="flex flex-col items-center gap-1">
+      <div className="flex flex-col items-center gap-1 text-xs">
         <p>© 2026 이원노. All rights reserved.</p>
       </div>
 
