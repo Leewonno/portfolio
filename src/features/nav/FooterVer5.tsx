@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export function FooterVer5() {
   return (
-    <footer className="relative w-full pt-12 pb-16 flex flex-col items-start gap-3 text-gray-400 text-sm border-t border-gray-400 border-dashed mt-30">
+    <footer className="relative w-full pt-6 pb-8 sm:pt-12 sm:pb-16 flex flex-col items-start gap-3 text-gray-400 text-sm border-t border-gray-400 border-dashed mt-30">
       {/* 맥도날드 */}
       <div className="absolute right-0 -top-6 sm:-top-7 w-8 sm:w-10">
         <Image alt="맥도날드" src={mcdonalds} />
