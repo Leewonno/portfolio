@@ -73,7 +73,7 @@ export function FooterVer5() {
       </div>
 
       {/* 저작권 + 제작 스택 */}
-      <div className="flex flex-col items-center gap-1">
+      <div className="flex flex-col items-center gap-1 text-xs">
         <p>© 2026 이원노. All rights reserved.</p>
       </div>
 
