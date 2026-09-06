@@ -12,3 +12,9 @@ export { Header } from "./nav/Header";
 
 // Ver5
 export { PageContainer } from "./ver5/components/PageContainer";
+
+// Ver6
+export { SixHeader } from "./ver6/components/SixHeader";
+export { SixContainer } from "./ver6/components/SixContainer";
+export { SixHero } from "./ver6/components/SixHero";
+export { SixSkills } from "./ver6/components/SixSkills";
